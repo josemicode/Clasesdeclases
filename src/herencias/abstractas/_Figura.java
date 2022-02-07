@@ -1,13 +1,24 @@
 package herencias.abstractas;
 
+import herencias.clases.Casilla;
+
 public abstract class _Figura {
 
     private String color;
     private boolean vida;
+    private Casilla cas;
 
     public _Figura(String color) {
         this.color = color;
         this.vida = true;
+    }
+
+    public Casilla getCas() {
+        return cas;
+    }
+
+    public void setCas(Casilla cas) {
+        this.cas = cas;
     }
 
     public String getColor() {
@@ -26,11 +37,9 @@ public abstract class _Figura {
         this.vida = vida;
     }
 
-    public abstract void movimiento();
-
     public void morir() {
         this.vida = false;
     }
 
-    
+    public abstract void movimiento(Casilla casilla2);
 }

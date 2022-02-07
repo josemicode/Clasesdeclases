@@ -9,8 +9,10 @@ public class Caballo extends _Figura {
     }
 
     @Override
-    public void movimiento() {
+    public void movimiento(Casilla casilla2) {
+        if(((casilla2.getNumero()== getCas().getNumero() - 2)||(casilla2.getNumero()== getCas().getNumero() + 2)) && ((casilla2.getLetra()== getCas().getLetra() - 1)||(casilla2.getLetra()== getCas().getLetra() + 1))) {
 
+        }
     }
 
     @Override

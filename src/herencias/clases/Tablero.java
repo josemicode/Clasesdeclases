@@ -13,28 +13,28 @@ public class Tablero {
         for(int i = 0; i<8; i++) {
             for (int j = 0; j<8; j++) {
                 if(j==0){
-                    casillas.add(new Casilla(i, 'A', null));
+                    casillas.add(new Casilla(i, 'A'));
                 }
                 if(j==1){
-                    casillas.add(new Casilla(i, 'B', null));
+                    casillas.add(new Casilla(i, 'B'));
                 }
                 if(j==2){
-                    casillas.add(new Casilla(i, 'C', null));
+                    casillas.add(new Casilla(i, 'C'));
                 }
                 if(j==3){
-                    casillas.add(new Casilla(i, 'D', null));
+                    casillas.add(new Casilla(i, 'D'));
                 }
                 if(j==4){
-                    casillas.add(new Casilla(i, 'E', null));
+                    casillas.add(new Casilla(i, 'E'));
                 }
                 if(j==5){
-                    casillas.add(new Casilla(i, 'F', null));
+                    casillas.add(new Casilla(i, 'F'));
                 }
                 if(j==6){
-                    casillas.add(new Casilla(i, 'G', null));
+                    casillas.add(new Casilla(i, 'G'));
                 }
                 if(j==7){
-                    casillas.add(new Casilla(i, 'H', null));
+                    casillas.add(new Casilla(i, 'H'));
                 }
             }
         }
@@ -62,7 +62,4 @@ public class Tablero {
                 res;
     }
 
-    //public void sacarPieza(String letra, int num) {
-    //    getCasillas().get()
-    //}
 }

@@ -9,9 +9,10 @@ public class Peon extends _Figura {
     }
 
     @Override
-    public void movimiento() {
+    public void movimiento(Casilla casilla2) {
 
     }
+
 
     @Override
     public String toString() {

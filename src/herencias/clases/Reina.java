@@ -9,7 +9,7 @@ public class Reina extends _Figura {
     }
 
     @Override
-    public void movimiento() {
+    public void movimiento(Casilla casilla2) {
 
     }
 

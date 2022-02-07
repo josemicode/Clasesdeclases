@@ -9,7 +9,7 @@ public class Casilla {
     private boolean llena;
     private _Figura figura;
 
-    public Casilla(int numero, char letra, _Figura figura) {
+    public Casilla(int numero, char letra) {
 
         this.letra = letra;
         this.numero = numero;
