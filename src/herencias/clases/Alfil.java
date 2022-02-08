@@ -10,7 +10,11 @@ public class Alfil extends _Figura {
 
     @Override
     public void movimiento(Casilla casilla2) {
-
+        for(int i = 1; i<=7; i++) {
+            if(((casilla2.getNumero()== getCas().getNumero() + i) || (casilla2.getNumero()== getCas().getNumero() - i)) && ((casilla2.getLetra()== getCas().getLetra() + i) || (casilla2.getLetra()== casilla2.getLetra() - i))) {
+                setCas(casilla2);
+            }
+        }
     }
 
     @Override
