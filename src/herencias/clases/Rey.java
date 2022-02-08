@@ -10,7 +10,9 @@ public class Rey extends _Figura {
 
     @Override
     public void movimiento(Casilla casilla2) {
-
+        if((((casilla2.getNumero()== getCas().getNumero() + 1) || (casilla2.getNumero()== getCas().getNumero() - 1)) || ((casilla2.getLetra()== getCas().getLetra() + 1) || (casilla2.getLetra()== getCas().getLetra() - 1))) || ((casilla2.getNumero()== getCas().getNumero() +1) && (casilla2.getLetra()== getCas().getLetra() +1)) || ((casilla2.getNumero()== getCas().getNumero() +1) && (casilla2.getLetra()== getCas().getLetra() -1)) || ((casilla2.getNumero()== getCas().getNumero() -1) && (casilla2.getLetra()== getCas().getLetra() -1)) || ((casilla2.getNumero()== getCas().getNumero() -1) && (casilla2.getLetra()== getCas().getLetra() +1)) ) {
+            setCas(casilla2);
+        }
     }
 
     @Override
