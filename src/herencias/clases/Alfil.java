@@ -24,5 +24,5 @@ public class Alfil extends _Figura {
         }
 
         return res;
-    }
+    }//afae
 }
