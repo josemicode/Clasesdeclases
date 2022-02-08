@@ -1,9 +1,6 @@
 package herencias.elmainsito;
 
-import herencias.clases.Alfil;
-import herencias.clases.Caballo;
-import herencias.clases.Tablero;
-import herencias.clases.Torre;
+import herencias.clases.*;
 
 public class mainAjedrezzzz {
     public static void main(String[] args) {
@@ -17,6 +14,8 @@ public class mainAjedrezzzz {
 
         //Alfil alfil1 = new Alfil("b");
 
+        //Reina reina1 = new Reina("n");
+
         //---------------------------------------------------------------------------------------------
 
         //tabs.getCasillas().get(1).setFigura(caballo1);
@@ -25,6 +24,8 @@ public class mainAjedrezzzz {
 
         //tabs.getCasillas().get(0).setFigura(alfil1);
 
+        //tabs.getCasillas().get(7).setFigura(reina1);
+
         //---------------------------------------------------------------------------------------------
 
         //caballo1.setCas(tabs.getCasillas().get(1));
@@ -32,6 +33,8 @@ public class mainAjedrezzzz {
         //torre1.setCas(tabs.getCasillas().get(12));
 
         //alfil1.setCas(tabs.getCasillas().get(0));
+
+        //reina1.setCas(tabs.getCasillas().get(7));
 
         //---------------------------------------------------------------------------------------------
 
@@ -44,6 +47,9 @@ public class mainAjedrezzzz {
 
         //tabs.mover(alfil1, tabs.getCasillas().get(9));
         //tabs.mover(alfil1, tabs.getCasillas().get(2));
+
+        //tabs.mover(reina1, tabs.getCasillas().get(2));
+        //tabs.mover(reina1, tabs.getCasillas().get(20));
 
         //---------------------------------------------------------------------------------------------
 
