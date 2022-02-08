@@ -10,8 +10,8 @@ public class Caballo extends _Figura {
 
     @Override
     public void movimiento(Casilla casilla2) {
-        if(((casilla2.getNumero()== getCas().getNumero() - 2)||(casilla2.getNumero()== getCas().getNumero() + 2)) && ((casilla2.getLetra()== getCas().getLetra() - 1)||(casilla2.getLetra()== getCas().getLetra() + 1))) {
-
+        if((((casilla2.getNumero()== getCas().getNumero() - 2)||(casilla2.getNumero()== getCas().getNumero() + 2)) && ((casilla2.getLetra()== getCas().getLetra() - 1)||(casilla2.getLetra()== getCas().getLetra() + 1)))||(((casilla2.getNumero()== getCas().getNumero() - 1)||(casilla2.getNumero()== getCas().getNumero() + 1)) && ((casilla2.getLetra()== getCas().getLetra() - 2)||(casilla2.getLetra()== getCas().getLetra() + 2)))) {
+            setCas(casilla2);
         }
     }
 

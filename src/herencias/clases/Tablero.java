@@ -1,5 +1,7 @@
 package herencias.clases;
 
+import herencias.abstractas._Figura;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -60,6 +62,25 @@ public class Tablero {
         }
         return
                 res;
+    }
+
+    public void mover(_Figura figura, Casilla casilla2) {
+
+        for (int i = 0; i<64; i++) {
+            if((getCasillas().get(i).getLetra() == figura.getCas().getLetra()) && (getCasillas().get(i).getNumero() == figura.getCas().getNumero())) {
+
+                getCasillas().get(i).setFigura(null);
+            }
+        }
+
+        figura.movimiento(casilla2);
+
+        for (int i = 0; i<64; i++) {
+            if((getCasillas().get(i).getLetra() == figura.getCas().getLetra()) && (getCasillas().get(i).getNumero() == figura.getCas().getNumero())) {
+
+                getCasillas().get(i).setFigura(figura);
+            }
+        }
     }
 
 }
