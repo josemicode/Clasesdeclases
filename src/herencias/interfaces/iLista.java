@@ -4,9 +4,9 @@ public interface iLista {
 
     final int capacidadMax = 10;
 
-    public boolean isEmpty();
+    public  boolean isEmpty();
 
-    public void push(int pusher);
+    public  void push(int pusher);
 
-    public int pop();
+    public  int pop();
 }
