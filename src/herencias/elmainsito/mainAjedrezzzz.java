@@ -66,7 +66,7 @@ public class mainAjedrezzzz {
         //tabs.mover(reina1, tabs.getCasillas().get(2));
         //tabs.mover(reina1, tabs.getCasillas().get(20));
 
-        //tabs.mover(rey1, tabs.getCasillas().get(60));
+        //tabs.mover(rey1, tabs.getCasillas().get(62));
 
         //tabs.mover(peon1, tabs.getCasillas().get(13));
         //tabs.mover(peon2, tabs.getCasillas().get(52));
