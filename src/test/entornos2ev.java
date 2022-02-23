@@ -9,7 +9,7 @@ public class entornos2ev {
 
         int counter = 0;
 
-        System.out.println("\n a. \n b. \n c. \n d. \n");
+        System.out.println("\n ");
         if (sc.next().charAt(0)=='a'){
             System.out.println("(^^)\n");
             counter++;
