@@ -41,7 +41,7 @@ public class sistemas2ev {
             falladas ++;
         }
 
-        System.out.println("3. Existen diferentes directivas en función del objeto al que se aplican, indique la opción correctaExisten diferentes directivas en función del objeto al que se aplican, indique la opción correcta (Tema 10)\r\n\n"
+        System.out.println("3. Existen diferentes directivas en función del objeto al que se aplican, indique la opción correcta (Tema 10)\r\n\n"
                 + "a. Equipo local\r\n"
                 + "b. Sitio\r\n"
                 + "c. Dominio\r\n"
@@ -211,7 +211,7 @@ public class sistemas2ev {
             falladas ++;
         }
 
-        System.out.println("14. El Instituto Nacional de Ciberseguridad recomiendo determinar qué información se debe salvar en función de los siguientes criterios:(Tema 14)\r\n\n"
+        System.out.println("14. El Instituto Nacional de Ciberseguridad recomienda determinar qué información se debe salvar en función de los siguientes criterios: (Tema 14)\r\n\n"
                 + "a. Nivel de accesibilidad o confidencialidad, utilidad o funcionalidad, en caso de robo, borrado o pérdida\r\n"
                 + "b. Nivel de acceso o seguridad, utilidad o funcionalidad, en caso de robo o pérdida\r\n"
                 + "c. Ambas son verdaderas\r\n"
@@ -366,7 +366,7 @@ public class sistemas2ev {
         }
 
         System.out.println("24. Las directivas de seguridad (Tema 10)\r\n\n"
-                + "a. Sirven para implementar configuraciones específicas a suarios/equipos del dominio\r\n"
+                + "a. Sirven para implementar configuraciones específicas a usuarios/equipos del dominio\r\n"
                 + "b. Se aplican siempre a un dominio\r\n"
                 + "c. Impiden que se conecten intrusos al servidor\r\n"
                 + "d. Ninguna es correcta \r\n");
@@ -444,10 +444,10 @@ public class sistemas2ev {
         }
 
         System.out.println("29. ¿Cuándo se inicia el gestor de arranque en un equipo con Windows? (Tema 8)\r\n\n"
-                + "a. letter-spacing\r\n"
-                + "b. word-spacing\r\n"
-                + "c. text-decoration\r\n"
-                + "d. line-height\r\n ");
+                + "a. Nada más arrancar el equipo\n" +
+                "b. Tras completar el inicio de la BIOS\n" +
+                "c. Tras iniciar el Sistema Operativo\n" +
+                "d. Con un solo Sistema Operativo no hay gestor de arranque\n");
         String pregunta29 = sc.next();
         numpreguntas++;
         if (pregunta29.equalsIgnoreCase("B")) {
@@ -474,7 +474,7 @@ public class sistemas2ev {
         }
 
         System.out.println("31. Señala la opción correcta (Tema 10)\r\n\n"
-                + ". Active Directory es el servicio directorio de Windows Server\r\n"
+                + "a. Active Directory es el servicio directorio de Windows Server\r\n"
                 + "b. Active Directory no es el servicio de directorio de Windows Server\r\n"
                 + "c. Amazing Directory es el servicio de directorio de Windows Server\r\n"
                 + "d. Amazing Directory no es el servicio de directorio de Windows Server \r\n");
@@ -661,7 +661,7 @@ public class sistemas2ev {
         System.out.println("Has acertado " + correctas + " preguntas. \n"
                 + "Has fallado " + falladas + " preguntas. \n");
 
-        double nota = correctas/numpreguntas;
+        double nota = (correctas/numpreguntas)*10;
         double resta = ((falladas/numpreguntas)/3)*10;
         double notafinal = (nota-resta);
 
