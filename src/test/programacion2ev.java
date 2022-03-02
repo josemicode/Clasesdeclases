@@ -343,6 +343,6 @@ public class programacion2ev {
 
         double res = (double) (((counter-((35-counter)/3))*100)/35);
 
-        System.out.println("Has acertado " +counter+ " preguntas de 35, un" +res+ "%");
+        System.out.println("Has acertado " +counter+ " preguntas de 35, \nun " +res+ "%");
     }
 }
