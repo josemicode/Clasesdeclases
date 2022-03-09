@@ -1,10 +1,22 @@
 package grafiquitos;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class prueba {
     private JPanel Panel1;
     private JLabel etiqueta;
+    private JComboBox comboBox1;
+
+    public prueba() {
+        comboBox1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                etiqueta.setText((String) comboBox1.getSelectedItem());
+            }
+        });
+    }
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("Prueba");
