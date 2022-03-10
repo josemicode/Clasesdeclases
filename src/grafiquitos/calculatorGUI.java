@@ -28,6 +28,7 @@ public class calculatorGUI extends JFrame {
     private JLabel Denum;
     private JButton Cambio;
     private JLabel Result;
+    private JButton Punto;
 
     private double resultado = 0;
 
@@ -220,6 +221,18 @@ public class calculatorGUI extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 sw = !sw;
+            }
+        });
+        Punto.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (sw){
+                    textito += Punto.getText();
+                    Num.setText(textito);
+                }else{
+                    textote += Punto.getText();
+                    Denum.setText(textote);
+                }
             }
         });
     }
