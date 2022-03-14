@@ -8,20 +8,20 @@
     <properties/>
     <border type="none"/>
     <children>
-      <component id="f3d74" class="javax.swing.JButton" binding="button2" default-binding="true">
+      <component id="f3d74" class="javax.swing.JButton" binding="Boton2">
         <constraints>
           <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Button"/>
+          <text value=""/>
         </properties>
       </component>
-      <component id="ff5f3" class="javax.swing.JButton" binding="button3" default-binding="true">
+      <component id="ff5f3" class="javax.swing.JButton" binding="Boton3">
         <constraints>
           <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Button"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="be5be" class="javax.swing.JButton" binding="button4" default-binding="true">
@@ -96,14 +96,13 @@
           <text value="Button"/>
         </properties>
       </component>
-      <component id="a4f63" class="javax.swing.JButton" binding="Boton1" custom-create="true">
+      <component id="a4f63" class="javax.swing.JButton" binding="Boton1">
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <enabled value="true"/>
           <hideActionText value="false"/>
-          <icon value="grafiquitos/R.jpg"/>
           <text value=""/>
         </properties>
       </component>
