@@ -1,6 +1,7 @@
 package cosasdeclases.blackjack;
 
 import javax.management.StringValueExp;
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -9,6 +10,11 @@ public class Carta {
     private int palo;
     private int num;
     private int val;
+    private ImageIcon icon;
+
+    public Carta(ImageIcon icon) {
+        this.icon = icon;
+    }
 
     public Carta() {
         this.palo = palo;
