@@ -1,5 +1,7 @@
 package grafiquitos;
 
+import cosasdeclases.blackjack.Carta;
+
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
@@ -37,22 +39,25 @@ public class cartasGUI extends JFrame{
 
         //JToggleButton boton1= new JToggleButton();
 
-        BufferedImage bufferedImage1 = ImageIO.read(new File("C:\\Users\\walls\\OneDrive\\Escritorio\\cora.png"));
-        Image carta1 = bufferedImage1.getScaledInstance(200, 200, Image.SCALE_DEFAULT);
-        ImageIcon icon1 = new ImageIcon(carta1);
 
-        BufferedImage bufferedrev = ImageIO.read(new File("C:\\Users\\walls\\OneDrive\\Escritorio\\rev.jpg"));
+        BufferedImage bufferedImage1 = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\cora.png")); //C:\Users\DAM\Desktop - C:\Users\walls\OneDrive\Escritorio
+        Image carta1 = bufferedImage1.getScaledInstance(200, 200, Image.SCALE_DEFAULT);
+        //ImageIcon icon1 = new ImageIcon(carta1);
+
+        Carta corason = new Carta(new ImageIcon(carta1));
+
+        BufferedImage bufferedrev = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\rev.jpg"));
         Image cartarev = bufferedrev.getScaledInstance(200, 200, Image.SCALE_DEFAULT);
         ImageIcon iconrev = new ImageIcon(cartarev);
 
-        Boton1.setIcon(icon1);
+        Boton1.setIcon(corason.getFotocarta());
 
         Boton1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
                 if (rev1){
-                    Boton1.setIcon(icon1);
+                    Boton1.setIcon(corason.getFotocarta());
                 }else{
                     Boton1.setIcon(iconrev);
                 }
@@ -61,18 +66,19 @@ public class cartasGUI extends JFrame{
             }
         });
 
-        BufferedImage bufferedImage2 = ImageIO.read(new File("C:\\Users\\walls\\OneDrive\\Escritorio\\romb.png"));
+        BufferedImage bufferedImage2 = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\romb.jpg"));
         Image carta2 = bufferedImage2.getScaledInstance(200, 200, Image.SCALE_DEFAULT);
-        ImageIcon icon2 = new ImageIcon(carta2);
 
-        Boton2.setIcon(icon2);
+        Carta rombo = new Carta(new ImageIcon(carta2));
+
+        Boton2.setIcon(rombo.getFotocarta());
 
         Boton2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
                 if (rev2){
-                    Boton2.setIcon(icon2);
+                    Boton2.setIcon(rombo.getFotocarta());
                 }else{
                     Boton2.setIcon(iconrev);
                 }
@@ -81,7 +87,7 @@ public class cartasGUI extends JFrame{
             }
         });
 
-        BufferedImage bufferedImage3 = ImageIO.read(new File("C:\\Users\\walls\\OneDrive\\Escritorio\\romb.png"));
+        BufferedImage bufferedImage3 = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\romb.jpg"));
         Image carta3 = bufferedImage3.getScaledInstance(200, 200, Image.SCALE_DEFAULT);
         ImageIcon icon3 = new ImageIcon(carta3);
 

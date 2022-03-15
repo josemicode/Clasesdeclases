@@ -2,6 +2,7 @@ package cosasdeclases.blackjack;
 
 import javax.management.StringValueExp;
 import javax.swing.*;
+import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -10,10 +11,10 @@ public class Carta {
     private int palo;
     private int num;
     private int val;
-    private ImageIcon icon;
+    private ImageIcon fotocarta;
 
-    public Carta(ImageIcon icon) {
-        this.icon = icon;
+    public Carta(ImageIcon fotocarta) {
+        this.fotocarta = fotocarta;
     }
 
     public Carta() {
@@ -30,6 +31,14 @@ public class Carta {
         }else{
             this.val = this.num;
         }
+    }
+
+    public ImageIcon getFotocarta() {
+        return fotocarta;
+    }
+
+    public void setFotocarta(ImageIcon fotocarta) {
+        this.fotocarta = fotocarta;
     }
 
     public int getPalo() {
