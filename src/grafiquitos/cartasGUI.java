@@ -89,16 +89,38 @@ public class cartasGUI extends JFrame{
 
         BufferedImage bufferedImage3 = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\romb.jpg"));
         Image carta3 = bufferedImage3.getScaledInstance(200, 200, Image.SCALE_DEFAULT);
-        ImageIcon icon3 = new ImageIcon(carta3);
 
-        Boton3.setIcon(icon3);
+        Carta pica = new Carta(new ImageIcon(carta3));
+
+        Boton3.setIcon(pica.getFotocarta());
 
         Boton3.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
                 if (rev3){
-                    Boton3.setIcon(icon3);
+                    Boton3.setIcon(pica.getFotocarta());
+                }else{
+                    Boton3.setIcon(iconrev);
+                }
+                rev3 = !rev3;
+
+            }
+        });
+
+        BufferedImage bufferedImage4 = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\romb.jpg"));
+        Image carta4 = bufferedImage4.getScaledInstance(200, 200, Image.SCALE_DEFAULT);
+
+        Carta treboles = new Carta(new ImageIcon(carta4));
+
+        Boton3.setIcon(treboles.getFotocarta());
+
+        Boton3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                if (rev3){
+                    Boton3.setIcon(treboles.getFotocarta());
                 }else{
                     Boton3.setIcon(iconrev);
                 }
