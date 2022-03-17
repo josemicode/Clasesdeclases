@@ -15,12 +15,13 @@ public class Carta {
 
     public Carta(ImageIcon fotocarta) {
         this.fotocarta = fotocarta;
-    }
-
-    public Carta() {
         this.palo = palo;
         this.num = num;
-        this.val = val;
+        if (num==11||num==12||num==13) {
+            this.val = 10;
+        }else{
+            this.val = this.num;
+        }
     }
 
     public Carta(int palo, int num) {
