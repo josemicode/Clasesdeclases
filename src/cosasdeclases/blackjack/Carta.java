@@ -12,9 +12,11 @@ public class Carta {
     private int num;
     private int val;
     private ImageIcon fotocarta;
+    private boolean rev;
 
     public Carta(ImageIcon fotocarta) {
         this.fotocarta = fotocarta;
+        this.rev = rev;
         this.palo = palo;
         this.num = num;
         if (num==11||num==12||num==13) {
@@ -32,6 +34,14 @@ public class Carta {
         }else{
             this.val = this.num;
         }
+    }
+
+    public boolean isRev() {
+        return rev;
+    }
+
+    public void setRev(boolean rev) {
+        this.rev = rev;
     }
 
     public ImageIcon getFotocarta() {

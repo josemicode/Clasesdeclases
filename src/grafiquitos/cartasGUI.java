@@ -27,24 +27,11 @@ public class cartasGUI extends JFrame{
     private JButton Boton12;
     private JLabel counter;
 
-    boolean rev1 = true;
-    boolean rev2 = true;
-    boolean rev3 = true;
-    boolean rev4 = true;
-    boolean rev5 = true;
-    boolean rev6 = true;
-    boolean rev7 = true;
-    boolean rev8 = true;
-    boolean rev9 = true;
-    boolean rev10 = true;
-    boolean rev11 = true;
-    boolean rev12 = true;
-
     int count = 0;
 
-    private int C1;
+    private Carta C1;
     private JButton B1;
-    private int C2;
+    private Carta C2;
     private JButton B2;
 
     public cartasGUI() throws IOException {
@@ -58,6 +45,7 @@ public class cartasGUI extends JFrame{
 
         Carta corason = new Carta(new ImageIcon(carta1));
         corason.setNum(2);
+        corason.setRev(true);
 
         BufferedImage bufferedrev = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\rev.jpg"));
         Image cartarev = bufferedrev.getScaledInstance(200, 200, Image.SCALE_DEFAULT);
@@ -69,26 +57,34 @@ public class cartasGUI extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                if (rev1){
+                if (corason.isRev()){
                     Boton1.setIcon(corason.getFotocarta());
                 }else{
                     Boton1.setIcon(iconrev);
                 }
-                rev1 = !rev1;
+                corason.setRev(!corason.isRev());
 
                 count++;
 
+
                 if (count == 1){
-                    C1 = corason.getNum();
+                    C1 = corason;
                     B1 = Boton1;
                 }
                 if (count == 2){
-                    C2 = corason.getNum();
-                    B2 = Boton2;
+                    count=0;
+                    C2 = corason;
+                    B2 = Boton1;
 
-                    if (C1!=C2){
+                    if (C1.getNum()!=C2.getNum()){
+
+                        B1.setIcon(iconrev);
+                        C1.setRev(true);
+                        B2.setIcon(iconrev);
+                        C2.setRev(true);
 
                     }
+                    count = 0;
                 }
             }
         });
@@ -97,6 +93,8 @@ public class cartasGUI extends JFrame{
         Image carta2 = bufferedImage2.getScaledInstance(200, 200, Image.SCALE_DEFAULT);
 
         Carta rombo = new Carta(new ImageIcon(carta2));
+        rombo.setNum(6);
+        rombo.setRev(true);
 
         Boton2.setIcon(iconrev);
 
@@ -104,14 +102,34 @@ public class cartasGUI extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                if (rev2){
+                if (rombo.isRev()){
                     Boton2.setIcon(rombo.getFotocarta());
                 }else{
                     Boton2.setIcon(iconrev);
                 }
-                rev2 = !rev2;
+                rombo.setRev(!rombo.isRev());
 
                 count++;
+
+
+                if (count == 1){
+                    C1 = rombo;
+                    B1 = Boton2;
+                    System.out.println(C1);
+                }
+                if (count == 2){
+                    C2 = rombo;
+                    B2 = Boton2;
+
+                    if (C1.getNum()!=C2.getNum()){
+
+                        B1.setIcon(iconrev);
+                        C1.setRev(true);
+                        B2.setIcon(iconrev);
+                        C2.setRev(true);
+                    }
+                    count = 0;
+                }
             }
         });
 
@@ -119,6 +137,8 @@ public class cartasGUI extends JFrame{
         Image carta3 = bufferedImage3.getScaledInstance(200, 200, Image.SCALE_DEFAULT);
 
         Carta pica = new Carta(new ImageIcon(carta3));
+        pica.setNum(1);
+        pica.setRev(true);
 
         Boton3.setIcon(iconrev);
 
@@ -126,14 +146,33 @@ public class cartasGUI extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                if (rev3){
+                if (pica.isRev()){
                     Boton3.setIcon(pica.getFotocarta());
                 }else{
                     Boton3.setIcon(iconrev);
                 }
-                rev3 = !rev3;
+                pica.setRev(!pica.isRev());
 
                 count++;
+
+                if (count == 1){
+                    C1 = pica;
+                    B1 = Boton3;
+                }
+                if (count == 2){
+                    count=0;
+                    C2 = pica;
+                    B2 = Boton3;
+
+                    if (C1.getNum()!=C2.getNum()){
+
+                        B1.setIcon(iconrev);
+                        C1.setRev(true);
+                        B2.setIcon(iconrev);
+                        C2.setRev(true);
+                    }
+                    count = 0;
+                }
             }
         });
 
@@ -141,6 +180,7 @@ public class cartasGUI extends JFrame{
         Image carta4 = bufferedImage4.getScaledInstance(200, 200, Image.SCALE_DEFAULT);
 
         Carta treboles = new Carta(new ImageIcon(carta4));
+        treboles.setRev(true);
 
         Boton4.setIcon(iconrev);
 
@@ -148,16 +188,39 @@ public class cartasGUI extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                if (rev4){
+                if (treboles.isRev()){
                     Boton4.setIcon(treboles.getFotocarta());
                 }else{
                     Boton4.setIcon(iconrev);
                 }
-                rev4 = !rev4;
+                treboles.setRev(!treboles.isRev());
 
                 count++;
+
+                if (count == 1){
+                    C1 = treboles;
+                    B1 = Boton4;
+                }
+                if (count == 2){
+                    count=0;
+                    C2 = treboles;
+                    B2 = Boton4;
+
+                    if (C1.getNum()!=C2.getNum()){
+
+                        B1.setIcon(iconrev);
+                        C1.setRev(true);
+                        B2.setIcon(iconrev);
+                        C2.setRev(true);
+                    }
+                    count = 0;
+                }
             }
         });
+
+        Carta treboles2 = new Carta(new ImageIcon(carta4));
+        treboles2.setNum(4);
+        treboles2.setRev(true);
 
         Boton5.setIcon(iconrev);
 
@@ -165,14 +228,33 @@ public class cartasGUI extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                if (rev5){
-                    Boton5.setIcon(treboles.getFotocarta());
+                if (treboles2.isRev()){
+                    Boton5.setIcon(treboles2.getFotocarta());
                 }else{
                     Boton5.setIcon(iconrev);
                 }
-                rev5 = !rev5;
+                treboles2.setRev(!treboles2.isRev());
 
                 count++;
+
+                if (count == 1){
+                    C1 = treboles2;
+                    B1 = Boton5;
+                }
+                if (count == 2){
+                    count=0;
+                    C2 = treboles2;
+                    B2 = Boton5;
+
+                    if (C1.getNum()!=C2.getNum()){
+
+                        B1.setIcon(iconrev);
+                        C1.setRev(true);
+                        B2.setIcon(iconrev);
+                        C2.setRev(true);
+                    }
+                    count = 0;
+                }
             }
         });
 
@@ -180,6 +262,8 @@ public class cartasGUI extends JFrame{
         Image carta5 = bufferedImage5.getScaledInstance(200, 200, Image.SCALE_DEFAULT);
 
         Carta kachu = new Carta(new ImageIcon(carta5));
+        kachu.setNum(10);
+        kachu.setRev(true);
 
         Boton6.setIcon(iconrev);
 
@@ -187,35 +271,73 @@ public class cartasGUI extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                if (rev6){
+                if (kachu.isRev()){
                     Boton6.setIcon(kachu.getFotocarta());
                 }else{
                     Boton6.setIcon(iconrev);
                 }
-                rev6 = !rev6;
+                kachu.setRev(!kachu.isRev());
 
                 count++;
+
+                if (count == 1){
+                    C1 = kachu;
+                    B1 = Boton6;
+                }
+                if (count == 2){
+                    count=0;
+                    C2 = kachu;
+                    B2 = Boton6;
+
+                    if (C1.getNum()!=C2.getNum()){
+
+                        B1.setIcon(iconrev);
+                        C1.setRev(true);
+                        B2.setIcon(iconrev);
+                        C2.setRev(true);
+                    }
+                    count = 0;
+                }
             }
         });
 
+
+        Carta corason2 = new Carta(new ImageIcon(carta1));
+        corason2.setNum(2);
+        corason2.setRev(true);
         Boton7.setIcon(iconrev);
 
         Boton7.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                if (rev7){
-                    Boton7.setIcon(corason.getFotocarta());
+                if (corason2.isRev()){
+                    Boton7.setIcon(corason2.getFotocarta());
                 }else{
                     Boton7.setIcon(iconrev);
                 }
-                rev7 = !rev7;
+                corason2.setRev(!corason2.isRev());
 
                 count++;
 
-                //if () {
+                if (count == 1){
+                    C1 = corason2;
+                    B1 = Boton7;
+                }
+                if (count == 2){
+                    count=0;
+                    C2 = corason2;
+                    B2 = Boton7;
 
-                //}
+                    if (C1.getNum()!=C2.getNum()){
+
+                        B1.setIcon(iconrev);
+                        C1.setRev(true);
+                        B2.setIcon(iconrev);
+                        C2.setRev(true);
+                    }
+                    count = 0;
+                }
             }
         });
 
@@ -223,6 +345,8 @@ public class cartasGUI extends JFrame{
         Image carta6 = bufferedImage6.getScaledInstance(200, 200, Image.SCALE_DEFAULT);
 
         Carta itsamee = new Carta(new ImageIcon(carta6));
+        itsamee.setNum(11);
+        itsamee.setRev(true);
 
         Boton8.setIcon(iconrev);
 
@@ -230,16 +354,39 @@ public class cartasGUI extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                if (rev8){
+                if (itsamee.isRev()){
                     Boton8.setIcon(itsamee.getFotocarta());
                 }else{
                     Boton8.setIcon(iconrev);
                 }
-                rev8 = !rev8;
+                itsamee.setRev(!itsamee.isRev());
 
                 count++;
+
+                if (count == 1){
+                    C1 = itsamee;
+                    B1 = Boton8;
+                }
+                if (count == 2){
+                    count=0;
+                    C2 = itsamee;
+                    B2 = Boton8;
+
+                    if (C1.getNum()!=C2.getNum()){
+
+                        B1.setIcon(iconrev);
+                        C1.setRev(true);
+                        B2.setIcon(iconrev);
+                        C2.setRev(true);
+                    }
+                    count = 0;
+                }
             }
         });
+
+        Carta rombo2 = new Carta(new ImageIcon(carta2));
+        rombo2.setNum(6);
+        rombo2.setRev(true);
 
         Boton9.setIcon(iconrev);
 
@@ -247,16 +394,39 @@ public class cartasGUI extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                if (rev9){
-                    Boton9.setIcon(rombo.getFotocarta());
+                if (rombo2.isRev()){
+                    Boton9.setIcon(rombo2.getFotocarta());
                 }else{
                     Boton9.setIcon(iconrev);
                 }
-                rev9 = !rev9;
+                rombo2.setRev(!rombo2.isRev());
 
                 count++;
+
+                if (count == 1){
+                    C1 = rombo2;
+                    B1 = Boton9;
+                }
+                if (count == 2){
+                    count=0;
+                    C2 = rombo2;
+                    B2 = Boton9;
+
+                    if (C1.getNum()!=C2.getNum()){
+
+                        B1.setIcon(iconrev);
+                        C1.setRev(true);
+                        B2.setIcon(iconrev);
+                        C2.setRev(true);
+                    }
+                    count = 0;
+                }
             }
         });
+
+        Carta itsamee2 = new Carta(new ImageIcon(carta6));
+        itsamee2.setNum(11);
+        itsamee2.setRev(true);
 
         Boton10.setIcon(iconrev);
 
@@ -264,16 +434,39 @@ public class cartasGUI extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                if (rev10){
-                    Boton10.setIcon(itsamee.getFotocarta());
+                if (itsamee2.isRev()){
+                    Boton10.setIcon(itsamee2.getFotocarta());
                 }else{
                     Boton10.setIcon(iconrev);
                 }
-                rev10 = !rev10;
+                itsamee2.setRev(!itsamee2.isRev());
 
                 count++;
+
+                if (count == 1){
+                    C1 = itsamee2;
+                    B1 = Boton10;
+                }
+                if (count == 2){
+                    count=0;
+                    C2 = itsamee2;
+                    B2 = Boton10;
+
+                    if (C1.getNum()!=C2.getNum()){
+
+                        B1.setIcon(iconrev);
+                        C1.setRev(true);
+                        B2.setIcon(iconrev);
+                        C2.setRev(true);
+                    }
+                    count = 0;
+                }
             }
         });
+
+        Carta pica2 = new Carta(new ImageIcon(carta3));
+        pica2.setNum(1);
+        pica2.setRev(true);
 
         Boton11.setIcon(iconrev);
 
@@ -281,16 +474,39 @@ public class cartasGUI extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                if (rev11){
-                    Boton11.setIcon(pica.getFotocarta());
+                if (pica2.isRev()){
+                    Boton11.setIcon(pica2.getFotocarta());
                 }else{
                     Boton11.setIcon(iconrev);
                 }
-                rev11 = !rev11;
+                pica2.setRev(!pica2.isRev());
 
                 count++;
+
+                if (count == 1){
+                    C1 = pica2;
+                    B1 = Boton11;
+                }
+                if (count == 2){
+                    count=0;
+                    C2 = pica2;
+                    B2 = Boton11;
+
+                    if (C1.getNum()!=C2.getNum()){
+
+                        B1.setIcon(iconrev);
+                        C1.setRev(true);
+                        B2.setIcon(iconrev);
+                        C2.setRev(true);
+                    }
+                    count = 0;
+                }
             }
         });
+
+        Carta kachu2 = new Carta(new ImageIcon(carta5));
+        kachu2.setNum(10);
+        kachu2.setRev(true);
 
         Boton12.setIcon(iconrev);
 
@@ -298,23 +514,39 @@ public class cartasGUI extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                if (rev12){
-                    Boton12.setIcon(kachu.getFotocarta());
+                if (kachu2.isRev()){
+                    Boton12.setIcon(kachu2.getFotocarta());
                 }else{
                     Boton12.setIcon(iconrev);
                 }
-                rev12 = !rev12;
+                kachu2.setRev(!kachu2.isRev());
 
                 count++;
 
+                if (count == 1){
+                    C1 = kachu2;
+                    B1 = Boton12;
+                }
+                if (count == 2){
+                    count=0;
+                    C2 = kachu2;
+                    B2 = Boton12;
+
+                    if (C1.getNum()!=C2.getNum()){
+
+                        B1.setIcon(iconrev);
+                        C1.setRev(true);
+                        B2.setIcon(iconrev);
+                        C2.setRev(true);
+                    }
+                    count = 0;
+                }
             }
         });
-
-
     }
 
     public static void main(String[] args) throws IOException {
-        JFrame frame = new JFrame("cartasGUI");
+        JFrame frame = new JFrame("Juego de memoria 1.0");
         frame.setContentPane(new cartasGUI().mainPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
