@@ -180,6 +180,7 @@ public class cartasGUI extends JFrame{
         Image carta4 = bufferedImage4.getScaledInstance(200, 200, Image.SCALE_DEFAULT);
 
         Carta treboles = new Carta(new ImageIcon(carta4));
+        treboles.setNum(4);
         treboles.setRev(true);
 
         Boton4.setIcon(iconrev);
