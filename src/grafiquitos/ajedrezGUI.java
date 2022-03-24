@@ -1,6 +1,8 @@
 package grafiquitos;
 
+import herencias.clases.Alfil;
 import herencias.clases.Caballo;
+import herencias.clases.Reina;
 import herencias.clases.Tablero;
 
 import javax.imageio.ImageIO;
@@ -83,11 +85,80 @@ public class ajedrezGUI {
 
         Tablero tablet = new Tablero();
 
-        Caballo cab1 = new Caballo("b");
+        Caballo cab1 = new Caballo("n");
         BufferedImage bufferedImage1 = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\imagenespajava\\caballonegro.png"));
-        Image carta1 = bufferedImage1.getScaledInstance(75, 75, Image.SCALE_DEFAULT);
-        cab1.setImg(new ImageIcon(carta1));
-        A1.setIcon(cab1.getImg());
+        Image imgcabnegro = bufferedImage1.getScaledInstance(75, 75, Image.SCALE_DEFAULT);
+        cab1.setImg(new ImageIcon(imgcabnegro));
+        tablet.getCasillas().get(58).setFigura(cab1);
+        cab1.setCas(tablet.getCasillas().get(58));
+
+        B8.setIcon(tablet.getCasillas().get(58).getFigura().getImg());
+
+        Caballo cab2 = new Caballo("b");
+        BufferedImage bufferedImage2 = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\imagenespajava\\caballoblanco.png"));
+        Image imgcabblanco = bufferedImage2.getScaledInstance(75, 75, Image.SCALE_DEFAULT);
+        cab2.setImg(new ImageIcon(imgcabblanco));
+        tablet.getCasillas().get(1).setFigura(cab2);
+        cab2.setCas(tablet.getCasillas().get(1));
+
+        B1.setIcon(tablet.getCasillas().get(1).getFigura().getImg());
+
+        Caballo cab3 = new Caballo("n");
+        cab3.setImg(new ImageIcon(imgcabnegro));
+        tablet.getCasillas().get(63).setFigura(cab3);
+        cab3.setCas(tablet.getCasillas().get(63));
+
+        G8.setIcon(tablet.getCasillas().get(63).getFigura().getImg());
+
+        Caballo cab4 = new Caballo("b");
+        cab1.setImg(new ImageIcon(imgcabblanco));
+        tablet.getCasillas().get(6).setFigura(cab1);
+        cab1.setCas(tablet.getCasillas().get(6));
+
+        G1.setIcon(tablet.getCasillas().get(6).getFigura().getImg());
+
+        Alfil alf1 = new Alfil("n");
+        BufferedImage bufferedImage3 = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\imagenespajava\\alfilnegro.png"));
+        Image imgalfnegro = bufferedImage3.getScaledInstance(75, 75, Image.SCALE_DEFAULT);
+        alf1.setImg(new ImageIcon(imgalfnegro));
+        tablet.getCasillas().get(59).setFigura(alf1);
+        alf1.setCas(tablet.getCasillas().get(59));
+
+        C8.setIcon(tablet.getCasillas().get(59).getFigura().getImg());
+
+        Alfil alf2 = new Alfil("b");
+        BufferedImage bufferedImage4 = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\imagenespajava\\alfilblanco.png"));
+        Image imgalfblanco = bufferedImage4.getScaledInstance(75, 75, Image.SCALE_DEFAULT);
+        alf2.setImg(new ImageIcon(imgalfblanco));
+        tablet.getCasillas().get(2).setFigura(alf2);
+        alf2.setCas(tablet.getCasillas().get(2));
+
+        C1.setIcon(tablet.getCasillas().get(2).getFigura().getImg());
+
+        Alfil alf3 = new Alfil("n");
+        alf3.setImg(new ImageIcon(imgalfnegro));
+        tablet.getCasillas().get(62).setFigura(alf3);
+        alf3.setCas(tablet.getCasillas().get(62));
+
+        F8.setIcon(tablet.getCasillas().get(62).getFigura().getImg());
+
+        Alfil alf4 = new Alfil("b");
+        alf4.setImg(new ImageIcon(imgalfblanco));
+        tablet.getCasillas().get(5).setFigura(alf4);
+        alf4.setCas(tablet.getCasillas().get(5));
+
+        F1.setIcon(tablet.getCasillas().get(5).getFigura().getImg());
+
+        Reina rna1 = new Reina("n");
+        BufferedImage bufferedImage5 = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\imagenespajava\\reinanegra.png"));
+        Image imgrnanegro = bufferedImage5.getScaledInstance(75, 75, Image.SCALE_DEFAULT);
+        rna1.setImg(new ImageIcon(imgrnanegro));
+        tablet.getCasillas().get(3).setFigura(rna1);
+        rna1.setCas(tablet.getCasillas().get(3));
+
+        D1.setIcon(tablet.getCasillas().get(3).getFigura().getImg());
+
+
 
         A1.addActionListener(new ActionListener() {
             @Override
