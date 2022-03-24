@@ -1,9 +1,6 @@
 package grafiquitos;
 
-import herencias.clases.Alfil;
-import herencias.clases.Caballo;
-import herencias.clases.Reina;
-import herencias.clases.Tablero;
+import herencias.clases.*;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -156,9 +153,52 @@ public class ajedrezGUI {
         tablet.getCasillas().get(3).setFigura(rna1);
         rna1.setCas(tablet.getCasillas().get(3));
 
-        D1.setIcon(tablet.getCasillas().get(3).getFigura().getImg());
+        D8.setIcon(tablet.getCasillas().get(3).getFigura().getImg());
 
+        Reina rna2 = new Reina("b");
+        BufferedImage bufferedImage6 = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\imagenespajava\\reinablanca.png"));
+        Image imgrnablanco = bufferedImage6.getScaledInstance(75, 75, Image.SCALE_DEFAULT);
+        rna2.setImg(new ImageIcon(imgrnablanco));
+        tablet.getCasillas().get(60).setFigura(rna2);
+        rna2.setCas(tablet.getCasillas().get(60));
 
+        D1.setIcon(tablet.getCasillas().get(60).getFigura().getImg());
+
+        Rey kng1 = new Rey("n");
+        BufferedImage bufferedImage7 = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\imagenespajava\\reynegro.png"));
+        Image imgkngnegro = bufferedImage7.getScaledInstance(75, 75, Image.SCALE_DEFAULT);
+        kng1.setImg(new ImageIcon(imgkngnegro));
+        tablet.getCasillas().get(61).setFigura(kng1);
+        kng1.setCas(tablet.getCasillas().get(61));
+
+        E8.setIcon(tablet.getCasillas().get(61).getFigura().getImg());
+
+        Rey kng2 = new Rey("b");
+        BufferedImage bufferedImage8 = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\imagenespajava\\reyblanco.png"));
+        Image imgkngblanco = bufferedImage8.getScaledInstance(75, 75, Image.SCALE_DEFAULT);
+        kng2.setImg(new ImageIcon(imgkngblanco));
+        tablet.getCasillas().get(4).setFigura(kng2);
+        kng2.setCas(tablet.getCasillas().get(4));
+
+        E1.setIcon(tablet.getCasillas().get(4).getFigura().getImg());
+
+        Torre trr1 = new Torre("n");
+        BufferedImage bufferedImage9 = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\imagenespajava\\torrenegra.png"));
+        Image imgtrrnegro = bufferedImage8.getScaledInstance(75, 75, Image.SCALE_DEFAULT);
+        kng2.setImg(new ImageIcon(imgkngblanco));
+        tablet.getCasillas().get(4).setFigura(kng2);
+        kng2.setCas(tablet.getCasillas().get(4));
+
+        E1.setIcon(tablet.getCasillas().get(4).getFigura().getImg());
+
+        Rey trr2 = new Rey("b");
+        BufferedImage bufferedImage10 = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\imagenespajava\\reyblanco.png"));
+        Image torreblanca = bufferedImage8.getScaledInstance(75, 75, Image.SCALE_DEFAULT);
+        trr2.setImg(new ImageIcon(torreblanca));
+        tablet.getCasillas().get(4).setFigura(kng2);
+        trr2.setCas(tablet.getCasillas().get(4));
+
+        E1.setIcon(tablet.getCasillas().get(4).getFigura().getImg());
 
         A1.addActionListener(new ActionListener() {
             @Override
