@@ -2,15 +2,26 @@ package herencias.abstractas;
 
 import herencias.clases.Casilla;
 
+import javax.swing.*;
+
 public abstract class _Figura {
 
     private String color;
     private boolean vida;
     private Casilla cas;
+    private ImageIcon img;
 
     public _Figura(String color) {
         this.color = color;
         this.vida = true;
+    }
+
+    public ImageIcon getImg() {
+        return img;
+    }
+
+    public void setImg(ImageIcon img) {
+        this.img = img;
     }
 
     public Casilla getCas() {

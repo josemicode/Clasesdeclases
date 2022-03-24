@@ -1,8 +1,16 @@
 package grafiquitos;
 
+import herencias.clases.Caballo;
+import herencias.clases.Tablero;
+
+import javax.imageio.ImageIO;
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 
 public class ajedrezGUI {
     private JButton A1;
@@ -69,8 +77,18 @@ public class ajedrezGUI {
     private JButton F1;
     private JButton E1;
     private JButton B8;
+    private JPanel mainPanel;
 
-    public ajedrezGUI() {
+    public ajedrezGUI() throws IOException {
+
+        Tablero tablet = new Tablero();
+
+        Caballo cab1 = new Caballo("b");
+        BufferedImage bufferedImage1 = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\imagenespajava\\caballonegro.png"));
+        Image carta1 = bufferedImage1.getScaledInstance(75, 75, Image.SCALE_DEFAULT);
+        cab1.setImg(new ImageIcon(carta1));
+        A1.setIcon(cab1.getImg());
+
         A1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -455,5 +473,13 @@ public class ajedrezGUI {
 
             }
         });
+    }
+
+    public static void main(String[] args) throws IOException {
+        JFrame frame = new JFrame("ajedrezGUI");
+        frame.setContentPane(new ajedrezGUI().mainPanel);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setVisible(true);
     }
 }
