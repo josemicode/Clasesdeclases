@@ -72,7 +72,6 @@ public class cartasGUI extends JFrame{
                     B1 = Boton1;
                 }
                 if (count == 2){
-                    count=0;
                     C2 = corason;
                     B2 = Boton1;
 
