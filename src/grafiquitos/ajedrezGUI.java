@@ -221,6 +221,15 @@ public class ajedrezGUI {
 
         H1.setIcon(tablet.getCasillas().get(7).getFigura().getImg());
 
+        Peon pe1 = new Peon("n");
+        BufferedImage bufferedImage11 = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\imagenespajava\\peonnegro.png"));
+        Image peonnegro = bufferedImage11.getScaledInstance(75, 75, Image.SCALE_DEFAULT);
+        pe1.setImg(new ImageIcon(peonnegro));
+        tablet.getCasillas().get(0).setFigura(pe1);
+        pe1.setCas(tablet.getCasillas().get(0));
+
+
+
         A1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -626,264 +635,880 @@ public class ajedrezGUI {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(20);
+                    Boton1 = E3;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(20));
+
+                    E3.setIcon(tablet.getCasillas().get(20).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         F3.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(21);
+                    Boton1 = F3;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(21));
+
+                    F3.setIcon(tablet.getCasillas().get(21).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         G3.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(22);
+                    Boton1 = G3;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(22));
+
+                    G3.setIcon(tablet.getCasillas().get(22).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         H3.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(23);
+                    Boton1 = H3;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(23));
+
+                    H3.setIcon(tablet.getCasillas().get(23).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         A4.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(24);
+                    Boton1 = A4;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(24));
+
+                    A4.setIcon(tablet.getCasillas().get(24).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         B4.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(25);
+                    Boton1 = B4;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(25));
+
+                    B4.setIcon(tablet.getCasillas().get(25).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         C4.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(26);
+                    Boton1 = C4;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(26));
+
+                    C4.setIcon(tablet.getCasillas().get(26).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         D4.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(27);
+                    Boton1 = D4;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(27));
+
+                    D4.setIcon(tablet.getCasillas().get(27).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         E4.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(28);
+                    Boton1 = E4;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(28));
+
+                    E4.setIcon(tablet.getCasillas().get(28).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         F4.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(29);
+                    Boton1 = F4;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(29));
+
+                    F4.setIcon(tablet.getCasillas().get(29).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         G4.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(30);
+                    Boton1 = G4;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(30));
+
+                    G4.setIcon(tablet.getCasillas().get(30).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         H4.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(31);
+                    Boton1 = H4;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(31));
+
+                    H4.setIcon(tablet.getCasillas().get(19).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         A5.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(32);
+                    Boton1 = A5;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(32));
+
+                    A5.setIcon(tablet.getCasillas().get(32).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         B5.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(33);
+                    Boton1 = B5;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(33));
+
+                    B5.setIcon(tablet.getCasillas().get(33).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         C5.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(34);
+                    Boton1 = C5;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(34));
+
+                    C5.setIcon(tablet.getCasillas().get(34).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         D5.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(35);
+                    Boton1 = D5;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(35));
+
+                    D5.setIcon(tablet.getCasillas().get(35).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         E5.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(36);
+                    Boton1 = E5;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(36));
+
+                    E5.setIcon(tablet.getCasillas().get(36).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         F5.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(37);
+                    Boton1 = F5;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(37));
+
+                    F5.setIcon(tablet.getCasillas().get(37).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         G5.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(38);
+                    Boton1 = G5;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(38));
+
+                    G5.setIcon(tablet.getCasillas().get(38).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         H5.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(39);
+                    Boton1 = H5;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(39));
+
+                    H5.setIcon(tablet.getCasillas().get(39).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         A6.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(40);
+                    Boton1 = A6;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(40));
+
+                    A6.setIcon(tablet.getCasillas().get(40).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         B6.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(41);
+                    Boton1 = B6;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(41));
+
+                    B6.setIcon(tablet.getCasillas().get(41).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         C6.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(42);
+                    Boton1 = C6;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(42));
+
+                    C6.setIcon(tablet.getCasillas().get(42).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         D6.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(43);
+                    Boton1 = D6;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(43));
+
+                    D6.setIcon(tablet.getCasillas().get(43).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         E6.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(44);
+                    Boton1 = E6;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(44));
+
+                    E6.setIcon(tablet.getCasillas().get(44).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         F6.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(45);
+                    Boton1 = F6;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(45));
+
+                    F6.setIcon(tablet.getCasillas().get(45).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         G6.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(46);
+                    Boton1 = G6;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(46));
+
+                    G6.setIcon(tablet.getCasillas().get(46).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         H6.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(47);
+                    Boton1 = H6;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(47));
+
+                    H6.setIcon(tablet.getCasillas().get(47).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         A7.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(48);
+                    Boton1 = A7;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(48));
+
+                    A7.setIcon(tablet.getCasillas().get(48).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         B7.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(49);
+                    Boton1 = B7;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(49));
+
+                    B7.setIcon(tablet.getCasillas().get(49).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         C7.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(50);
+                    Boton1 = C7;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(50));
+
+                    C7.setIcon(tablet.getCasillas().get(50).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         D7.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(51);
+                    Boton1 = D7;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(51));
+
+                    D7.setIcon(tablet.getCasillas().get(51).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         E7.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(52);
+                    Boton1 = E7;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(52));
+
+                    E7.setIcon(tablet.getCasillas().get(52).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         F7.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(53);
+                    Boton1 = F7;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(53));
+
+                    F7.setIcon(tablet.getCasillas().get(53).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         G7.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(54);
+                    Boton1 = G7;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(54));
+
+                    G7.setIcon(tablet.getCasillas().get(54).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         H7.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(55);
+                    Boton1 = H7;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(55));
+
+                    H7.setIcon(tablet.getCasillas().get(55).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         A8.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(56);
+                    Boton1 = A8;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(56));
+
+                    A8.setIcon(tablet.getCasillas().get(56).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         B8.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(57);
+                    Boton1 = B8;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(57));
+
+                    B8.setIcon(tablet.getCasillas().get(57).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         C8.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(58);
+                    Boton1 = C8;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(58));
+
+                    C8.setIcon(tablet.getCasillas().get(58).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         D8.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(59);
+                    Boton1 = D8;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(59));
+
+                    D8.setIcon(tablet.getCasillas().get(59).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         E8.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(60);
+                    Boton1 = E8;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(60));
+
+                    E8.setIcon(tablet.getCasillas().get(60).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         F8.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(61);
+                    Boton1 = F8;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(61));
+
+                    F8.setIcon(tablet.getCasillas().get(61).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         G8.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(62);
+                    Boton1 = G8;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(62));
+
+                    G8.setIcon(tablet.getCasillas().get(62).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
         H8.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                count++;
+
+                if (count == 1) {
+                    Cas1 = tablet.getCasillas().get(63);
+                    Boton1 = H8;
+                }
+                if (count == 2) {
+                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(63));
+
+                    H8.setIcon(tablet.getCasillas().get(63).getFigura().getImg());
+                    Boton1.setIcon(null);
+
+                    count = 0;
+                }
             }
         });
     }
