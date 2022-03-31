@@ -81,9 +81,9 @@ public class ajedrezGUI {
     private int count = 0;
 
     private Casilla Cas1;// = new Casilla(0,'A');
-    private Casilla Cas2;
+    //private Casilla Cas2;
     private JButton Boton1;
-    private JButton Boton2;
+    //private JButton Boton2;
 
     public ajedrezGUI() throws IOException {
 
@@ -225,10 +225,117 @@ public class ajedrezGUI {
         BufferedImage bufferedImage11 = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\imagenespajava\\peonnegro.png"));
         Image peonnegro = bufferedImage11.getScaledInstance(75, 75, Image.SCALE_DEFAULT);
         pe1.setImg(new ImageIcon(peonnegro));
-        tablet.getCasillas().get(0).setFigura(pe1);
-        pe1.setCas(tablet.getCasillas().get(0));
+        tablet.getCasillas().get(48).setFigura(pe1);
+        pe1.setCas(tablet.getCasillas().get(48));
 
+        A7.setIcon(tablet.getCasillas().get(48).getFigura().getImg());
 
+        Peon pe2 = new Peon("n");
+        pe2.setImg(new ImageIcon(peonnegro));
+        tablet.getCasillas().get(49).setFigura(pe2);
+        pe2.setCas(tablet.getCasillas().get(49));
+
+        B7.setIcon(tablet.getCasillas().get(49).getFigura().getImg());
+
+        Peon pe3 = new Peon("n");
+        pe3.setImg(new ImageIcon(peonnegro));
+        tablet.getCasillas().get(50).setFigura(pe3);
+        pe3.setCas(tablet.getCasillas().get(50));
+
+        C7.setIcon(tablet.getCasillas().get(50).getFigura().getImg());
+
+        Peon pe4 = new Peon("n");
+        pe4.setImg(new ImageIcon(peonnegro));
+        tablet.getCasillas().get(51).setFigura(pe4);
+        pe4.setCas(tablet.getCasillas().get(51));
+
+        D7.setIcon(tablet.getCasillas().get(51).getFigura().getImg());
+
+        Peon pe5 = new Peon("n");
+        pe5.setImg(new ImageIcon(peonnegro));
+        tablet.getCasillas().get(52).setFigura(pe5);
+        pe5.setCas(tablet.getCasillas().get(52));
+
+        E7.setIcon(tablet.getCasillas().get(52).getFigura().getImg());
+
+        Peon pe6 = new Peon("n");
+        pe6.setImg(new ImageIcon(peonnegro));
+        tablet.getCasillas().get(53).setFigura(pe6);
+        pe6.setCas(tablet.getCasillas().get(53));
+
+        F7.setIcon(tablet.getCasillas().get(53).getFigura().getImg());
+
+        Peon pe7 = new Peon("n");
+        pe7.setImg(new ImageIcon(peonnegro));
+        tablet.getCasillas().get(54).setFigura(pe7);
+        pe7.setCas(tablet.getCasillas().get(54));
+
+        G7.setIcon(tablet.getCasillas().get(54).getFigura().getImg());
+
+        Peon pe8 = new Peon("n");
+        pe8.setImg(new ImageIcon(peonnegro));
+        tablet.getCasillas().get(55).setFigura(pe8);
+        pe8.setCas(tablet.getCasillas().get(55));
+
+        H7.setIcon(tablet.getCasillas().get(55).getFigura().getImg());
+
+        Peon pe9 = new Peon("b");
+        BufferedImage bufferedImage12 = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\imagenespajava\\peonblanco.png"));
+        Image peonblanco = bufferedImage12.getScaledInstance(75, 75, Image.SCALE_DEFAULT);
+        pe9.setImg(new ImageIcon(peonblanco));
+        tablet.getCasillas().get(8).setFigura(pe9);
+        pe9.setCas(tablet.getCasillas().get(8));
+
+        A2.setIcon(tablet.getCasillas().get(8).getFigura().getImg());
+
+        Peon pe10 = new Peon("b");
+        pe10.setImg(new ImageIcon(peonblanco));
+        tablet.getCasillas().get(9).setFigura(pe10);
+        pe10.setCas(tablet.getCasillas().get(9));
+
+        B2.setIcon(tablet.getCasillas().get(9).getFigura().getImg());
+
+        Peon pe11 = new Peon("b");
+        pe11.setImg(new ImageIcon(peonblanco));
+        tablet.getCasillas().get(10).setFigura(pe11);
+        pe11.setCas(tablet.getCasillas().get(10));
+
+        C2.setIcon(tablet.getCasillas().get(10).getFigura().getImg());
+
+        Peon pe12 = new Peon("b");
+        pe12.setImg(new ImageIcon(peonblanco));
+        tablet.getCasillas().get(11).setFigura(pe12);
+        pe12.setCas(tablet.getCasillas().get(11));
+
+        D2.setIcon(tablet.getCasillas().get(11).getFigura().getImg());
+
+        Peon pe13 = new Peon("b");
+        pe13.setImg(new ImageIcon(peonblanco));
+        tablet.getCasillas().get(12).setFigura(pe13);
+        pe13.setCas(tablet.getCasillas().get(12));
+
+        E2.setIcon(tablet.getCasillas().get(12).getFigura().getImg());
+
+        Peon pe14 = new Peon("b");
+        pe14.setImg(new ImageIcon(peonblanco));
+        tablet.getCasillas().get(13).setFigura(pe14);
+        pe14.setCas(tablet.getCasillas().get(13));
+
+        F2.setIcon(tablet.getCasillas().get(13).getFigura().getImg());
+
+        Peon pe15 = new Peon("b");
+        pe15.setImg(new ImageIcon(peonblanco));
+        tablet.getCasillas().get(14).setFigura(pe15);
+        pe15.setCas(tablet.getCasillas().get(14));
+
+        G2.setIcon(tablet.getCasillas().get(14).getFigura().getImg());
+
+        Peon pe16 = new Peon("b");
+        pe16.setImg(new ImageIcon(peonblanco));
+        tablet.getCasillas().get(15).setFigura(pe16);
+        pe16.setCas(tablet.getCasillas().get(15));
+
+        H2.setIcon(tablet.getCasillas().get(15).getFigura().getImg());
 
         A1.addActionListener(new ActionListener() {
             @Override
@@ -864,7 +971,7 @@ public class ajedrezGUI {
                 if (count == 2) {
                     tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(31));
 
-                    H4.setIcon(tablet.getCasillas().get(19).getFigura().getImg());
+                    H4.setIcon(tablet.getCasillas().get(31).getFigura().getImg());
                     Boton1.setIcon(null);
 
                     count = 0;

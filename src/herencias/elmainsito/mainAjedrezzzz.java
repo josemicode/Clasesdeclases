@@ -12,7 +12,7 @@ public class mainAjedrezzzz {
 
         //Torre torre1 = new Torre("n");
 
-        //Alfil alfil1 = new Alfil("b");
+        Alfil alfil1 = new Alfil("b");
 
         //Reina reina1 = new Reina("n");
 
@@ -27,7 +27,7 @@ public class mainAjedrezzzz {
 
         //tabs.getCasillas().get(12).setFigura(torre1);
 
-        //tabs.getCasillas().get(0).setFigura(alfil1);
+        tabs.getCasillas().get(0).setFigura(alfil1);
 
         //tabs.getCasillas().get(7).setFigura(reina1);
 
@@ -42,7 +42,7 @@ public class mainAjedrezzzz {
 
         //torre1.setCas(tabs.getCasillas().get(12));
 
-        //alfil1.setCas(tabs.getCasillas().get(0));
+        alfil1.setCas(tabs.getCasillas().get(0));
 
         //reina1.setCas(tabs.getCasillas().get(7));
 
@@ -60,8 +60,9 @@ public class mainAjedrezzzz {
         //tabs.mover(torre1, tabs.getCasillas().get(60));
         //tabs.mover(torre1, tabs.getCasillas().get(63));
 
-        //tabs.mover(alfil1, tabs.getCasillas().get(9));
-        //tabs.mover(alfil1, tabs.getCasillas().get(2));
+        tabs.mover(alfil1, tabs.getCasillas().get(9));
+        tabs.mover(alfil1, tabs.getCasillas().get(2));
+        tabs.mover(alfil1, tabs.getCasillas().get(9));
 
         //tabs.mover(reina1, tabs.getCasillas().get(2));
         //tabs.mover(reina1, tabs.getCasillas().get(20));
