@@ -11,6 +11,7 @@ public class Alfil extends _Figura {
     @Override
     public void movimiento(Casilla casilla2) {
         for(int i = 1; i<=7; i++) {
+            /*
             //System.out.println(casilla2.getNumero());
             //System.out.println(getCas().getNumero());
             //System.out.println(casilla2.getLetra());
@@ -21,6 +22,17 @@ public class Alfil extends _Figura {
                      ((casilla2.getLetra()== (getCas().getLetra() + i)) || (casilla2.getLetra()== (getCas().getLetra() - i)))) {
 
                 setCas(casilla2);
+            }
+            */
+
+            int counter;
+
+            if((casilla2.getLetra()== (getCas().getLetra() + i)) && (casilla2.getNumero()== (getCas().getNumero() + i))){
+                for (int j = 1; j<i; j++){
+                    if ((casilla2.getLetra()== (getCas().getLetra() + j)) && (casilla2.getNumero()== (getCas().getNumero() + j))){
+
+                    }
+                }
             }
         }
     }
