@@ -9,7 +9,7 @@ public class Reina extends _Figura {
     }
 
     @Override
-    public void movimiento(Casilla casilla2) {
+    public void movimiento(Casilla casilla2, Tablero tablas) {
         for(int i = 1; i<=7; i++) {
             if((((casilla2.getNumero()== getCas().getNumero() + i) || (casilla2.getNumero()== getCas().getNumero() - i)) && ((casilla2.getLetra()== getCas().getLetra() + i) || (casilla2.getLetra()== casilla2.getLetra() - i))) || ((getCas().getLetra() == casilla2.getLetra())||(getCas().getNumero() == casilla2.getNumero()))) {
                 setCas(casilla2);

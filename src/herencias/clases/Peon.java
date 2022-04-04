@@ -9,7 +9,7 @@ public class Peon extends _Figura {
     }
 
     @Override
-    public void movimiento(Casilla casilla2) {
+    public void movimiento(Casilla casilla2, Tablero tablas) {
         if((getColor().equals("b") && (casilla2.getNumero()== getCas().getNumero() + 1)) || ((getColor().equals("n")) && (casilla2.getNumero()== getCas().getNumero() -1))) {
             setCas(casilla2);
         }

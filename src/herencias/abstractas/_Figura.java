@@ -1,6 +1,7 @@
 package herencias.abstractas;
 
 import herencias.clases.Casilla;
+import herencias.clases.Tablero;
 
 import javax.swing.*;
 
@@ -10,10 +11,19 @@ public abstract class _Figura {
     private boolean vida;
     private Casilla cas;
     private ImageIcon img;
+    private int Pos;
 
     public _Figura(String color) {
         this.color = color;
         this.vida = true;
+    }
+
+    public int getPos() {
+        return Pos;
+    }
+
+    public void setPos(int pos) {
+        Pos = pos;
     }
 
     public ImageIcon getImg() {
@@ -52,5 +62,5 @@ public abstract class _Figura {
         this.vida = false;
     }
 
-    public abstract void movimiento(Casilla casilla2);
+    public abstract void movimiento(Casilla casilla2, Tablero tablas);
 }

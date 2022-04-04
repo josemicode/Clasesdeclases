@@ -9,7 +9,7 @@ public class Torre extends _Figura {
     }
 
     @Override
-    public void movimiento(Casilla casilla2) {
+    public void movimiento(Casilla casilla2, Tablero tablas) {
         if((getCas().getLetra() == casilla2.getLetra())||(getCas().getNumero() == casilla2.getNumero())) {
             setCas(casilla2);
         }

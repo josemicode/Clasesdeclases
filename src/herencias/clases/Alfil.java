@@ -9,7 +9,7 @@ public class Alfil extends _Figura {
     }
 
     @Override
-    public void movimiento(Casilla casilla2) {
+    public void movimiento(Casilla casilla2, Tablero tablas) {
         for(int i = 1; i<=7; i++) {
             /*
             //System.out.println(casilla2.getNumero());
@@ -25,12 +25,16 @@ public class Alfil extends _Figura {
             }
             */
 
-            int counter;
+            int counter = 0;
+            boolean pepe = false;
 
             if((casilla2.getLetra()== (getCas().getLetra() + i)) && (casilla2.getNumero()== (getCas().getNumero() + i))){
-                for (int j = 1; j<i; j++){
-                    if ((casilla2.getLetra()== (getCas().getLetra() + j)) && (casilla2.getNumero()== (getCas().getNumero() + j))){
-
+                for (int j = getCas().getFigura().getPos() + 9; j < casilla2.getFigura().getPos(); j++){
+                    if (!tablas.getCasillas().get(j).isLlena()) {
+                        counter++;
+                        if (counter == (i-1)) {
+                            setCas(casilla2);
+                        }
                     }
                 }
             }
