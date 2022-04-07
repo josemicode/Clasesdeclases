@@ -26,7 +26,8 @@ public class Alfil extends _Figura {
             */
 
             //int counter = 0;
-            boolean pepe = false;
+            boolean bool = false;
+            //boolean masmenos = false;
 
             if((casilla2.getLetra()== (getCas().getLetra() + i)) && (casilla2.getNumero()== (getCas().getNumero() + i))){
                 System.out.println((casilla2.getPos() - 9) + " pre-for");
@@ -35,14 +36,68 @@ public class Alfil extends _Figura {
                     if (!(tablas.getCasillas().get(j).getFigura()==null)) {
                         System.out.println("El get j esta lleno");
 
-                        pepe = true;
+                        bool = true;
                     }
                 }
-                if(!pepe){
+                if(!bool){
                     setCas(casilla2);
-                    pepe=!pepe;
+                    bool=!bool;
                 }
             }else if((casilla2.getLetra()== (getCas().getLetra() + 1)) && (casilla2.getNumero()== (getCas().getNumero() + 1))){
+                setCas(casilla2);
+            }
+
+            if((casilla2.getLetra()== (getCas().getLetra() + i)) && (casilla2.getNumero()== (getCas().getNumero() - i))){
+                System.out.println((casilla2.getPos() - 9) + " pre-for");
+                for (int j = getCas().getPos() - 7; j >= (casilla2.getPos() + 7); j-=7){
+                    System.out.println(j + " iteracion");
+                    if (!(tablas.getCasillas().get(j).getFigura()==null)) {
+                        System.out.println("El get j esta lleno");
+
+                        bool = true;
+                    }
+                }
+                if(!bool){
+                    setCas(casilla2);
+                    bool=!bool;
+                }
+            }else if((casilla2.getLetra()== (getCas().getLetra() + 1)) && (casilla2.getNumero()== (getCas().getNumero() - 1))){
+                setCas(casilla2);
+            }
+
+            if((casilla2.getLetra()== (getCas().getLetra() - i)) && (casilla2.getNumero()== (getCas().getNumero() + i))){
+                System.out.println((casilla2.getPos() - 9) + " pre-for");
+                for (int j = getCas().getPos() + 7; j <= (casilla2.getPos() - 7); j+=7){
+                    System.out.println(j + " iteracion");
+                    if (!(tablas.getCasillas().get(j).getFigura()==null)) {
+                        System.out.println("El get j esta lleno");
+
+                        bool = true;
+                    }
+                }
+                if(!bool){
+                    setCas(casilla2);
+                    bool=!bool;
+                }
+            }else if((casilla2.getLetra()== (getCas().getLetra() - 1)) && (casilla2.getNumero()== (getCas().getNumero() + 1))){
+                setCas(casilla2);
+            }
+
+            if((casilla2.getLetra()== (getCas().getLetra() - i)) && (casilla2.getNumero()== (getCas().getNumero() - i))){
+                System.out.println((casilla2.getPos() - 9) + " pre-for");
+                for (int j = getCas().getPos() - 9; j >= (casilla2.getPos() + 9); j-=9){
+                    System.out.println(j + " iteracion");
+                    if (!(tablas.getCasillas().get(j).getFigura()==null)) {
+                        System.out.println("El get j esta lleno");
+
+                        bool = true;
+                    }
+                }
+                if(!bool){
+                    setCas(casilla2);
+                    bool=!bool;
+                }
+            }else if((casilla2.getLetra()== (getCas().getLetra() - 1)) && (casilla2.getNumero()== (getCas().getNumero() - 1))){
                 setCas(casilla2);
             }
         }

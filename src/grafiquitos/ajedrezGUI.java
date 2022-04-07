@@ -122,7 +122,7 @@ public class ajedrezGUI {
 
         Caballo cab4 = new Caballo("b");
         cab4.setImg(new ImageIcon(imgcabblanco));
-        tablet.getCasillas().get(6).setFigura(cab1);
+        tablet.getCasillas().get(6).setFigura(cab4);
         cab4.setCas(tablet.getCasillas().get(6));
 
         cab4.getCas().setPos(6);
@@ -422,7 +422,8 @@ public class ajedrezGUI {
         tablet.getCasillas().get(34).setPos(34);
         tablet.getCasillas().get(35).setPos(35);
         tablet.getCasillas().get(36).setPos(36);
-        tablet.getCasillas().get(37).setPos(38);
+        tablet.getCasillas().get(37).setPos(37);
+        tablet.getCasillas().get(38).setPos(38);
         tablet.getCasillas().get(39).setPos(39);
         tablet.getCasillas().get(40).setPos(40);
         tablet.getCasillas().get(41).setPos(41);

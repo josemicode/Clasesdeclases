@@ -64,12 +64,15 @@ public class Tablero {
                 res;
     }
 
-    public void mover(_Figura figura, Casilla casilla2) {
+    public boolean mover(_Figura figura, Casilla casilla2) {
 
+        boolean cond = false;
+        
         for (int i = 0; i<64; i++) {
             if((getCasillas().get(i).getLetra() == figura.getCas().getLetra()) && (getCasillas().get(i).getNumero() == figura.getCas().getNumero())) {
 
                 getCasillas().get(i).setFigura(null);
+                cond = true;
             }
         }
 
@@ -81,6 +84,7 @@ public class Tablero {
                 getCasillas().get(i).setFigura(figura);
             }
         }
+        return cond;
     }
 
 }
