@@ -96,6 +96,8 @@ public class ajedrezGUI {
         tablet.getCasillas().get(57).setFigura(cab1);
         cab1.setCas(tablet.getCasillas().get(57));
 
+        cab1.getCas().setPos(57);
+
         B8.setIcon(tablet.getCasillas().get(57).getFigura().getImg());
 
         Caballo cab2 = new Caballo("b");
@@ -105,6 +107,8 @@ public class ajedrezGUI {
         tablet.getCasillas().get(1).setFigura(cab2);
         cab2.setCas(tablet.getCasillas().get(1));
 
+        cab2.getCas().setPos(1);
+
         B1.setIcon(tablet.getCasillas().get(1).getFigura().getImg());
 
         Caballo cab3 = new Caballo("n");
@@ -112,12 +116,16 @@ public class ajedrezGUI {
         tablet.getCasillas().get(62).setFigura(cab3);
         cab3.setCas(tablet.getCasillas().get(62));
 
+        cab3.getCas().setPos(62);
+
         G8.setIcon(tablet.getCasillas().get(62).getFigura().getImg());
 
         Caballo cab4 = new Caballo("b");
-        cab1.setImg(new ImageIcon(imgcabblanco));
+        cab4.setImg(new ImageIcon(imgcabblanco));
         tablet.getCasillas().get(6).setFigura(cab1);
-        cab1.setCas(tablet.getCasillas().get(6));
+        cab4.setCas(tablet.getCasillas().get(6));
+
+        cab4.getCas().setPos(6);
 
         G1.setIcon(tablet.getCasillas().get(6).getFigura().getImg());
 
@@ -128,6 +136,8 @@ public class ajedrezGUI {
         tablet.getCasillas().get(58).setFigura(alf1);
         alf1.setCas(tablet.getCasillas().get(58));
 
+        alf1.getCas().setPos(58);
+
         C8.setIcon(tablet.getCasillas().get(58).getFigura().getImg());
 
         Alfil alf2 = new Alfil("b");
@@ -137,6 +147,8 @@ public class ajedrezGUI {
         tablet.getCasillas().get(2).setFigura(alf2);
         alf2.setCas(tablet.getCasillas().get(2));
 
+        alf2.getCas().setPos(2);
+
         C1.setIcon(tablet.getCasillas().get(2).getFigura().getImg());
 
         Alfil alf3 = new Alfil("n");
@@ -144,12 +156,16 @@ public class ajedrezGUI {
         tablet.getCasillas().get(61).setFigura(alf3);
         alf3.setCas(tablet.getCasillas().get(61));
 
+        alf3.getCas().setPos(61);
+
         F8.setIcon(tablet.getCasillas().get(61).getFigura().getImg());
 
         Alfil alf4 = new Alfil("b");
         alf4.setImg(new ImageIcon(imgalfblanco));
         tablet.getCasillas().get(5).setFigura(alf4);
         alf4.setCas(tablet.getCasillas().get(5));
+
+        alf4.getCas().setPos(5);
 
         F1.setIcon(tablet.getCasillas().get(5).getFigura().getImg());
 
@@ -160,6 +176,8 @@ public class ajedrezGUI {
         tablet.getCasillas().get(59).setFigura(rna1);
         rna1.setCas(tablet.getCasillas().get(59));
 
+        rna1.getCas().setPos(59);
+
         D8.setIcon(tablet.getCasillas().get(59).getFigura().getImg());
 
         Reina rna2 = new Reina("b");
@@ -168,6 +186,8 @@ public class ajedrezGUI {
         rna2.setImg(new ImageIcon(imgrnablanco));
         tablet.getCasillas().get(3).setFigura(rna2);
         rna2.setCas(tablet.getCasillas().get(3));
+
+        rna2.getCas().setPos(3);
 
         D1.setIcon(tablet.getCasillas().get(3).getFigura().getImg());
 
@@ -178,6 +198,8 @@ public class ajedrezGUI {
         tablet.getCasillas().get(60).setFigura(kng1);
         kng1.setCas(tablet.getCasillas().get(60));
 
+        kng1.getCas().setPos(60);
+
         E8.setIcon(tablet.getCasillas().get(60).getFigura().getImg());
 
         Rey kng2 = new Rey("b");
@@ -186,6 +208,8 @@ public class ajedrezGUI {
         kng2.setImg(new ImageIcon(imgkngblanco));
         tablet.getCasillas().get(4).setFigura(kng2);
         kng2.setCas(tablet.getCasillas().get(4));
+
+        kng2.getCas().setPos(4);
 
         E1.setIcon(tablet.getCasillas().get(4).getFigura().getImg());
 
@@ -196,6 +220,8 @@ public class ajedrezGUI {
         tablet.getCasillas().get(56).setFigura(trr1);
         trr1.setCas(tablet.getCasillas().get(56));
 
+        trr1.getCas().setPos(56);
+
         A8.setIcon(tablet.getCasillas().get(56).getFigura().getImg());
 
         Torre trr2 = new Torre("b");
@@ -205,6 +231,8 @@ public class ajedrezGUI {
         tablet.getCasillas().get(0).setFigura(trr2);
         trr2.setCas(tablet.getCasillas().get(0));
 
+        trr2.getCas().setPos(0);
+
         A1.setIcon(tablet.getCasillas().get(0).getFigura().getImg());
 
         Torre trr3 = new Torre("n");
@@ -212,12 +240,16 @@ public class ajedrezGUI {
         tablet.getCasillas().get(63).setFigura(trr3);
         trr3.setCas(tablet.getCasillas().get(63));
 
+        trr3.getCas().setPos(63);
+
         H8.setIcon(tablet.getCasillas().get(63).getFigura().getImg());
 
         Torre trr4 = new Torre("b");
         trr4.setImg(new ImageIcon(torreblanca));
         tablet.getCasillas().get(7).setFigura(trr4);
         trr4.setCas(tablet.getCasillas().get(7));
+
+        trr4.getCas().setPos(7);
 
         H1.setIcon(tablet.getCasillas().get(7).getFigura().getImg());
 
@@ -228,12 +260,16 @@ public class ajedrezGUI {
         tablet.getCasillas().get(48).setFigura(pe1);
         pe1.setCas(tablet.getCasillas().get(48));
 
+        pe1.getCas().setPos(48);
+
         A7.setIcon(tablet.getCasillas().get(48).getFigura().getImg());
 
         Peon pe2 = new Peon("n");
         pe2.setImg(new ImageIcon(peonnegro));
         tablet.getCasillas().get(49).setFigura(pe2);
         pe2.setCas(tablet.getCasillas().get(49));
+
+        pe2.getCas().setPos(49);
 
         B7.setIcon(tablet.getCasillas().get(49).getFigura().getImg());
 
@@ -242,12 +278,16 @@ public class ajedrezGUI {
         tablet.getCasillas().get(50).setFigura(pe3);
         pe3.setCas(tablet.getCasillas().get(50));
 
+        pe3.getCas().setPos(50);
+
         C7.setIcon(tablet.getCasillas().get(50).getFigura().getImg());
 
         Peon pe4 = new Peon("n");
         pe4.setImg(new ImageIcon(peonnegro));
         tablet.getCasillas().get(51).setFigura(pe4);
         pe4.setCas(tablet.getCasillas().get(51));
+
+        pe4.getCas().setPos(51);
 
         D7.setIcon(tablet.getCasillas().get(51).getFigura().getImg());
 
@@ -256,12 +296,16 @@ public class ajedrezGUI {
         tablet.getCasillas().get(52).setFigura(pe5);
         pe5.setCas(tablet.getCasillas().get(52));
 
+        pe5.getCas().setPos(52);
+
         E7.setIcon(tablet.getCasillas().get(52).getFigura().getImg());
 
         Peon pe6 = new Peon("n");
         pe6.setImg(new ImageIcon(peonnegro));
         tablet.getCasillas().get(53).setFigura(pe6);
         pe6.setCas(tablet.getCasillas().get(53));
+
+        pe6.getCas().setPos(53);
 
         F7.setIcon(tablet.getCasillas().get(53).getFigura().getImg());
 
@@ -270,12 +314,16 @@ public class ajedrezGUI {
         tablet.getCasillas().get(54).setFigura(pe7);
         pe7.setCas(tablet.getCasillas().get(54));
 
+        pe7.getCas().setPos(54);
+
         G7.setIcon(tablet.getCasillas().get(54).getFigura().getImg());
 
         Peon pe8 = new Peon("n");
         pe8.setImg(new ImageIcon(peonnegro));
         tablet.getCasillas().get(55).setFigura(pe8);
         pe8.setCas(tablet.getCasillas().get(55));
+
+        pe8.getCas().setPos(55);
 
         H7.setIcon(tablet.getCasillas().get(55).getFigura().getImg());
 
@@ -286,12 +334,16 @@ public class ajedrezGUI {
         tablet.getCasillas().get(8).setFigura(pe9);
         pe9.setCas(tablet.getCasillas().get(8));
 
+        pe9.getCas().setPos(8);
+
         A2.setIcon(tablet.getCasillas().get(8).getFigura().getImg());
 
         Peon pe10 = new Peon("b");
         pe10.setImg(new ImageIcon(peonblanco));
         tablet.getCasillas().get(9).setFigura(pe10);
         pe10.setCas(tablet.getCasillas().get(9));
+
+        pe10.getCas().setPos(9);
 
         B2.setIcon(tablet.getCasillas().get(9).getFigura().getImg());
 
@@ -300,12 +352,16 @@ public class ajedrezGUI {
         tablet.getCasillas().get(10).setFigura(pe11);
         pe11.setCas(tablet.getCasillas().get(10));
 
+        pe11.getCas().setPos(10);
+
         C2.setIcon(tablet.getCasillas().get(10).getFigura().getImg());
 
         Peon pe12 = new Peon("b");
         pe12.setImg(new ImageIcon(peonblanco));
         tablet.getCasillas().get(11).setFigura(pe12);
         pe12.setCas(tablet.getCasillas().get(11));
+
+        pe12.getCas().setPos(11);
 
         D2.setIcon(tablet.getCasillas().get(11).getFigura().getImg());
 
@@ -314,12 +370,16 @@ public class ajedrezGUI {
         tablet.getCasillas().get(12).setFigura(pe13);
         pe13.setCas(tablet.getCasillas().get(12));
 
+        pe13.getCas().setPos(12);
+
         E2.setIcon(tablet.getCasillas().get(12).getFigura().getImg());
 
         Peon pe14 = new Peon("b");
         pe14.setImg(new ImageIcon(peonblanco));
         tablet.getCasillas().get(13).setFigura(pe14);
         pe14.setCas(tablet.getCasillas().get(13));
+
+        pe14.getCas().setPos(13);
 
         F2.setIcon(tablet.getCasillas().get(13).getFigura().getImg());
 
@@ -328,6 +388,8 @@ public class ajedrezGUI {
         tablet.getCasillas().get(14).setFigura(pe15);
         pe15.setCas(tablet.getCasillas().get(14));
 
+        pe15.getCas().setPos(14);
+
         G2.setIcon(tablet.getCasillas().get(14).getFigura().getImg());
 
         Peon pe16 = new Peon("b");
@@ -335,7 +397,42 @@ public class ajedrezGUI {
         tablet.getCasillas().get(15).setFigura(pe16);
         pe16.setCas(tablet.getCasillas().get(15));
 
+        pe16.getCas().setPos(15);
+
         H2.setIcon(tablet.getCasillas().get(15).getFigura().getImg());
+
+        tablet.getCasillas().get(16).setPos(16);
+        tablet.getCasillas().get(17).setPos(17);
+        tablet.getCasillas().get(18).setPos(18);
+        tablet.getCasillas().get(19).setPos(19);
+        tablet.getCasillas().get(20).setPos(20);
+        tablet.getCasillas().get(21).setPos(21);
+        tablet.getCasillas().get(22).setPos(22);
+        tablet.getCasillas().get(23).setPos(23);
+        tablet.getCasillas().get(24).setPos(24);
+        tablet.getCasillas().get(25).setPos(25);
+        tablet.getCasillas().get(26).setPos(26);
+        tablet.getCasillas().get(27).setPos(27);
+        tablet.getCasillas().get(28).setPos(28);
+        tablet.getCasillas().get(29).setPos(29);
+        tablet.getCasillas().get(30).setPos(30);
+        tablet.getCasillas().get(31).setPos(31);
+        tablet.getCasillas().get(32).setPos(32);
+        tablet.getCasillas().get(33).setPos(33);
+        tablet.getCasillas().get(34).setPos(34);
+        tablet.getCasillas().get(35).setPos(35);
+        tablet.getCasillas().get(36).setPos(36);
+        tablet.getCasillas().get(37).setPos(38);
+        tablet.getCasillas().get(39).setPos(39);
+        tablet.getCasillas().get(40).setPos(40);
+        tablet.getCasillas().get(41).setPos(41);
+        tablet.getCasillas().get(42).setPos(42);
+        tablet.getCasillas().get(43).setPos(43);
+        tablet.getCasillas().get(44).setPos(44);
+        tablet.getCasillas().get(45).setPos(45);
+        tablet.getCasillas().get(46).setPos(46);
+        tablet.getCasillas().get(47).setPos(47);
+
 
         A1.addActionListener(new ActionListener() {
             @Override

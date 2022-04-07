@@ -25,18 +25,25 @@ public class Alfil extends _Figura {
             }
             */
 
-            int counter = 0;
+            //int counter = 0;
             boolean pepe = false;
 
             if((casilla2.getLetra()== (getCas().getLetra() + i)) && (casilla2.getNumero()== (getCas().getNumero() + i))){
-                for (int j = getCas().getFigura().getPos() + 9; j < casilla2.getFigura().getPos(); j++){
-                    if (!tablas.getCasillas().get(j).isLlena()) {
-                        counter++;
-                        if (counter == (i-1)) {
-                            setCas(casilla2);
-                        }
+                System.out.println((casilla2.getPos() - 9) + " pre-for");
+                for (int j = getCas().getPos() + 9; j <= (casilla2.getPos() - 9); j+=9){
+                    System.out.println(j + " iteracion");
+                    if (!(tablas.getCasillas().get(j).getFigura()==null)) {
+                        System.out.println("El get j esta lleno");
+
+                        pepe = true;
                     }
                 }
+                if(!pepe){
+                    setCas(casilla2);
+                    pepe=!pepe;
+                }
+            }else if((casilla2.getLetra()== (getCas().getLetra() + 1)) && (casilla2.getNumero()== (getCas().getNumero() + 1))){
+                setCas(casilla2);
             }
         }
     }

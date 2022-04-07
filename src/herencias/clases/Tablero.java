@@ -69,7 +69,6 @@ public class Tablero {
         for (int i = 0; i<64; i++) {
             if((getCasillas().get(i).getLetra() == figura.getCas().getLetra()) && (getCasillas().get(i).getNumero() == figura.getCas().getNumero())) {
 
-                getCasillas().get(i).getFigura().setPos(-1);
                 getCasillas().get(i).setFigura(null);
             }
         }
@@ -80,7 +79,6 @@ public class Tablero {
             if((getCasillas().get(i).getLetra() == figura.getCas().getLetra()) && (getCasillas().get(i).getNumero() == figura.getCas().getNumero())) {
 
                 getCasillas().get(i).setFigura(figura);
-                getCasillas().get(i).getFigura().setPos(i);
             }
         }
     }

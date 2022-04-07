@@ -8,6 +8,15 @@ public class Casilla {
     private int numero;
     private boolean llena;
     private _Figura figura;
+    protected int Pos;
+
+    public int getPos() {
+        return Pos;
+    }
+
+    public void setPos(int pos) {
+        Pos = pos;
+    }
 
     public Casilla(int numero, char letra) {
 

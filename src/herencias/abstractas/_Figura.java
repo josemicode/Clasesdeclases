@@ -7,23 +7,14 @@ import javax.swing.*;
 
 public abstract class _Figura {
 
-    private String color;
-    private boolean vida;
-    private Casilla cas;
-    private ImageIcon img;
-    private int Pos;
+    protected String color;
+    protected boolean vida;
+    protected Casilla cas;
+    protected ImageIcon img;
 
     public _Figura(String color) {
         this.color = color;
         this.vida = true;
-    }
-
-    public int getPos() {
-        return Pos;
-    }
-
-    public void setPos(int pos) {
-        Pos = pos;
     }
 
     public ImageIcon getImg() {
