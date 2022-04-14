@@ -15,7 +15,7 @@ public class Torre extends _Figura {
         }*/
         boolean bool = false;
 
-        if (getCas().getLetra() == casilla2.getLetra()) {
+        if (getCas().getNumero() == casilla2.getNumero()) {
             if (casilla2.getPos() > getCas().getPos()) {
                 for (int i = getCas().getPos() + 1; i < casilla2.getPos(); i++) {
                     if (!(tablas.getCasillas().get(i).getFigura()==null)) {
@@ -39,13 +39,19 @@ public class Torre extends _Figura {
                     bool=!bool;
                 }
             }
-        }else if ((casilla2.getLetra() == getCas().getLetra() + 1)||(casilla2.getLetra() == getCas().getLetra() - 1)){
+        }else if (((casilla2.getNumero() == getCas().getNumero() + 1) && (casilla2.getLetra() == getCas().getLetra()))
+                ||
+                ((casilla2.getNumero() == getCas().getNumero() - 1) && (casilla2.getLetra() == getCas().getLetra()))
+                ||
+                ((casilla2.getNumero() == getCas().getNumero()) && (casilla2.getLetra() == getCas().getLetra() + 1))
+                ||
+                ((casilla2.getNumero() == getCas().getNumero()) && (casilla2.getLetra() == getCas().getLetra() - 1))){
             setCas(casilla2);
         }
 
-        if (getCas().getNumero() == casilla2.getNumero()) {
+        if (getCas().getLetra() == casilla2.getLetra()) {
             if (casilla2.getPos() > getCas().getPos()) {
-                for (int i = getCas().getPos() + 1; i < casilla2.getPos(); i+=8) {
+                for (int i = getCas().getPos() + 8; i < casilla2.getPos(); i+=8) {
                     if (!(tablas.getCasillas().get(i).getFigura()==null)) {
                         bool = true;
                     }
@@ -57,7 +63,7 @@ public class Torre extends _Figura {
             }
 
             if (casilla2.getPos() < getCas().getPos()) {
-                for (int i = getCas().getPos() - 1; i > casilla2.getPos(); i-=8) {
+                for (int i = getCas().getPos() - 8; i > casilla2.getPos(); i-=8) {
                     if (!(tablas.getCasillas().get(i).getFigura()==null)) {
                         bool = true;
                     }
@@ -67,9 +73,9 @@ public class Torre extends _Figura {
                     bool=!bool;
                 }
             }
-        }else if ((casilla2.getNumero() == getCas().getNumero() + 1)||(casilla2.getNumero() == getCas().getNumero() - 1)){
+        }/*else if ((casilla2.getLetra() == getCas().getLetra() + 1)||(casilla2.getLetra() == getCas().getLetra() - 1)){
             setCas(casilla2);
-        }
+        }*/
     }
 
     @Override
