@@ -19,23 +19,6 @@ public class Reina extends _Figura {
         boolean bool = false;
 
         for(int i = 1; i<=7; i++) {
-            /*
-            //System.out.println(casilla2.getNumero());
-            //System.out.println(getCas().getNumero());
-            //System.out.println(casilla2.getLetra());
-            //System.out.println(getCas().getLetra());
-
-            if(((casilla2.getNumero()== (getCas().getNumero() + i)) || (casilla2.getNumero()== (getCas().getNumero() - i)))
-                    &&
-                     ((casilla2.getLetra()== (getCas().getLetra() + i)) || (casilla2.getLetra()== (getCas().getLetra() - i)))) {
-
-                setCas(casilla2);
-            }
-            */
-
-            //int counter = 0;
-
-            //boolean masmenos = false;
 
             if((casilla2.getLetra()== (getCas().getLetra() + i)) && (casilla2.getNumero()== (getCas().getNumero() + i))){
                 System.out.println((casilla2.getPos() - 9) + " pre-for");
