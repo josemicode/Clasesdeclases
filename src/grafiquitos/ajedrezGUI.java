@@ -442,13 +442,17 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(0);
-                    Boton1 = A1;
+                    if(!(tablet.getCasillas().get(0).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(0);
+                        Boton1 = A1;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    //tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(0));
+                        //tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(0));
 
-                    //if(tablet.getCasillas().get(0).getFigura().isMovida()) {
+                        //if(tablet.getCasillas().get(0).getFigura().isMovida()) {
                     if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(0))){
 
                         A1.setIcon(tablet.getCasillas().get(0).getFigura().getImg());
@@ -469,8 +473,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(1);
-                    Boton1 = B1;
+
+                    if(!(tablet.getCasillas().get(1).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(1);
+                        Boton1 = B1;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -492,8 +501,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(2);
-                    Boton1 = C1;
+
+                    if(!(tablet.getCasillas().get(2).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(2);
+                        Boton1 = C1;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -515,8 +529,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(3);
-                    Boton1 = D1;
+
+                    if(!(tablet.getCasillas().get(3).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(3);
+                        Boton1 = D1;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -538,8 +557,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(4);
-                    Boton1 = E1;
+
+                    if(!(tablet.getCasillas().get(4).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(4);
+                        Boton1 = E1;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -561,8 +585,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(5);
-                    Boton1 = F1;
+
+                    if(!(tablet.getCasillas().get(5).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(5);
+                        Boton1 = F1;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -584,8 +613,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(6);
-                    Boton1 = G1;
+
+                    if(!(tablet.getCasillas().get(6).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(6);
+                        Boton1 = G1;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -607,8 +641,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(7);
-                    Boton1 = H1;
+
+                    if(!(tablet.getCasillas().get(7).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(7);
+                        Boton1 = H1;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -630,8 +669,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(8);
-                    Boton1 = A2;
+
+                    if(!(tablet.getCasillas().get(8).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(8);
+                        Boton1 = A2;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -653,8 +697,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(9);
-                    Boton1 = B2;
+
+                    if(!(tablet.getCasillas().get(9).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(9);
+                        Boton1 = B2;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -676,8 +725,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(10);
-                    Boton1 = C2;
+
+                    if(!(tablet.getCasillas().get(10).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(10);
+                        Boton1 = C2;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -699,8 +753,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(11);
-                    Boton1 = D2;
+
+                    if(!(tablet.getCasillas().get(11).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(11);
+                        Boton1 = D2;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -722,8 +781,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(12);
-                    Boton1 = E2;
+
+                    if(!(tablet.getCasillas().get(12).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(12);
+                        Boton1 = E2;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -745,12 +809,17 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(13);
-                    Boton1 = F2;
+
+                    if(!(tablet.getCasillas().get(13).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(13);
+                        Boton1 = F2;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
-                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(1))){
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(13))){
 
                         F2.setIcon(tablet.getCasillas().get(13).getFigura().getImg());
                         Boton1.setIcon(null);
@@ -768,8 +837,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(14);
-                    Boton1 = G2;
+
+                    if(!(tablet.getCasillas().get(14).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(14);
+                        Boton1 = G2;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -791,8 +865,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(15);
-                    Boton1 = H2;
+
+                    if(!(tablet.getCasillas().get(15).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(15);
+                        Boton1 = H2;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -814,8 +893,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(16);
-                    Boton1 = A3;
+
+                    if(!(tablet.getCasillas().get(16).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(16);
+                        Boton1 = A3;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -837,8 +921,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(17);
-                    Boton1 = B3;
+
+                    if(!(tablet.getCasillas().get(17).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(17);
+                        Boton1 = B3;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -860,8 +949,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(18);
-                    Boton1 = C3;
+
+                    if(!(tablet.getCasillas().get(18).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(18);
+                        Boton1 = C3;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -883,8 +977,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(19);
-                    Boton1 = D3;
+
+                    if(!(tablet.getCasillas().get(19).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(19);
+                        Boton1 = D3;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -906,8 +1005,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(20);
-                    Boton1 = E3;
+
+                    if(!(tablet.getCasillas().get(20).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(20);
+                        Boton1 = E3;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -929,8 +1033,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(21);
-                    Boton1 = F3;
+
+                    if(!(tablet.getCasillas().get(21).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(21);
+                        Boton1 = F3;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -952,8 +1061,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(22);
-                    Boton1 = G3;
+
+                    if(!(tablet.getCasillas().get(22).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(22);
+                        Boton1 = G3;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -975,8 +1089,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(23);
-                    Boton1 = H3;
+
+                    if(!(tablet.getCasillas().get(23).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(23);
+                        Boton1 = H3;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -998,8 +1117,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(24);
-                    Boton1 = A4;
+
+                    if(!(tablet.getCasillas().get(24).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(24);
+                        Boton1 = A4;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1021,8 +1145,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(25);
-                    Boton1 = B4;
+
+                    if(!(tablet.getCasillas().get(25).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(25);
+                        Boton1 = B4;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1044,8 +1173,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(26);
-                    Boton1 = C4;
+
+                    if(!(tablet.getCasillas().get(26).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(26);
+                        Boton1 = C4;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1067,8 +1201,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(27);
-                    Boton1 = D4;
+
+                    if(!(tablet.getCasillas().get(27).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(27);
+                        Boton1 = D4;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1090,8 +1229,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(28);
-                    Boton1 = E4;
+
+                    if(!(tablet.getCasillas().get(28).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(28);
+                        Boton1 = E4;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1113,8 +1257,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(29);
-                    Boton1 = F4;
+
+                    if(!(tablet.getCasillas().get(29).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(29);
+                        Boton1 = F4;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1136,8 +1285,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(30);
-                    Boton1 = G4;
+
+                    if(!(tablet.getCasillas().get(30).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(30);
+                        Boton1 = G4;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1159,8 +1313,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(31);
-                    Boton1 = H4;
+
+                    if(!(tablet.getCasillas().get(31).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(31);
+                        Boton1 = H4;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1182,8 +1341,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(32);
-                    Boton1 = A5;
+
+                    if(!(tablet.getCasillas().get(32).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(32);
+                        Boton1 = A5;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1205,8 +1369,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(33);
-                    Boton1 = B5;
+
+                    if(!(tablet.getCasillas().get(33).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(33);
+                        Boton1 = B5;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1228,8 +1397,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(34);
-                    Boton1 = C5;
+
+                    if(!(tablet.getCasillas().get(34).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(34);
+                        Boton1 = C5;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1251,8 +1425,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(35);
-                    Boton1 = D5;
+
+                    if(!(tablet.getCasillas().get(35).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(35);
+                        Boton1 = D5;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1274,8 +1453,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(36);
-                    Boton1 = E5;
+
+                    if(!(tablet.getCasillas().get(36).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(36);
+                        Boton1 = E5;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1297,8 +1481,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(37);
-                    Boton1 = F5;
+
+                    if(!(tablet.getCasillas().get(37).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(37);
+                        Boton1 = F5;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1320,8 +1509,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(38);
-                    Boton1 = G5;
+
+                    if(!(tablet.getCasillas().get(38).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(38);
+                        Boton1 = G5;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1343,8 +1537,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(39);
-                    Boton1 = H5;
+
+                    if(!(tablet.getCasillas().get(39).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(39);
+                        Boton1 = H5;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1366,8 +1565,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(40);
-                    Boton1 = A6;
+
+                    if(!(tablet.getCasillas().get(40).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(40);
+                        Boton1 = A6;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1389,8 +1593,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(41);
-                    Boton1 = B6;
+
+                    if(!(tablet.getCasillas().get(41).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(41);
+                        Boton1 = B6;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1412,8 +1621,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(42);
-                    Boton1 = C6;
+
+                    if(!(tablet.getCasillas().get(42).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(42);
+                        Boton1 = C6;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1435,8 +1649,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(43);
-                    Boton1 = D6;
+
+                    if(!(tablet.getCasillas().get(43).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(43);
+                        Boton1 = D6;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1458,8 +1677,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(44);
-                    Boton1 = E6;
+
+                    if(!(tablet.getCasillas().get(44).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(44);
+                        Boton1 = E6;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1481,8 +1705,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(45);
-                    Boton1 = F6;
+
+                    if(!(tablet.getCasillas().get(45).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(45);
+                        Boton1 = F6;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1504,8 +1733,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(46);
-                    Boton1 = G6;
+
+                    if(!(tablet.getCasillas().get(46).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(46);
+                        Boton1 = G6;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1527,8 +1761,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(47);
-                    Boton1 = H6;
+
+                    if(!(tablet.getCasillas().get(47).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(47);
+                        Boton1 = H6;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1550,8 +1789,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(48);
-                    Boton1 = A7;
+
+                    if(!(tablet.getCasillas().get(48).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(48);
+                        Boton1 = A7;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1573,8 +1817,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(49);
-                    Boton1 = B7;
+
+                    if(!(tablet.getCasillas().get(49).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(49);
+                        Boton1 = B7;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1596,8 +1845,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(50);
-                    Boton1 = C7;
+
+                    if(!(tablet.getCasillas().get(50).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(50);
+                        Boton1 = C7;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1619,8 +1873,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(51);
-                    Boton1 = D7;
+
+                    if(!(tablet.getCasillas().get(51).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(51);
+                        Boton1 = D7;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1642,8 +1901,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(52);
-                    Boton1 = E7;
+
+                    if(!(tablet.getCasillas().get(52).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(52);
+                        Boton1 = E7;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1665,8 +1929,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(53);
-                    Boton1 = F7;
+
+                    if(!(tablet.getCasillas().get(53).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(53);
+                        Boton1 = F7;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1688,8 +1957,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(54);
-                    Boton1 = G7;
+
+                    if(!(tablet.getCasillas().get(54).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(54);
+                        Boton1 = G7;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1711,8 +1985,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(55);
-                    Boton1 = H7;
+
+                    if(!(tablet.getCasillas().get(55).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(55);
+                        Boton1 = H7;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1734,8 +2013,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(56);
-                    Boton1 = A8;
+
+                    if(!(tablet.getCasillas().get(56).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(56);
+                        Boton1 = A8;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1757,8 +2041,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(57);
-                    Boton1 = B8;
+
+                    if(!(tablet.getCasillas().get(57).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(57);
+                        Boton1 = B8;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1780,8 +2069,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(58);
-                    Boton1 = C8;
+
+                    if(!(tablet.getCasillas().get(58).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(58);
+                        Boton1 = C8;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1803,8 +2097,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(59);
-                    Boton1 = D8;
+
+                    if(!(tablet.getCasillas().get(59).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(59);
+                        Boton1 = D8;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1826,8 +2125,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(60);
-                    Boton1 = E8;
+
+                    if(!(tablet.getCasillas().get(60).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(60);
+                        Boton1 = E8;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1849,8 +2153,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(61);
-                    Boton1 = F8;
+
+                    if(!(tablet.getCasillas().get(61).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(61);
+                        Boton1 = F8;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1872,8 +2181,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(62);
-                    Boton1 = G8;
+
+                    if(!(tablet.getCasillas().get(62).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(62);
+                        Boton1 = G8;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 
@@ -1895,8 +2209,13 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(63);
-                    Boton1 = H8;
+
+                    if(!(tablet.getCasillas().get(63).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(63);
+                        Boton1 = H8;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
 

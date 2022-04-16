@@ -32,10 +32,12 @@ public class Reina extends _Figura {
                 }
                 if(!bool){
                     setCas(casilla2);
+                    this.movida = true;
                     bool=!bool;
                 }
             }else if((casilla2.getLetra()== (getCas().getLetra() + 1)) && (casilla2.getNumero()== (getCas().getNumero() + 1))){
                 setCas(casilla2);
+                this.movida = true;
             }
 
             if((casilla2.getLetra()== (getCas().getLetra() + i)) && (casilla2.getNumero()== (getCas().getNumero() - i))){
@@ -50,10 +52,12 @@ public class Reina extends _Figura {
                 }
                 if(!bool){
                     setCas(casilla2);
+                    this.movida = true;
                     bool=!bool;
                 }
             }else if((casilla2.getLetra()== (getCas().getLetra() + 1)) && (casilla2.getNumero()== (getCas().getNumero() - 1))){
                 setCas(casilla2);
+                this.movida = true;
             }
 
             if((casilla2.getLetra()== (getCas().getLetra() - i)) && (casilla2.getNumero()== (getCas().getNumero() + i))){
@@ -68,10 +72,12 @@ public class Reina extends _Figura {
                 }
                 if(!bool){
                     setCas(casilla2);
+                    this.movida = true;
                     bool=!bool;
                 }
             }else if((casilla2.getLetra()== (getCas().getLetra() - 1)) && (casilla2.getNumero()== (getCas().getNumero() + 1))){
                 setCas(casilla2);
+                this.movida = true;
             }
 
             if((casilla2.getLetra()== (getCas().getLetra() - i)) && (casilla2.getNumero()== (getCas().getNumero() - i))){
@@ -86,10 +92,12 @@ public class Reina extends _Figura {
                 }
                 if(!bool){
                     setCas(casilla2);
+                    this.movida = true;
                     bool=!bool;
                 }
             }else if((casilla2.getLetra()== (getCas().getLetra() - 1)) && (casilla2.getNumero()== (getCas().getNumero() - 1))){
                 setCas(casilla2);
+                this.movida = true;
             }
         }
 
@@ -102,6 +110,7 @@ public class Reina extends _Figura {
                 }
                 if (!bool) {
                     setCas(casilla2);
+                    this.movida = true;
                     bool=!bool;
                 }
             }
@@ -114,6 +123,7 @@ public class Reina extends _Figura {
                 }
                 if (!bool) {
                     setCas(casilla2);
+                    this.movida = true;
                     bool=!bool;
                 }
             }
@@ -125,6 +135,7 @@ public class Reina extends _Figura {
                 ||
                 ((casilla2.getNumero() == getCas().getNumero()) && (casilla2.getLetra() == getCas().getLetra() - 1))){
             setCas(casilla2);
+            this.movida = true;
         }
 
         if (getCas().getLetra() == casilla2.getLetra()) {
@@ -136,6 +147,7 @@ public class Reina extends _Figura {
                 }
                 if (!bool) {
                     setCas(casilla2);
+                    this.movida = true;
                     bool=!bool;
                 }
             }
@@ -148,6 +160,7 @@ public class Reina extends _Figura {
                 }
                 if (!bool) {
                     setCas(casilla2);
+                    this.movida = true;
                     bool=!bool;
                 }
             }
