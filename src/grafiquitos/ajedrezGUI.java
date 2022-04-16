@@ -442,6 +442,7 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
+
                     if(!(tablet.getCasillas().get(0).getFigura()==null)) {
                         Cas1 = tablet.getCasillas().get(0);
                         Boton1 = A1;
@@ -450,9 +451,7 @@ public class ajedrezGUI {
                     }
                 }
                 if (count == 2) {
-                        //tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(0));
 
-                        //if(tablet.getCasillas().get(0).getFigura().isMovida()) {
                     if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(0))){
 
                         A1.setIcon(tablet.getCasillas().get(0).getFigura().getImg());
