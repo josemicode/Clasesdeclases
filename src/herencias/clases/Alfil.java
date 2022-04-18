@@ -30,83 +30,143 @@ public class Alfil extends _Figura {
             //boolean masmenos = false;
 
             if((casilla2.getLetra()== (getCas().getLetra() + i)) && (casilla2.getNumero()== (getCas().getNumero() + i))){
-                System.out.println((casilla2.getPos() - 9) + " pre-for");
+
                 for (int j = getCas().getPos() + 9; j <= (casilla2.getPos() - 9); j+=9){
-                    System.out.println(j + " iteracion");
+
                     if (!(tablas.getCasillas().get(j).getFigura()==null)) {
-                        System.out.println("El get j esta lleno");
+
 
                         bool = true;
                     }
                 }
                 if(!bool){
-                    setCas(casilla2);
-                    this.movida = true;
-                    bool=!bool;
+                    if (casilla2.getFigura()==null) {
+
+                        setCas(casilla2);
+                        this.movida = true;
+                        bool=!bool;
+
+                    }if ((casilla2.getFigura()!=null) && !(color.equals(casilla2.getFigura().getColor()))) {
+                        setCas(casilla2);
+                        this.movida = true;
+                        bool=!bool;
+                    }
                 }
             }else if((casilla2.getLetra()== (getCas().getLetra() + 1)) && (casilla2.getNumero()== (getCas().getNumero() + 1))){
-                setCas(casilla2);
-                this.movida = true;
+                if (casilla2.getFigura()==null) {
+
+                    setCas(casilla2);
+                    this.movida = true;
+
+                }if ((casilla2.getFigura()!=null) && !(color.equals(casilla2.getFigura().getColor()))) {
+                    setCas(casilla2);
+                    this.movida = true;
+                }
             }
 
             if((casilla2.getLetra()== (getCas().getLetra() + i)) && (casilla2.getNumero()== (getCas().getNumero() - i))){
-                System.out.println((casilla2.getPos() - 9) + " pre-for");
+
                 for (int j = getCas().getPos() - 7; j >= (casilla2.getPos() + 7); j-=7){
-                    System.out.println(j + " iteracion");
+
                     if (!(tablas.getCasillas().get(j).getFigura()==null)) {
-                        System.out.println("El get j esta lleno");
+
 
                         bool = true;
                     }
                 }
                 if(!bool){
-                    setCas(casilla2);
-                    this.movida = true;
-                    bool=!bool;
+                    if (casilla2.getFigura()==null) {
+
+                        setCas(casilla2);
+                        this.movida = true;
+                        bool=!bool;
+
+                    }if ((casilla2.getFigura()!=null) && !(color.equals(casilla2.getFigura().getColor()))) {
+                        setCas(casilla2);
+                        this.movida = true;
+                        bool=!bool;
+                    }
                 }
             }else if((casilla2.getLetra()== (getCas().getLetra() + 1)) && (casilla2.getNumero()== (getCas().getNumero() - 1))){
-                setCas(casilla2);
-                this.movida = true;
+                if (casilla2.getFigura()==null) {
+
+                    setCas(casilla2);
+                    this.movida = true;
+
+                }if ((casilla2.getFigura()!=null) && !(color.equals(casilla2.getFigura().getColor()))) {
+                    setCas(casilla2);
+                    this.movida = true;
+                }
             }
 
             if((casilla2.getLetra()== (getCas().getLetra() - i)) && (casilla2.getNumero()== (getCas().getNumero() + i))){
-                System.out.println((casilla2.getPos() - 9) + " pre-for");
+
                 for (int j = getCas().getPos() + 7; j <= (casilla2.getPos() - 7); j+=7){
-                    System.out.println(j + " iteracion");
+
                     if (!(tablas.getCasillas().get(j).getFigura()==null)) {
-                        System.out.println("El get j esta lleno");
+
 
                         bool = true;
                     }
                 }
                 if(!bool){
-                    setCas(casilla2);
-                    this.movida = true;
-                    bool=!bool;
+                    if (casilla2.getFigura()==null) {
+
+                        setCas(casilla2);
+                        this.movida = true;
+                        bool=!bool;
+
+                    }if ((casilla2.getFigura()!=null) && !(color.equals(casilla2.getFigura().getColor()))) {
+                        setCas(casilla2);
+                        this.movida = true;
+                        bool=!bool;
+                    }
                 }
             }else if((casilla2.getLetra()== (getCas().getLetra() - 1)) && (casilla2.getNumero()== (getCas().getNumero() + 1))){
-                setCas(casilla2);
-                this.movida = true;
+                if (casilla2.getFigura()==null) {
+
+                    setCas(casilla2);
+                    this.movida = true;
+
+                }if ((casilla2.getFigura()!=null) && !(color.equals(casilla2.getFigura().getColor()))) {
+                    setCas(casilla2);
+                    this.movida = true;
+                }
             }
 
             if((casilla2.getLetra()== (getCas().getLetra() - i)) && (casilla2.getNumero()== (getCas().getNumero() - i))){
-                System.out.println((casilla2.getPos() - 9) + " pre-for");
+
                 for (int j = getCas().getPos() - 9; j >= (casilla2.getPos() + 9); j-=9){
-                    System.out.println(j + " iteracion");
+
                     if (!(tablas.getCasillas().get(j).getFigura()==null)) {
-                        System.out.println("El get j esta lleno");
+
 
                         bool = true;
                     }
                 }
                 if(!bool){
-                    setCas(casilla2);
-                    this.movida = true;
-                    bool=!bool;
+                    if (casilla2.getFigura()==null) {
+
+                        setCas(casilla2);
+                        this.movida = true;
+                        bool=!bool;
+
+                    }if ((casilla2.getFigura()!=null) && !(color.equals(casilla2.getFigura().getColor()))) {
+                        setCas(casilla2);
+                        this.movida = true;
+                        bool=!bool;
+                    }
                 }
             }else if((casilla2.getLetra()== (getCas().getLetra() - 1)) && (casilla2.getNumero()== (getCas().getNumero() - 1))){
-                setCas(casilla2);
-                this.movida = true;
+                if (casilla2.getFigura()==null) {
+
+                    setCas(casilla2);
+                    this.movida = true;
+
+                }if ((casilla2.getFigura()!=null) && !(color.equals(casilla2.getFigura().getColor()))) {
+                    setCas(casilla2);
+                    this.movida = true;
+                }
             }
         }
     }

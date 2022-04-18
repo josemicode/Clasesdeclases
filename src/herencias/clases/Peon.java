@@ -39,8 +39,11 @@ public class Peon extends _Figura {
                 ||
                 ((casilla2.getNumero() == getCas().getNumero() + 1) && (casilla2.getLetra() == getCas().getLetra() + 1))) {
                 if (!(casilla2.getFigura()==null)) {
-                    setCas(casilla2);
-                    this.movida = true;
+                    if (!(color.equals(casilla2.getFigura().getColor()))) {
+                        setCas(casilla2);
+                        this.movida = true;
+
+                    }
                 }
             }
         }
@@ -71,8 +74,11 @@ public class Peon extends _Figura {
                     ||
                     ((casilla2.getNumero() == getCas().getNumero() - 1) && (casilla2.getLetra() == getCas().getLetra() + 1))) {
                 if (!(casilla2.getFigura()==null)) {
-                    setCas(casilla2);
-                    this.movida = true;
+                    if (!(color.equals(casilla2.getFigura().getColor()))) {
+                        setCas(casilla2);
+                        this.movida = true;
+
+                    }
                 }
             }
         }
@@ -92,4 +98,3 @@ public class Peon extends _Figura {
         return res;
     }
 }
-// pepe
