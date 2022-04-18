@@ -80,10 +80,12 @@ public class ajedrezGUI {
 
     private int count = 0;
 
-    private Casilla Cas1;// = new Casilla(0,'A');
+    private Casilla Cas1;// Casilla auxiliar
     //private Casilla Cas2;
-    private JButton Boton1;
+    private JButton Boton1;// Boton auxiliar
     //private JButton Boton2;
+
+    private boolean turnegro = false; //el turno de las piezas negras
 
     public ajedrezGUI() throws IOException {
 
@@ -441,6 +443,14 @@ public class ajedrezGUI {
 
                 count++;
 
+                if (!(tablet.getCasillas().get(0).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(0).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(0).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
+
                 if (count == 1) {
 
                     if(!(tablet.getCasillas().get(0).getFigura()==null)) {
@@ -458,6 +468,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(0).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
 
                     count = 0;
@@ -470,6 +481,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(1).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(1).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(1).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -488,6 +507,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(1).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -498,6 +518,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(2).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(2).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(2).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -516,6 +544,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(2).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -526,6 +555,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(3).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(3).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(3).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -544,6 +581,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(3).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -554,6 +592,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(4).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(4).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(4).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -572,6 +618,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(4).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -582,6 +629,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(5).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(5).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(5).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -600,6 +655,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(5).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -610,6 +666,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(6).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(6).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(6).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -628,6 +692,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(6).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -638,6 +703,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(7).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(7).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(7).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -656,6 +729,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(7).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -666,6 +740,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(8).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(8).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(8).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -684,6 +766,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(8).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -694,6 +777,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(9).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(9).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(9).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -712,6 +803,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(9).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -722,6 +814,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(10).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(10).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(10).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -740,6 +840,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(10).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -750,6 +851,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(11).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(11).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(11).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -768,6 +877,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(11).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -778,6 +888,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(12).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(12).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(12).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -796,6 +914,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(12).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -806,6 +925,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(13).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(13).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(13).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -824,6 +951,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(13).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -834,6 +962,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(14).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(14).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(14).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -852,6 +988,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(14).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -862,6 +999,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(15).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(15).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(15).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -880,6 +1025,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(15).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -890,6 +1036,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(16).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(16).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(16).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -908,6 +1062,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(16).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -918,6 +1073,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(17).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(17).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(17).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -936,6 +1099,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(17).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -946,6 +1110,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(18).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(18).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(18).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -964,6 +1136,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(18).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -974,6 +1147,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(19).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(19).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(19).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -992,6 +1173,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(19).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -1002,6 +1184,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(20).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(20).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(20).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -1020,6 +1210,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(20).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -1030,6 +1221,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(21).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(21).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(21).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -1048,6 +1247,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(21).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -1058,6 +1258,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(22).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(22).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(22).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -1076,6 +1284,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(22).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -1086,6 +1295,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(23).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(23).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(23).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -1104,6 +1321,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(23).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -1114,6 +1332,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(24).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(24).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(24).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -1132,6 +1358,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(24).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -1142,6 +1369,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(25).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(25).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(25).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -1160,6 +1395,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(25).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -1170,6 +1406,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(26).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(26).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(26).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -1188,6 +1432,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(26).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -1198,6 +1443,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(27).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(27).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(27).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -1216,6 +1469,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(27).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -1226,6 +1480,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(28).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(28).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(28).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -1244,6 +1506,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(28).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -1254,6 +1517,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(29).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(29).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(29).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -1272,6 +1543,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(29).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -1282,6 +1554,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(30).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(30).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(30).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -1300,6 +1580,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(30).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -1310,6 +1591,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(31).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(31).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(31).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -1328,6 +1617,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(31).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -1338,6 +1628,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(32).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(32).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(32).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -1356,6 +1654,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(32).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -1366,6 +1665,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(33).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(33).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(33).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -1384,6 +1691,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(33).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -1394,6 +1702,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(34).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(34).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(34).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -1412,6 +1728,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(34).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -1422,6 +1739,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(35).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(35).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(35).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -1440,6 +1765,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(35).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -1450,6 +1776,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(36).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(36).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(36).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -1468,6 +1802,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(36).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -1478,6 +1813,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(37).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(37).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(37).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -1496,6 +1839,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(37).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -1506,6 +1850,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(38).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(38).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(38).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -1524,6 +1876,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(38).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -1534,6 +1887,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(39).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(39).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(39).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -1552,6 +1913,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(39).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -1562,6 +1924,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(40).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(40).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(40).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -1580,6 +1950,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(40).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -1590,6 +1961,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(41).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(41).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(41).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -1608,6 +1987,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(41).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -1618,6 +1998,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(42).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(42).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(42).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -1636,6 +2024,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(42).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -1646,6 +2035,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(43).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(43).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(43).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -1664,6 +2061,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(43).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -1674,6 +2072,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(44).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(44).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(44).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -1692,6 +2098,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(44).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -1702,6 +2109,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(45).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(45).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(45).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -1720,6 +2135,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(45).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -1730,6 +2146,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(46).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(46).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(46).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -1748,6 +2172,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(46).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -1758,6 +2183,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(47).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(47).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(47).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -1776,6 +2209,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(47).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -1786,6 +2220,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(48).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(48).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(48).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -1804,6 +2246,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(48).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -1814,6 +2257,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(49).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(49).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(49).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -1832,6 +2283,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(49).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -1842,6 +2294,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(50).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(50).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(50).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -1860,6 +2320,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(50).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -1870,6 +2331,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(51).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(51).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(51).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -1888,6 +2357,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(51).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -1898,6 +2368,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(52).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(52).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(52).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -1916,6 +2394,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(52).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -1926,6 +2405,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(53).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(53).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(53).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -1944,6 +2431,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(53).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -1954,6 +2442,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(54).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(54).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(54).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -1972,6 +2468,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(54).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -1982,6 +2479,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(55).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(55).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(55).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -2000,6 +2505,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(55).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -2010,6 +2516,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(56).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(56).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(56).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -2028,6 +2542,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(56).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -2038,6 +2553,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(57).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(57).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(57).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -2056,6 +2579,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(57).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -2066,6 +2590,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(58).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(58).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(58).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -2084,6 +2616,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(58).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -2094,6 +2627,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(59).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(59).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(59).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -2112,6 +2653,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(59).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -2122,6 +2664,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(60).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(60).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(60).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -2140,6 +2690,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(60).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -2150,6 +2701,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(61).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(61).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(61).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -2168,6 +2727,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(61).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -2178,6 +2738,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(62).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(62).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(62).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -2196,6 +2764,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(62).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
@@ -2206,6 +2775,14 @@ public class ajedrezGUI {
             public void actionPerformed(ActionEvent e) {
 
                 count++;
+
+                if (!(tablet.getCasillas().get(63).getFigura()==null)){
+                    if (count == 1) {
+                        if ((tablet.getCasillas().get(63).getFigura().getColor().equals("b") && turnegro ) || (tablet.getCasillas().get(63).getFigura().getColor().equals("n") && !turnegro)){
+                            count--;
+                        }
+                    }
+                }
 
                 if (count == 1) {
 
@@ -2224,6 +2801,7 @@ public class ajedrezGUI {
                         Boton1.setIcon(null);
 
                         tablet.getCasillas().get(63).getFigura().setMovida(false);
+                        turnegro=!turnegro;
                     }
                     count = 0;
                 }
