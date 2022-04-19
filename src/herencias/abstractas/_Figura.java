@@ -8,13 +8,13 @@ import javax.swing.*;
 public abstract class _Figura {
 
     protected String color;
-    protected boolean vida;
+    protected boolean movida;
     protected Casilla cas;
     protected ImageIcon img;
 
     public _Figura(String color) {
         this.color = color;
-        this.vida = true;
+        this.movida = false;
     }
 
     public ImageIcon getImg() {
@@ -41,17 +41,17 @@ public abstract class _Figura {
         this.color = color;
     }
 
-    public boolean isVida() {
-        return vida;
+    public boolean isMovida() {
+        return movida;
     }
 
-    public void setVida(boolean vida) {
-        this.vida = vida;
+    public void setMovida(boolean movida) {
+        this.movida = movida;
     }
 
-    public void morir() {
-        this.vida = false;
-    }
+    /*public void morir() {
+        this.movida = false;
+    }*/
 
     public abstract void movimiento(Casilla casilla2, Tablero tablas);
 }

@@ -15,34 +15,6 @@ public class Torre extends _Figura {
         }*/
         boolean bool = false;
 
-        if (getCas().getLetra() == casilla2.getLetra()) {
-            if (casilla2.getPos() > getCas().getPos()) {
-                for (int i = getCas().getPos() + 8; i < casilla2.getPos(); i+=8) {
-                    if (!(tablas.getCasillas().get(i).getFigura()==null)) {
-                        bool = true;
-                    }
-                }
-                if (!bool) {
-                    setCas(casilla2);
-                    bool=!bool;
-                }
-            }
-
-            if (casilla2.getPos() < getCas().getPos()) {
-                for (int i = getCas().getPos() - 8; i > casilla2.getPos(); i-=8) {
-                    if (!(tablas.getCasillas().get(i).getFigura()==null)) {
-                        bool = true;
-                    }
-                }
-                if (!bool) {
-                    setCas(casilla2);
-                    bool=!bool;
-                }
-            }
-        }else if ((casilla2.getLetra() == getCas().getLetra() + 1)||(casilla2.getLetra() == getCas().getLetra() - 1)){
-            setCas(casilla2);
-        }
-
         if (getCas().getNumero() == casilla2.getNumero()) {
             if (casilla2.getPos() > getCas().getPos()) {
                 for (int i = getCas().getPos() + 1; i < casilla2.getPos(); i++) {
@@ -52,6 +24,7 @@ public class Torre extends _Figura {
                 }
                 if (!bool) {
                     setCas(casilla2);
+                    this.movida = true;
                     bool=!bool;
                 }
             }
@@ -64,12 +37,53 @@ public class Torre extends _Figura {
                 }
                 if (!bool) {
                     setCas(casilla2);
+                    this.movida = true;
                     bool=!bool;
                 }
             }
-        }else if ((casilla2.getNumero() == getCas().getNumero() + 1)||(casilla2.getNumero() == getCas().getNumero() - 1)){
-            setCas(casilla2);
         }
+
+        if (((casilla2.getNumero() == getCas().getNumero() + 1) && (casilla2.getLetra() == getCas().getLetra()))
+                ||
+                ((casilla2.getNumero() == getCas().getNumero() - 1) && (casilla2.getLetra() == getCas().getLetra()))
+                ||
+                ((casilla2.getNumero() == getCas().getNumero()) && (casilla2.getLetra() == getCas().getLetra() + 1))
+                ||
+                ((casilla2.getNumero() == getCas().getNumero()) && (casilla2.getLetra() == getCas().getLetra() - 1))){
+
+            setCas(casilla2);
+            this.movida = true;
+        }
+
+        if (getCas().getLetra() == casilla2.getLetra()) {
+            if (casilla2.getPos() > getCas().getPos()) {
+                for (int i = getCas().getPos() + 8; i < casilla2.getPos(); i+=8) {
+                    if (!(tablas.getCasillas().get(i).getFigura()==null)) {
+                        bool = true;
+                    }
+                }
+                if (!bool) {
+                    setCas(casilla2);
+                    this.movida = true;
+                    bool=!bool;
+                }
+            }
+
+            if (casilla2.getPos() < getCas().getPos()) {
+                for (int i = getCas().getPos() - 8; i > casilla2.getPos(); i-=8) {
+                    if (!(tablas.getCasillas().get(i).getFigura()==null)) {
+                        bool = true;
+                    }
+                }
+                if (!bool) {
+                    setCas(casilla2);
+                    this.movida = true;
+                    bool=!bool;
+                }
+            }
+        }/*else if ((casilla2.getLetra() == getCas().getLetra() + 1)||(casilla2.getLetra() == getCas().getLetra() - 1)){
+            setCas(casilla2);
+        }*/
     }
 
     @Override

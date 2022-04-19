@@ -12,6 +12,7 @@ public class Caballo extends _Figura {
     public void movimiento(Casilla casilla2, Tablero tablas) {
         if((((casilla2.getNumero()== getCas().getNumero() - 2)||(casilla2.getNumero()== getCas().getNumero() + 2)) && ((casilla2.getLetra()== getCas().getLetra() - 1)||(casilla2.getLetra()== getCas().getLetra() + 1)))||(((casilla2.getNumero()== getCas().getNumero() - 1)||(casilla2.getNumero()== getCas().getNumero() + 1)) && ((casilla2.getLetra()== getCas().getLetra() - 2)||(casilla2.getLetra()== getCas().getLetra() + 2)))) {
             setCas(casilla2);
+            this.movida = true;
         }
     }
 

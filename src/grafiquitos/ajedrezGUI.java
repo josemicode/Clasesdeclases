@@ -90,7 +90,7 @@ public class ajedrezGUI {
         Tablero tablet = new Tablero();
 
         Caballo cab1 = new Caballo("n");
-        BufferedImage bufferedImage1 = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\imagenespajava\\caballonegro.png"));
+        BufferedImage bufferedImage1 = ImageIO.read(new File("C:\\Users\\walls\\OneDrive\\Escritorio\\imagenespajava\\caballonegro.png"));
         Image imgcabnegro = bufferedImage1.getScaledInstance(75, 75, Image.SCALE_DEFAULT);
         cab1.setImg(new ImageIcon(imgcabnegro));
         tablet.getCasillas().get(57).setFigura(cab1);
@@ -101,7 +101,7 @@ public class ajedrezGUI {
         B8.setIcon(tablet.getCasillas().get(57).getFigura().getImg());
 
         Caballo cab2 = new Caballo("b");
-        BufferedImage bufferedImage2 = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\imagenespajava\\caballoblanco.png"));
+        BufferedImage bufferedImage2 = ImageIO.read(new File("C:\\Users\\walls\\OneDrive\\Escritorio\\imagenespajava\\caballoblanco.png"));
         Image imgcabblanco = bufferedImage2.getScaledInstance(75, 75, Image.SCALE_DEFAULT);
         cab2.setImg(new ImageIcon(imgcabblanco));
         tablet.getCasillas().get(1).setFigura(cab2);
@@ -130,7 +130,7 @@ public class ajedrezGUI {
         G1.setIcon(tablet.getCasillas().get(6).getFigura().getImg());
 
         Alfil alf1 = new Alfil("n");
-        BufferedImage bufferedImage3 = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\imagenespajava\\alfilnegro.png"));
+        BufferedImage bufferedImage3 = ImageIO.read(new File("C:\\Users\\walls\\OneDrive\\Escritorio\\imagenespajava\\alfilnegro.png"));
         Image imgalfnegro = bufferedImage3.getScaledInstance(75, 75, Image.SCALE_DEFAULT);
         alf1.setImg(new ImageIcon(imgalfnegro));
         tablet.getCasillas().get(58).setFigura(alf1);
@@ -141,7 +141,7 @@ public class ajedrezGUI {
         C8.setIcon(tablet.getCasillas().get(58).getFigura().getImg());
 
         Alfil alf2 = new Alfil("b");
-        BufferedImage bufferedImage4 = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\imagenespajava\\alfilblanco.png"));
+        BufferedImage bufferedImage4 = ImageIO.read(new File("C:\\Users\\walls\\OneDrive\\Escritorio\\imagenespajava\\alfilblanco.png"));
         Image imgalfblanco = bufferedImage4.getScaledInstance(75, 75, Image.SCALE_DEFAULT);
         alf2.setImg(new ImageIcon(imgalfblanco));
         tablet.getCasillas().get(2).setFigura(alf2);
@@ -170,7 +170,7 @@ public class ajedrezGUI {
         F1.setIcon(tablet.getCasillas().get(5).getFigura().getImg());
 
         Reina rna1 = new Reina("n");
-        BufferedImage bufferedImage5 = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\imagenespajava\\reinanegra.png"));
+        BufferedImage bufferedImage5 = ImageIO.read(new File("C:\\Users\\walls\\OneDrive\\Escritorio\\imagenespajava\\reinanegra.png"));
         Image imgrnanegro = bufferedImage5.getScaledInstance(75, 75, Image.SCALE_DEFAULT);
         rna1.setImg(new ImageIcon(imgrnanegro));
         tablet.getCasillas().get(59).setFigura(rna1);
@@ -181,7 +181,7 @@ public class ajedrezGUI {
         D8.setIcon(tablet.getCasillas().get(59).getFigura().getImg());
 
         Reina rna2 = new Reina("b");
-        BufferedImage bufferedImage6 = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\imagenespajava\\reinablanca.png"));
+        BufferedImage bufferedImage6 = ImageIO.read(new File("C:\\Users\\walls\\OneDrive\\Escritorio\\imagenespajava\\reinablanca.png"));
         Image imgrnablanco = bufferedImage6.getScaledInstance(75, 75, Image.SCALE_DEFAULT);
         rna2.setImg(new ImageIcon(imgrnablanco));
         tablet.getCasillas().get(3).setFigura(rna2);
@@ -192,7 +192,7 @@ public class ajedrezGUI {
         D1.setIcon(tablet.getCasillas().get(3).getFigura().getImg());
 
         Rey kng1 = new Rey("n");
-        BufferedImage bufferedImage7 = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\imagenespajava\\reynegro.png"));
+        BufferedImage bufferedImage7 = ImageIO.read(new File("C:\\Users\\walls\\OneDrive\\Escritorio\\imagenespajava\\reynegro.png"));
         Image imgkngnegro = bufferedImage7.getScaledInstance(75, 75, Image.SCALE_DEFAULT);
         kng1.setImg(new ImageIcon(imgkngnegro));
         tablet.getCasillas().get(60).setFigura(kng1);
@@ -203,7 +203,7 @@ public class ajedrezGUI {
         E8.setIcon(tablet.getCasillas().get(60).getFigura().getImg());
 
         Rey kng2 = new Rey("b");
-        BufferedImage bufferedImage8 = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\imagenespajava\\reyblanco.png"));
+        BufferedImage bufferedImage8 = ImageIO.read(new File("C:\\Users\\walls\\OneDrive\\Escritorio\\imagenespajava\\reyblanco.png"));
         Image imgkngblanco = bufferedImage8.getScaledInstance(75, 75, Image.SCALE_DEFAULT);
         kng2.setImg(new ImageIcon(imgkngblanco));
         tablet.getCasillas().get(4).setFigura(kng2);
@@ -214,7 +214,7 @@ public class ajedrezGUI {
         E1.setIcon(tablet.getCasillas().get(4).getFigura().getImg());
 
         Torre trr1 = new Torre("n");
-        BufferedImage bufferedImage9 = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\imagenespajava\\torrenegra.png"));
+        BufferedImage bufferedImage9 = ImageIO.read(new File("C:\\Users\\walls\\OneDrive\\Escritorio\\imagenespajava\\torrenegra.png"));
         Image imgtrrnegro = bufferedImage9.getScaledInstance(75, 75, Image.SCALE_DEFAULT);
         trr1.setImg(new ImageIcon(imgtrrnegro));
         tablet.getCasillas().get(56).setFigura(trr1);
@@ -225,7 +225,7 @@ public class ajedrezGUI {
         A8.setIcon(tablet.getCasillas().get(56).getFigura().getImg());
 
         Torre trr2 = new Torre("b");
-        BufferedImage bufferedImage10 = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\imagenespajava\\torreblanca.png"));
+        BufferedImage bufferedImage10 = ImageIO.read(new File("C:\\Users\\walls\\OneDrive\\Escritorio\\imagenespajava\\torreblanca.png"));
         Image torreblanca = bufferedImage10.getScaledInstance(75, 75, Image.SCALE_DEFAULT);
         trr2.setImg(new ImageIcon(torreblanca));
         tablet.getCasillas().get(0).setFigura(trr2);
@@ -254,7 +254,7 @@ public class ajedrezGUI {
         H1.setIcon(tablet.getCasillas().get(7).getFigura().getImg());
 
         Peon pe1 = new Peon("n");
-        BufferedImage bufferedImage11 = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\imagenespajava\\peonnegro.png"));
+        BufferedImage bufferedImage11 = ImageIO.read(new File("C:\\Users\\walls\\OneDrive\\Escritorio\\imagenespajava\\peonnegro.png"));
         Image peonnegro = bufferedImage11.getScaledInstance(75, 75, Image.SCALE_DEFAULT);
         pe1.setImg(new ImageIcon(peonnegro));
         tablet.getCasillas().get(48).setFigura(pe1);
@@ -328,7 +328,7 @@ public class ajedrezGUI {
         H7.setIcon(tablet.getCasillas().get(55).getFigura().getImg());
 
         Peon pe9 = new Peon("b");
-        BufferedImage bufferedImage12 = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\imagenespajava\\peonblanco.png"));
+        BufferedImage bufferedImage12 = ImageIO.read(new File("C:\\Users\\walls\\OneDrive\\Escritorio\\imagenespajava\\peonblanco.png"));
         Image peonblanco = bufferedImage12.getScaledInstance(75, 75, Image.SCALE_DEFAULT);
         pe9.setImg(new ImageIcon(peonblanco));
         tablet.getCasillas().get(8).setFigura(pe9);
@@ -442,14 +442,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(0);
-                    Boton1 = A1;
+
+                    if(!(tablet.getCasillas().get(0).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(0);
+                        Boton1 = A1;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(0));
 
-                    A1.setIcon(tablet.getCasillas().get(0).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(0))){
+
+                        A1.setIcon(tablet.getCasillas().get(0).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(0).getFigura().setMovida(false);
+                    }
 
                     count = 0;
                 }
@@ -463,15 +472,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(1);
-                    Boton1 = B1;
+
+                    if(!(tablet.getCasillas().get(1).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(1);
+                        Boton1 = B1;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(1));
 
-                    B1.setIcon(tablet.getCasillas().get(1).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(1))){
 
+                        B1.setIcon(tablet.getCasillas().get(1).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(1).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -483,15 +500,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(2);
-                    Boton1 = C1;
+
+                    if(!(tablet.getCasillas().get(2).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(2);
+                        Boton1 = C1;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(2));
 
-                    C1.setIcon(tablet.getCasillas().get(2).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(2))){
 
+                        C1.setIcon(tablet.getCasillas().get(2).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(2).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -503,15 +528,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(3);
-                    Boton1 = D1;
+
+                    if(!(tablet.getCasillas().get(3).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(3);
+                        Boton1 = D1;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(3));
 
-                    D1.setIcon(tablet.getCasillas().get(3).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(3))){
 
+                        D1.setIcon(tablet.getCasillas().get(3).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(3).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -523,15 +556,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(4);
-                    Boton1 = E1;
+
+                    if(!(tablet.getCasillas().get(4).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(4);
+                        Boton1 = E1;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(4));
 
-                    E1.setIcon(tablet.getCasillas().get(4).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(4))){
 
+                        E1.setIcon(tablet.getCasillas().get(4).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(4).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -543,15 +584,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(5);
-                    Boton1 = F1;
+
+                    if(!(tablet.getCasillas().get(5).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(5);
+                        Boton1 = F1;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(5));
 
-                    F1.setIcon(tablet.getCasillas().get(5).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(5))){
 
+                        F1.setIcon(tablet.getCasillas().get(5).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(5).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -563,15 +612,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(6);
-                    Boton1 = G1;
+
+                    if(!(tablet.getCasillas().get(6).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(6);
+                        Boton1 = G1;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(6));
 
-                    G1.setIcon(tablet.getCasillas().get(6).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(6))){
 
+                        G1.setIcon(tablet.getCasillas().get(6).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(6).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -583,15 +640,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(7);
-                    Boton1 = H1;
+
+                    if(!(tablet.getCasillas().get(7).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(7);
+                        Boton1 = H1;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(7));
 
-                    H1.setIcon(tablet.getCasillas().get(7).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(7))){
 
+                        H1.setIcon(tablet.getCasillas().get(7).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(7).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -603,15 +668,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(8);
-                    Boton1 = A2;
+
+                    if(!(tablet.getCasillas().get(8).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(8);
+                        Boton1 = A2;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(8));
 
-                    A2.setIcon(tablet.getCasillas().get(8).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(8))){
 
+                        A2.setIcon(tablet.getCasillas().get(8).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(8).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -623,15 +696,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(9);
-                    Boton1 = B2;
+
+                    if(!(tablet.getCasillas().get(9).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(9);
+                        Boton1 = B2;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(9));
 
-                    B2.setIcon(tablet.getCasillas().get(9).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(9))){
 
+                        B2.setIcon(tablet.getCasillas().get(9).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(9).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -643,15 +724,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(10);
-                    Boton1 = C2;
+
+                    if(!(tablet.getCasillas().get(10).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(10);
+                        Boton1 = C2;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(10));
 
-                    C2.setIcon(tablet.getCasillas().get(10).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(10))){
 
+                        C2.setIcon(tablet.getCasillas().get(10).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(10).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -663,15 +752,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(11);
-                    Boton1 = D2;
+
+                    if(!(tablet.getCasillas().get(11).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(11);
+                        Boton1 = D2;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(11));
 
-                    D2.setIcon(tablet.getCasillas().get(11).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(11))){
 
+                        D2.setIcon(tablet.getCasillas().get(11).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(11).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -683,15 +780,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(12);
-                    Boton1 = E2;
+
+                    if(!(tablet.getCasillas().get(12).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(12);
+                        Boton1 = E2;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(12));
 
-                    E2.setIcon(tablet.getCasillas().get(12).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(12))){
 
+                        E2.setIcon(tablet.getCasillas().get(12).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(12).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -703,15 +808,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(13);
-                    Boton1 = F2;
+
+                    if(!(tablet.getCasillas().get(13).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(13);
+                        Boton1 = F2;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(13));
 
-                    F2.setIcon(tablet.getCasillas().get(13).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(13))){
 
+                        F2.setIcon(tablet.getCasillas().get(13).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(13).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -723,15 +836,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(14);
-                    Boton1 = G2;
+
+                    if(!(tablet.getCasillas().get(14).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(14);
+                        Boton1 = G2;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(14));
 
-                    G2.setIcon(tablet.getCasillas().get(14).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(14))){
 
+                        G2.setIcon(tablet.getCasillas().get(14).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(14).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -743,15 +864,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(15);
-                    Boton1 = H2;
+
+                    if(!(tablet.getCasillas().get(15).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(15);
+                        Boton1 = H2;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(15));
 
-                    H2.setIcon(tablet.getCasillas().get(15).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(15))){
 
+                        H2.setIcon(tablet.getCasillas().get(15).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(15).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -763,15 +892,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(16);
-                    Boton1 = A3;
+
+                    if(!(tablet.getCasillas().get(16).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(16);
+                        Boton1 = A3;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(16));
 
-                    A3.setIcon(tablet.getCasillas().get(16).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(16))){
 
+                        A3.setIcon(tablet.getCasillas().get(16).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(16).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -783,15 +920,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(17);
-                    Boton1 = B3;
+
+                    if(!(tablet.getCasillas().get(17).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(17);
+                        Boton1 = B3;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(17));
 
-                    B3.setIcon(tablet.getCasillas().get(17).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(17))){
 
+                        B3.setIcon(tablet.getCasillas().get(17).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(17).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -803,15 +948,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(18);
-                    Boton1 = C3;
+
+                    if(!(tablet.getCasillas().get(18).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(18);
+                        Boton1 = C3;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(18));
 
-                    C3.setIcon(tablet.getCasillas().get(18).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(18))){
 
+                        C3.setIcon(tablet.getCasillas().get(18).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(18).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -823,15 +976,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(19);
-                    Boton1 = D3;
+
+                    if(!(tablet.getCasillas().get(19).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(19);
+                        Boton1 = D3;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(19));
 
-                    D3.setIcon(tablet.getCasillas().get(19).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(19))){
 
+                        D3.setIcon(tablet.getCasillas().get(19).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(19).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -843,15 +1004,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(20);
-                    Boton1 = E3;
+
+                    if(!(tablet.getCasillas().get(20).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(20);
+                        Boton1 = E3;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(20));
 
-                    E3.setIcon(tablet.getCasillas().get(20).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(20))){
 
+                        E3.setIcon(tablet.getCasillas().get(20).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(20).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -863,15 +1032,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(21);
-                    Boton1 = F3;
+
+                    if(!(tablet.getCasillas().get(21).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(21);
+                        Boton1 = F3;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(21));
 
-                    F3.setIcon(tablet.getCasillas().get(21).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(21))){
 
+                        F3.setIcon(tablet.getCasillas().get(21).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(21).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -883,15 +1060,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(22);
-                    Boton1 = G3;
+
+                    if(!(tablet.getCasillas().get(22).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(22);
+                        Boton1 = G3;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(22));
 
-                    G3.setIcon(tablet.getCasillas().get(22).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(22))){
 
+                        G3.setIcon(tablet.getCasillas().get(22).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(22).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -903,15 +1088,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(23);
-                    Boton1 = H3;
+
+                    if(!(tablet.getCasillas().get(23).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(23);
+                        Boton1 = H3;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(23));
 
-                    H3.setIcon(tablet.getCasillas().get(23).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(23))){
 
+                        H3.setIcon(tablet.getCasillas().get(23).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(23).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -923,15 +1116,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(24);
-                    Boton1 = A4;
+
+                    if(!(tablet.getCasillas().get(24).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(24);
+                        Boton1 = A4;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(24));
 
-                    A4.setIcon(tablet.getCasillas().get(24).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(24))){
 
+                        A4.setIcon(tablet.getCasillas().get(24).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(24).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -943,15 +1144,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(25);
-                    Boton1 = B4;
+
+                    if(!(tablet.getCasillas().get(25).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(25);
+                        Boton1 = B4;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(25));
 
-                    B4.setIcon(tablet.getCasillas().get(25).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(25))){
 
+                        B4.setIcon(tablet.getCasillas().get(25).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(25).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -963,15 +1172,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(26);
-                    Boton1 = C4;
+
+                    if(!(tablet.getCasillas().get(26).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(26);
+                        Boton1 = C4;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(26));
 
-                    C4.setIcon(tablet.getCasillas().get(26).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(26))){
 
+                        C4.setIcon(tablet.getCasillas().get(26).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(26).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -983,15 +1200,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(27);
-                    Boton1 = D4;
+
+                    if(!(tablet.getCasillas().get(27).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(27);
+                        Boton1 = D4;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(27));
 
-                    D4.setIcon(tablet.getCasillas().get(27).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(27))){
 
+                        D4.setIcon(tablet.getCasillas().get(27).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(27).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -1003,15 +1228,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(28);
-                    Boton1 = E4;
+
+                    if(!(tablet.getCasillas().get(28).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(28);
+                        Boton1 = E4;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(28));
 
-                    E4.setIcon(tablet.getCasillas().get(28).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(28))){
 
+                        E4.setIcon(tablet.getCasillas().get(28).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(28).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -1023,15 +1256,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(29);
-                    Boton1 = F4;
+
+                    if(!(tablet.getCasillas().get(29).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(29);
+                        Boton1 = F4;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(29));
 
-                    F4.setIcon(tablet.getCasillas().get(29).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(29))){
 
+                        F4.setIcon(tablet.getCasillas().get(29).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(29).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -1043,15 +1284,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(30);
-                    Boton1 = G4;
+
+                    if(!(tablet.getCasillas().get(30).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(30);
+                        Boton1 = G4;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(30));
 
-                    G4.setIcon(tablet.getCasillas().get(30).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(30))){
 
+                        G4.setIcon(tablet.getCasillas().get(30).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(30).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -1063,15 +1312,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(31);
-                    Boton1 = H4;
+
+                    if(!(tablet.getCasillas().get(31).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(31);
+                        Boton1 = H4;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(31));
 
-                    H4.setIcon(tablet.getCasillas().get(31).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(31))){
 
+                        H4.setIcon(tablet.getCasillas().get(31).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(31).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -1083,15 +1340,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(32);
-                    Boton1 = A5;
+
+                    if(!(tablet.getCasillas().get(32).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(32);
+                        Boton1 = A5;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(32));
 
-                    A5.setIcon(tablet.getCasillas().get(32).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(32))){
 
+                        A5.setIcon(tablet.getCasillas().get(32).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(32).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -1103,15 +1368,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(33);
-                    Boton1 = B5;
+
+                    if(!(tablet.getCasillas().get(33).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(33);
+                        Boton1 = B5;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(33));
 
-                    B5.setIcon(tablet.getCasillas().get(33).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(33))){
 
+                        B5.setIcon(tablet.getCasillas().get(33).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(33).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -1123,15 +1396,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(34);
-                    Boton1 = C5;
+
+                    if(!(tablet.getCasillas().get(34).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(34);
+                        Boton1 = C5;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(34));
 
-                    C5.setIcon(tablet.getCasillas().get(34).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(34))){
 
+                        C5.setIcon(tablet.getCasillas().get(34).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(34).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -1143,15 +1424,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(35);
-                    Boton1 = D5;
+
+                    if(!(tablet.getCasillas().get(35).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(35);
+                        Boton1 = D5;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(35));
 
-                    D5.setIcon(tablet.getCasillas().get(35).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(35))){
 
+                        D5.setIcon(tablet.getCasillas().get(35).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(35).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -1163,15 +1452,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(36);
-                    Boton1 = E5;
+
+                    if(!(tablet.getCasillas().get(36).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(36);
+                        Boton1 = E5;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(36));
 
-                    E5.setIcon(tablet.getCasillas().get(36).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(36))){
 
+                        E5.setIcon(tablet.getCasillas().get(36).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(36).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -1183,15 +1480,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(37);
-                    Boton1 = F5;
+
+                    if(!(tablet.getCasillas().get(37).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(37);
+                        Boton1 = F5;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(37));
 
-                    F5.setIcon(tablet.getCasillas().get(37).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(37))){
 
+                        F5.setIcon(tablet.getCasillas().get(37).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(37).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -1203,15 +1508,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(38);
-                    Boton1 = G5;
+
+                    if(!(tablet.getCasillas().get(38).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(38);
+                        Boton1 = G5;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(38));
 
-                    G5.setIcon(tablet.getCasillas().get(38).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(38))){
 
+                        G5.setIcon(tablet.getCasillas().get(38).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(38).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -1223,15 +1536,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(39);
-                    Boton1 = H5;
+
+                    if(!(tablet.getCasillas().get(39).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(39);
+                        Boton1 = H5;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(39));
 
-                    H5.setIcon(tablet.getCasillas().get(39).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(39))){
 
+                        H5.setIcon(tablet.getCasillas().get(39).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(39).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -1243,15 +1564,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(40);
-                    Boton1 = A6;
+
+                    if(!(tablet.getCasillas().get(40).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(40);
+                        Boton1 = A6;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(40));
 
-                    A6.setIcon(tablet.getCasillas().get(40).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(40))){
 
+                        A6.setIcon(tablet.getCasillas().get(40).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(40).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -1263,15 +1592,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(41);
-                    Boton1 = B6;
+
+                    if(!(tablet.getCasillas().get(41).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(41);
+                        Boton1 = B6;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(41));
 
-                    B6.setIcon(tablet.getCasillas().get(41).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(41))){
 
+                        B6.setIcon(tablet.getCasillas().get(41).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(41).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -1283,15 +1620,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(42);
-                    Boton1 = C6;
+
+                    if(!(tablet.getCasillas().get(42).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(42);
+                        Boton1 = C6;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(42));
 
-                    C6.setIcon(tablet.getCasillas().get(42).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(42))){
 
+                        C6.setIcon(tablet.getCasillas().get(42).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(42).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -1303,15 +1648,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(43);
-                    Boton1 = D6;
+
+                    if(!(tablet.getCasillas().get(43).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(43);
+                        Boton1 = D6;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(43));
 
-                    D6.setIcon(tablet.getCasillas().get(43).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(43))){
 
+                        D6.setIcon(tablet.getCasillas().get(43).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(34).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -1323,15 +1676,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(44);
-                    Boton1 = E6;
+
+                    if(!(tablet.getCasillas().get(44).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(44);
+                        Boton1 = E6;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(44));
 
-                    E6.setIcon(tablet.getCasillas().get(44).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(44))){
 
+                        E6.setIcon(tablet.getCasillas().get(44).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(44).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -1343,15 +1704,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(45);
-                    Boton1 = F6;
+
+                    if(!(tablet.getCasillas().get(45).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(45);
+                        Boton1 = F6;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(45));
 
-                    F6.setIcon(tablet.getCasillas().get(45).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(45))){
 
+                        F6.setIcon(tablet.getCasillas().get(45).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(45).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -1363,15 +1732,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(46);
-                    Boton1 = G6;
+
+                    if(!(tablet.getCasillas().get(46).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(46);
+                        Boton1 = G6;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(46));
 
-                    G6.setIcon(tablet.getCasillas().get(46).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(46))){
 
+                        G6.setIcon(tablet.getCasillas().get(46).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(46).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -1383,15 +1760,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(47);
-                    Boton1 = H6;
+
+                    if(!(tablet.getCasillas().get(47).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(47);
+                        Boton1 = H6;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(47));
 
-                    H6.setIcon(tablet.getCasillas().get(47).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(47))){
 
+                        H6.setIcon(tablet.getCasillas().get(47).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(47).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -1403,15 +1788,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(48);
-                    Boton1 = A7;
+
+                    if(!(tablet.getCasillas().get(48).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(48);
+                        Boton1 = A7;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(48));
 
-                    A7.setIcon(tablet.getCasillas().get(48).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(48))){
 
+                        A7.setIcon(tablet.getCasillas().get(48).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(48).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -1423,15 +1816,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(49);
-                    Boton1 = B7;
+
+                    if(!(tablet.getCasillas().get(49).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(49);
+                        Boton1 = B7;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(49));
 
-                    B7.setIcon(tablet.getCasillas().get(49).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(49))){
 
+                        B7.setIcon(tablet.getCasillas().get(49).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(49).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -1443,15 +1844,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(50);
-                    Boton1 = C7;
+
+                    if(!(tablet.getCasillas().get(50).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(50);
+                        Boton1 = C7;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(50));
 
-                    C7.setIcon(tablet.getCasillas().get(50).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(50))){
 
+                        C7.setIcon(tablet.getCasillas().get(50).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(50).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -1463,15 +1872,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(51);
-                    Boton1 = D7;
+
+                    if(!(tablet.getCasillas().get(51).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(51);
+                        Boton1 = D7;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(51));
 
-                    D7.setIcon(tablet.getCasillas().get(51).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(51))){
 
+                        D7.setIcon(tablet.getCasillas().get(51).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(51).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -1483,15 +1900,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(52);
-                    Boton1 = E7;
+
+                    if(!(tablet.getCasillas().get(52).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(52);
+                        Boton1 = E7;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(52));
 
-                    E7.setIcon(tablet.getCasillas().get(52).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(52))){
 
+                        E7.setIcon(tablet.getCasillas().get(52).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(52).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -1503,15 +1928,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(53);
-                    Boton1 = F7;
+
+                    if(!(tablet.getCasillas().get(53).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(53);
+                        Boton1 = F7;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(53));
 
-                    F7.setIcon(tablet.getCasillas().get(53).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(53))){
 
+                        F7.setIcon(tablet.getCasillas().get(53).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(53).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -1523,15 +1956,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(54);
-                    Boton1 = G7;
+
+                    if(!(tablet.getCasillas().get(54).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(54);
+                        Boton1 = G7;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(54));
 
-                    G7.setIcon(tablet.getCasillas().get(54).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(54))){
 
+                        G7.setIcon(tablet.getCasillas().get(54).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(54).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -1543,15 +1984,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(55);
-                    Boton1 = H7;
+
+                    if(!(tablet.getCasillas().get(55).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(55);
+                        Boton1 = H7;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(55));
 
-                    H7.setIcon(tablet.getCasillas().get(55).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(55))){
 
+                        H7.setIcon(tablet.getCasillas().get(55).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(55).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -1563,15 +2012,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(56);
-                    Boton1 = A8;
+
+                    if(!(tablet.getCasillas().get(56).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(56);
+                        Boton1 = A8;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(56));
 
-                    A8.setIcon(tablet.getCasillas().get(56).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(56))){
 
+                        A8.setIcon(tablet.getCasillas().get(56).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(56).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -1583,15 +2040,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(57);
-                    Boton1 = B8;
+
+                    if(!(tablet.getCasillas().get(57).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(57);
+                        Boton1 = B8;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(57));
 
-                    B8.setIcon(tablet.getCasillas().get(57).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(57))){
 
+                        B8.setIcon(tablet.getCasillas().get(57).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(57).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -1603,15 +2068,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(58);
-                    Boton1 = C8;
+
+                    if(!(tablet.getCasillas().get(58).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(58);
+                        Boton1 = C8;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(58));
 
-                    C8.setIcon(tablet.getCasillas().get(58).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(58))){
 
+                        C8.setIcon(tablet.getCasillas().get(58).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(58).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -1623,15 +2096,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(59);
-                    Boton1 = D8;
+
+                    if(!(tablet.getCasillas().get(59).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(59);
+                        Boton1 = D8;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(59));
 
-                    D8.setIcon(tablet.getCasillas().get(59).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(59))){
 
+                        D8.setIcon(tablet.getCasillas().get(59).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(59).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -1643,15 +2124,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(60);
-                    Boton1 = E8;
+
+                    if(!(tablet.getCasillas().get(60).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(60);
+                        Boton1 = E8;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(60));
 
-                    E8.setIcon(tablet.getCasillas().get(60).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(60))){
 
+                        E8.setIcon(tablet.getCasillas().get(60).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(60).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -1663,15 +2152,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(61);
-                    Boton1 = F8;
+
+                    if(!(tablet.getCasillas().get(61).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(61);
+                        Boton1 = F8;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(61));
 
-                    F8.setIcon(tablet.getCasillas().get(61).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(61))){
 
+                        F8.setIcon(tablet.getCasillas().get(61).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(61).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -1683,15 +2180,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(62);
-                    Boton1 = G8;
+
+                    if(!(tablet.getCasillas().get(62).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(62);
+                        Boton1 = G8;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(62));
 
-                    G8.setIcon(tablet.getCasillas().get(62).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(62))){
 
+                        G8.setIcon(tablet.getCasillas().get(62).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(62).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }
@@ -1703,15 +2208,23 @@ public class ajedrezGUI {
                 count++;
 
                 if (count == 1) {
-                    Cas1 = tablet.getCasillas().get(63);
-                    Boton1 = H8;
+
+                    if(!(tablet.getCasillas().get(63).getFigura()==null)) {
+                        Cas1 = tablet.getCasillas().get(63);
+                        Boton1 = H8;
+                    }else {
+                        count--;
+                    }
                 }
                 if (count == 2) {
-                    tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(63));
 
-                    H8.setIcon(tablet.getCasillas().get(63).getFigura().getImg());
-                    Boton1.setIcon(null);
+                    if (tablet.mover(Cas1.getFigura(), tablet.getCasillas().get(63))){
 
+                        H8.setIcon(tablet.getCasillas().get(63).getFigura().getImg());
+                        Boton1.setIcon(null);
+
+                        tablet.getCasillas().get(63).getFigura().setMovida(false);
+                    }
                     count = 0;
                 }
             }

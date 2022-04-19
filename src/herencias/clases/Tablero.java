@@ -66,13 +66,13 @@ public class Tablero {
 
     public boolean mover(_Figura figura, Casilla casilla2) {
 
-        boolean cond = false;
+        //boolean cond = false;
         
         for (int i = 0; i<64; i++) {
             if((getCasillas().get(i).getLetra() == figura.getCas().getLetra()) && (getCasillas().get(i).getNumero() == figura.getCas().getNumero())) {
 
                 getCasillas().get(i).setFigura(null);
-                cond = true;
+                //cond = true;
             }
         }
 
@@ -84,7 +84,7 @@ public class Tablero {
                 getCasillas().get(i).setFigura(figura);
             }
         }
-        return cond;
+        return figura.isMovida();
     }
 
 }

@@ -10,10 +10,11 @@ public class Rey extends _Figura {
 
     @Override
     public void movimiento(Casilla casilla2, Tablero tablas) {
-        System.out.println(casilla2);
-        System.out.println(getCas());
+        //System.out.println(casilla2);
+        //System.out.println(getCas());
         if(((casilla2.getNumero()== getCas().getNumero() +1) && (casilla2.getLetra()== getCas().getLetra() +1)) || ((casilla2.getNumero()== getCas().getNumero() +1) && (casilla2.getLetra()== getCas().getLetra() -1)) || ((casilla2.getNumero()== getCas().getNumero() -1) && (casilla2.getLetra()== getCas().getLetra() -1)) || ((casilla2.getNumero()== getCas().getNumero() -1) && (casilla2.getLetra()== getCas().getLetra() +1)) || ((casilla2.getNumero()== getCas().getNumero() -1) && (casilla2.getLetra()== getCas().getLetra())) || ((casilla2.getNumero()== getCas().getNumero() +1) && (casilla2.getLetra()== getCas().getLetra())) || ((casilla2.getNumero()== getCas().getNumero()) && (casilla2.getLetra()== getCas().getLetra() -1)) || ((casilla2.getNumero()== getCas().getNumero()) && (casilla2.getLetra()== getCas().getLetra() +1))) {
             setCas(casilla2);
+            this.movida = true;
         }
     }
 
