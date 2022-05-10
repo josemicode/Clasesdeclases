@@ -1,2 +1,216 @@
-sisisisis
-yuhgruibh
+1. ¿Cuáles son los tipos de redes más habituales?
+a. MAN, WAN, WLAN, SAN
+b. LAN, MAN
+c. LAN, MAN, WAN, WLAN, SAN
+d. LAN, WAN, SAN
+X
+2. En la topología de tipo bus...
+a. Todos los hosts están interconectados entre sí. Se utiliza en redes de alta disponibilidad.
+b. Se utiliza un solo bus o enlace al que todos los hosts se conectan directamente.
+c. Conecta cada host con el siguiente y el último con el primero, formando lógicamente el anillo tal y como indica su nombre.
+d. Conecta estrellas individuales con otros dispositivos de red, como switches o hub.
+X
+3. Señala la correcta
+Topología: bus, malla, en estrella, en estrella extendida, en anillo, jerárquica o en árbol
+Topología: bus, malla, en punta, en estrella extendida, en anillo, jerárquica o en árbol
+Topología: bus, malla, en estrella, en estrella extendida, en aro, jerárquica o en árbol
+Topología: bus, valla, en estrella, en estrella extendida, en anillo, jerárquica o en árbol
+X
+4. Señala las capas del modelo OSI:
+Aplicación, presentación, sesión, transporte, red, enlace de datos y física.
+Representación, transporte y enlace
+Aplicación, transporte y física.
+Física y lógica
+X
+5. Los dos tipos de cableado de cobre son:
+RHZ1 y PCP
+UTP y STP
+SBR y EVA
+Z1 y PU
+X
+6. Los componentes de una red son…
+a. dispositivos, medios y servicios.
+b. dispositivos, medios y conexión.
+c. dispositivos, hilos y conexión.
+d. dispositivos, medios e hilos.
+X
+1. Cual de las siguientes NO es una Capa de protocolo:
+a. Capa de Internet
+b. Capa de acceso a la red
+c. Capa de Intersección
+d. Capa de transporte
+X
+2. Cual de las siguientes capas que forman parte del modelo OSI, NO es una capa de host
+a. Aplicación
+b. Presentación
+c. Sesión
+d. Transporte
+X
+3. ¿Qué capa del modelo OSI facilita el acceso a servicios y conexiones?
+a. Capa de red
+b. Capa de sesión
+c. Capa de enlace de datos
+d. Capa física
+X
+4. ¿Cómo se estructuran las capas del modelo OSI?
+a. 7 capas divididas entre capas de host y capas de medios.
+b. 8 capas divididas entre capas de host y capas de medios.
+c. 6 capas sin división.
+d. 7 capas sin división.
+X
+5. ¿Para qué utilizamos un DNS?
+a. Para asignar nombres de dominios.
+b. Para asignar nombres de datos.
+c. Para asignar nombres de servidores.
+d. Para asignar nombres de nodos.
+X
+6. El protocolo TCP/IP:
+a. Se basa en la utilización del protocolo TCP frente al IP.
+b. Solo es compatible con unos pocos equipos informáticos especiales.
+c. Carece de una capa de transporte para una mejor optimización.
+d. Admite diferentes tecnologías de redes.
+X
+1. Los switches…
+a. Son dispositivos de red que envían los mensajes que reciben por todos sus puertos.
+b. Se utilizan para conectar varios dispositivos en la misma red controlando el flujo de datos y dirigiendo los mensajes a los hosts especificados en cada mensaje.
+c. Conectan diferentes redes entre sí, proporcionando, por tanto, un medio de red para que los hosts puedan comunicarse con hosts que están en redes remotas.
+d. Se utilizan para interconectar diferentes segmentos de red o diferentes redes.
+X
+2. La dirección IP de la puerta de enlace o gateway…
+a. Se descubre con el comando ‘ipconfig’ de la consola de comandos del PC
+b. Es la dirección IPv4 del PC
+c. No te permite interconectar a otras redes con otros protocolos y arquitecturas
+d. Siempre es la 194.168.1.1 ó 195.168.0.1
+X
+3. En las buenas prácticas para la resolución de problemas de conectividad, seleccione cuál o cuáles de los siguientes comandos son algunos de los más utilizados
+a. Ping: Envía una solicitud a una dirección esperando obtener una petición
+b. Traceroute: Indica la ruta que recorre un paquete por la red
+c. Show running-config: Muestra una lista de opciones de diagnóstico en tiempo real
+d. B y C son correctas
+X
+4. Las redes inalámbricas, también conocidas como WLAN:
+a. Son redes de área local que transportan la información mediante frecuencia de radio y microondas
+b. Son redes de área local que transportan la información a través de los cables de fibra óptica
+c. El estándar más usado para las redes inalámbricas Wi-Fi
+d. A y C son correctas
+X
+5. ¿Cuáles son los conectores que podemos usar para la configuración de los dispositivos de red, switch y router?
+a. R45 y RS23
+b. RJ45 y RS45
+c. SR4 y M12
+d. RJ45 y RS232
+X
+6. ¿Cuál de las siguientes no es una pauta de seguridad en las redes?
+a. Disponer de firewall
+b. Configuración de accesos
+c. Uso de VPN
+d. Uso de la red sin contraseña
+X
+1. ¿Cuál no es un requisito de seguridad del sistema?
+a. Política de contraseñas seguras
+b. Mantener equipos desactualizados
+c. Impedir el acceso al CPD personas sin autorización
+d. Política de cifrado
+X
+2. ¿Cuál no es un tipo de seguridad de sistema?
+a. Física
+b. Interna
+c. Lógica
+d. Pasiva
+X
+3. ¿Cual es el principal objetivo de los antivirus?
+a. Eliminar y/o bloquear cualquier elemento malicioso en el dispositivo
+b. Detectar, eliminar y/o bloquear cualquier acción  o  elemento  malicioso  en  el  dispositivo
+c. Detectar, y eliminar cualquier elemento  malicioso  en  el  dispositivo
+d. Detectar, eliminar y bloquear cualquier acción  o  elemento  malicioso  en  el  dispositivo
+X
+4. ¿Qué sistema de detección de malware utiliza firmas para identificar si un archivo es malware?
+a. Activa
+b. Proactiva
+c. Reactiva
+d. Heurística
+X
+5. ¿Cual de estas , NO es una de las cosas que proporciona la seguridad informática?
+a. Disponibilidad
+b. Fiabilidad
+c. Integridad
+d. Confidencialidad
+X
+6. ¿Cual no es una forma de evitar o mitigar los ataques de fuerza bruta?
+a. Limitar los intentos de acceso
+b. Utilizar contraseñas seguras
+c. Implementar la autenticación de doble factor
+d. Activar el antivirus de nuestro servidor
+X
+1.Cuáles de estas fases no pertenecen al proceso de encapsulamiento:(SERGIO)
+a. crear los datos
+b. empaquetar los datos
+c. borrar los datos
+d. realizar la conversión a bits.
+X
+2. Indica la característica incorrecta para el protocolo de servidores de correo POP3:
+a. Es uno de los protocolos utilizados para recibir e-mails.
+b. Tiene como ventaja principal que se puede revisar y conservar el correo electrónico sin necesidad de estar conectado a internet.
+c. El inconveniente más grande es que al descargar los e-mails de forma local, los mensajes solo están disponibles en el dispositivo en el que se descargan.
+d. Actualmente es el  protocolo  más  utilizado  para  recibir  correos  electrónicos.
+X
+3. Los servidores de correo se encargan de… (Juan Carlos)
+a. Almacenar  información  relativa  a  páginas  web para mostrar a los clientes a través de un navegador.
+b. de  enviar,  recibir  y administrar  mensajes  de  correo  electrónico  entre  usuarios,  dispositivos y  servidores.
+c. publicar sitios web en internet.
+d. Ninguna de las anteriores.
+X
+4. Para  el  envío,  recepción  y  transferencia  de  correos electrónicos y archivos se utiliza los siguientes protocolos:
+a. SMTP,POP3 y LAMP
+b. LAMP, IMAP y LPD
+c. SMTP POP3 y IMAP
+d. Ninguna de las anteriores
+X
+5- Para  dar  acceso  de  administración  a  un usuario servidores de impresión en linux, hay que añadirlo al grupo lpadmin mediante el comando: (JOSAN)
+a. Nmap -n -sS -Min Rate 5000 -vvv
+b. Permision update -rxx
+c. usermod -a -G lpadmin usuario.
+d. Chmod -Grep portable Extract Ports
+X
+6- ¿Cómo instalamos el servidor Web IIS en nuestro servidor?(GONZALO)
+a. Viene por defecto instalado
+b. Hay que descargarlo e instalarlo de internet
+c. Agregando roles y características del servidor
+d. Ninguna es correcta.
+X
+1.Señale cual no es una ventaja del cloud computing:
+a.Ahorro de costes.
+b.Disponibilidad.
+c.Optimización de recursos.
+d.Flexibilidad  y  continuidad.
+X
+2. ¿En qué categorías se ofrecen los servicios en la nube a los clientes?
+Infraestructura como servicio.
+Plataforma como servicio.
+Software como servicio.
+Todas son correctas.
+X
+3. ¿Cuál de estos no es una categoría de servicio en la nube? (Álvaro)
+a. Perfil como servicio (aasP)
+b. Infraestructura  como  servicio  (IaaS)
+c. Software como servicio (Saas)
+d. Plataforma como servicio (Paas)
+X
+4. ¿Cuál de estos no es un modelo de servicios cloud?(Roberto)
+a. Nube pública
+b. Nube privada
+c. Nube protegida
+d. Nube híbrida
+X
+5. En una Infraestructura  como  servicio  (IaaS).
+a. El  usuario  es  responsable  de  la  adquisición,  instalación  y  administración de sus propios software y sistemas operativos. El proveedor de servicios en la nube se encarga de garantizar al usuario la disposición de la infraestructura en la nube
+b. El cliente desarrolla sus propias aplicaciones, y el proveedor es responsable de administrar la infraestructura en la nube. Lo utilizan, sobre todo, empresas que desarrollan su propio software.
+c. El cliente utiliza solo el software de la aplicación, y el proveedor de servicios es responsable de la administración y mantenimiento de dicho software. Un ejemplo de este servicio es Google Apps o Salesforce.
+d. ninguna es correcta
+X
+6. Elija la opción correcta.
+a. Las cuentas de almacenamiento de Azure permiten almacenar hasta 1 TB de datos en la nube.
+b. Las cuentas de almacenamiento de Azure permiten almacenar hasta 50 TB de datos en la nube.
+c. Las cuentas de almacenamiento de Azure permiten almacenar hasta 500 GB de datos en la nube.
+d. Las cuentas de almacenamiento de Azure permiten almacenar hasta 500 TB de datos en la nube.
+X
