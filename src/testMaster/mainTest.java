@@ -11,7 +11,6 @@ public class mainTest {
         LectTest testMarcas = new LectTest("llmm3ev.txt");
         LectTest testBases = new LectTest("bbdd3ev.txt");
         LectTest testProgramacion = new LectTest("prog3ev.txt");
-        //testEntornos.Impresion();
 
         Scanner newchar = new Scanner(System.in);
 

@@ -38,6 +38,8 @@ public class LectTest {
                 if (resp.equalsIgnoreCase(res)) {
                     System.out.println("Correcto");
                     points++;
+                }else{
+                    System.out.println("Incorrecto");
                 }
                 questCount++;
             }else{
