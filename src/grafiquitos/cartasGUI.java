@@ -34,12 +34,12 @@ public class cartasGUI extends JFrame{
     private Carta C2;
     private JButton B2;
 
-    public cartasGUI() throws IOException {
+    public cartasGUI() throws Exception {
 
         //JToggleButton boton1= new JToggleButton();
 
 
-        BufferedImage bufferedImage1 = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\cora.png")); //C:\Users\DAM\Desktop - C:\Users\walls\OneDrive\Escritorio
+        BufferedImage bufferedImage1 = ImageIO.read(new File("C:\\Users\\walls\\Desktop\\cora.jpg")); //C:\Users\DAM\Desktop - C:\Users\walls\OneDrive\Escritorio
         Image carta1 = bufferedImage1.getScaledInstance(200, 200, Image.SCALE_DEFAULT);
         //ImageIcon icon1 = new ImageIcon(carta1);
 
@@ -47,7 +47,7 @@ public class cartasGUI extends JFrame{
         corason.setNum(2);
         corason.setRev(true);
 
-        BufferedImage bufferedrev = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\rev.jpg"));
+        BufferedImage bufferedrev = ImageIO.read(new File("C:\\Users\\walls\\Desktop\\rev.png"));
         Image cartarev = bufferedrev.getScaledInstance(200, 200, Image.SCALE_DEFAULT);
         ImageIcon iconrev = new ImageIcon(cartarev);
 
@@ -88,7 +88,7 @@ public class cartasGUI extends JFrame{
             }
         });
 
-        BufferedImage bufferedImage2 = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\romb.jpg"));
+        BufferedImage bufferedImage2 = ImageIO.read(new File("C:\\Users\\walls\\Desktop\\romb.jpg"));
         Image carta2 = bufferedImage2.getScaledInstance(200, 200, Image.SCALE_DEFAULT);
 
         Carta rombo = new Carta(new ImageIcon(carta2));
@@ -132,7 +132,7 @@ public class cartasGUI extends JFrame{
             }
         });
 
-        BufferedImage bufferedImage3 = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\pica.png"));
+        BufferedImage bufferedImage3 = ImageIO.read(new File("C:\\Users\\walls\\Desktop\\pica.png"));
         Image carta3 = bufferedImage3.getScaledInstance(200, 200, Image.SCALE_DEFAULT);
 
         Carta pica = new Carta(new ImageIcon(carta3));
@@ -175,7 +175,7 @@ public class cartasGUI extends JFrame{
             }
         });
 
-        BufferedImage bufferedImage4 = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\treboles.jpg"));
+        BufferedImage bufferedImage4 = ImageIO.read(new File("C:\\Users\\walls\\Desktop\\treboles.jpg"));
         Image carta4 = bufferedImage4.getScaledInstance(200, 200, Image.SCALE_DEFAULT);
 
         Carta treboles = new Carta(new ImageIcon(carta4));
@@ -258,7 +258,7 @@ public class cartasGUI extends JFrame{
             }
         });
 
-        BufferedImage bufferedImage5 = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\pika.jpg"));
+        BufferedImage bufferedImage5 = ImageIO.read(new File("C:\\Users\\walls\\Desktop\\pika.jpg"));
         Image carta5 = bufferedImage5.getScaledInstance(200, 200, Image.SCALE_DEFAULT);
 
         Carta kachu = new Carta(new ImageIcon(carta5));
@@ -341,7 +341,7 @@ public class cartasGUI extends JFrame{
             }
         });
 
-        BufferedImage bufferedImage6 = ImageIO.read(new File("C:\\Users\\DAM\\Desktop\\mario.jpg"));
+        BufferedImage bufferedImage6 = ImageIO.read(new File("C:\\Users\\walls\\Desktop\\mario.jpg"));
         Image carta6 = bufferedImage6.getScaledInstance(200, 200, Image.SCALE_DEFAULT);
 
         Carta itsamee = new Carta(new ImageIcon(carta6));
@@ -545,7 +545,7 @@ public class cartasGUI extends JFrame{
         });
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
         JFrame frame = new JFrame("Juego de memoria 1.0");
         frame.setContentPane(new cartasGUI().mainPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

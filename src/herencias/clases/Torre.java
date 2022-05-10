@@ -23,9 +23,17 @@ public class Torre extends _Figura {
                     }
                 }
                 if (!bool) {
-                    setCas(casilla2);
-                    this.movida = true;
-                    bool=!bool;
+                    if (casilla2.getFigura()==null) {
+
+                        setCas(casilla2);
+                        this.movida = true;
+                        bool=!bool;
+
+                    }if ((casilla2.getFigura()!=null) && !(color.equals(casilla2.getFigura().getColor()))) {
+                        setCas(casilla2);
+                        this.movida = true;
+                        bool=!bool;
+                    }
                 }
             }
 
@@ -36,23 +44,37 @@ public class Torre extends _Figura {
                     }
                 }
                 if (!bool) {
-                    setCas(casilla2);
-                    this.movida = true;
-                    bool=!bool;
+                    if (casilla2.getFigura()==null) {
+
+                        setCas(casilla2);
+                        this.movida = true;
+                        bool=!bool;
+
+                    }if ((casilla2.getFigura()!=null) && !(color.equals(casilla2.getFigura().getColor()))) {
+                        setCas(casilla2);
+                        this.movida = true;
+                        bool=!bool;
+                    }
                 }
             }
-        }
-
-        if (((casilla2.getNumero() == getCas().getNumero() + 1) && (casilla2.getLetra() == getCas().getLetra()))
+        }else if (((casilla2.getNumero() == getCas().getNumero() + 1) && (casilla2.getLetra() == getCas().getLetra()))
                 ||
                 ((casilla2.getNumero() == getCas().getNumero() - 1) && (casilla2.getLetra() == getCas().getLetra()))
                 ||
                 ((casilla2.getNumero() == getCas().getNumero()) && (casilla2.getLetra() == getCas().getLetra() + 1))
                 ||
                 ((casilla2.getNumero() == getCas().getNumero()) && (casilla2.getLetra() == getCas().getLetra() - 1))){
+            if (casilla2.getFigura()==null) {
 
-            setCas(casilla2);
-            this.movida = true;
+                setCas(casilla2);
+                this.movida = true;
+
+
+            }if ((casilla2.getFigura()!=null) && !(color.equals(casilla2.getFigura().getColor()))) {
+                setCas(casilla2);
+                this.movida = true;
+
+            }
         }
 
         if (getCas().getLetra() == casilla2.getLetra()) {
@@ -63,9 +85,17 @@ public class Torre extends _Figura {
                     }
                 }
                 if (!bool) {
-                    setCas(casilla2);
-                    this.movida = true;
-                    bool=!bool;
+                    if (casilla2.getFigura()==null) {
+
+                        setCas(casilla2);
+                        this.movida = true;
+                        bool=!bool;
+
+                    }if ((casilla2.getFigura()!=null) && !(color.equals(casilla2.getFigura().getColor()))) {
+                        setCas(casilla2);
+                        this.movida = true;
+                        bool=!bool;
+                    }
                 }
             }
 
@@ -76,14 +106,20 @@ public class Torre extends _Figura {
                     }
                 }
                 if (!bool) {
-                    setCas(casilla2);
-                    this.movida = true;
-                    bool=!bool;
+                    if (casilla2.getFigura()==null) {
+
+                        setCas(casilla2);
+                        this.movida = true;
+                        bool=!bool;
+
+                    }if ((casilla2.getFigura()!=null) && !(color.equals(casilla2.getFigura().getColor()))) {
+                        setCas(casilla2);
+                        this.movida = true;
+                        bool=!bool;
+                    }
                 }
             }
-        }/*else if ((casilla2.getLetra() == getCas().getLetra() + 1)||(casilla2.getLetra() == getCas().getLetra() - 1)){
-            setCas(casilla2);
-        }*/
+        }
     }
 
     @Override
