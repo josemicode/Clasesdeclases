@@ -1,6 +1,210 @@
-mamamamamm
-h
-gj
-k
-k
-POLLO
+Las expresiones FLWOR son:
+a. For, let, where, order, return
+b. For, let, when, order, return
+c. For, let, where, order, reverse
+d. For, length, where, order, return
+A
+Clasificación de las bases de datos según el almacenamiento de la información
+a. XML enabled y XML not enabled
+b. XML nativo y XML not enabled
+c. XML enabled y XML nativo
+d. Ninguna es correcta
+C
+De qué dos partes consta una consulta XQUERY?
+a. Prólogo y expresión
+b. Prólogo y planteamiento
+c. Búsqueda y expresión
+d. Planteamiento y  búsqueda
+A
+¿En qué grupos pueden dividirse las herramientas de XML?
+a. Herramientas de edición y base de datos.
+b. Herramientas de búsqueda y creación.
+c. Herramientas de creación y base de datos.
+d. Herramientas de base de datos nativa y base de datos primitiva.
+C
+Dentro de las expresiones FLWOR, ¿qué nos permite hacer la cláusula “order”?
+a. Nos permite filtrar los resultados con las condiciones que se le indiquen.
+b. Nos va a permitir ordenar los resultados obtenidos
+c. Nos  va  a  permitir  devolver  los  nodos  o  valores  que  hemos  seleccionado,  filtrado  y  ordenado
+d. Permite asignar valores a variables que se vayan a utilizar en el código.
+B
+Es una característica de XQuery…
+a. Selección de la información
+b. Filtrar los datos.
+c. Buscar información en un grupo de documentos.
+d. Todas son correctas.
+D
+En XQUERY las operaciones disponibles para secuencias de nodos son:
+a. Variable, function y number
+b. Union, Intersect y Except
+c. Integer, String y Arrays
+d. Concat, Join, Insert
+B
+¿Cuáles son las funciones numéricas que tiene predefinidas XQuery?
+a. abs(), round() y floor()
+b. abs(), round() y ground()
+c. string(), round() y ground()
+d. abs(), avg() y count()
+A
+¿Para qué sirve la operación para secuencia de nodos “Except”?
+a. Para devolver la unión de los dos conjuntos de nodos que se le pasa
+b. Para devolver la intersección de los dos conjuntos de nodos que se le pasa
+c. Para devolver los nodos que no aparecen en el primer conjunto, pero si en el segundo
+d. Para devolver los nodos que aparecen en el primer conjunto, pero no en el segundo.
+D
+Es una ventaja de usar XQuery para transformaciones XML:
+a. Está escrito en XML.
+b. Basado en plantillas.
+c. Integración en la mayoría de IDE
+d. Es corto, rápido y elegante cuando se trabaja con muchos datos.
+D
+¿Cómo declaramos una función XQuery?
+a. declare function espacio_nombres:nombre_funcion
+b. function declare espacio_nombres:nombre_funcion
+c. begin declare espacio_nombres:nombre_funcion
+d. function begin espacio_nombres:nombre_funcion
+A
+Los operadores aritméticos:
+a. Sirven para calcular logaritmos.
+b. Sirven para calcular sucesiones aritméticas y sus sumas, por definición series aritméticas.
+c. Sirven de símbolos para llevar a cabo distinciones de elementos booleanos.
+d. Sirven de símbolos para llevar a cabo operaciones numéricas.
+D
+¿Qué es la sindicación de contenidos?
+a. La organización sindical de los propietarios de los portales web
+b. Es la posibilidad de acceder a recursos que ofrecen otras webs
+c. Es la organización jerarquizada de los menús de una web
+d. Es la posibilidad de acceder a recursos de una misma web
+B
+En cuanto a las herramientas de agregación, podemos diferenciar:
+a. FEEDFORALL, LIST GARDEN, RSS BUILDER, ABSOLUTE RSS EDITOR, FETCHRSS.
+b. Agregadores Online(Feedly, Inoreader) y Agregadores de Escritorio(FeedDemon, RSSOwl).
+c. Agregadores Online(Feedly, Inoreader) y Agregadores Offline(FeedDemon, RSSOwl).
+d. Blogs-Collection y Boosterblog
+B
+¿Cuál de los siguientes no es un servicio de validación online?
+a. RSS ADVISORY BOARD
+b. CROTVALIDATOR
+c. FEEDVALIDATOR
+d. W3C FEED VALIDATION SERVICE
+B
+¿De qué manera no se puede crear un fichero RSS?
+a. Usando software
+b. Usando cualquier editor XML
+c. Usando hardware
+d. Usando un generador a partir de la información del sitio web
+C
+¿Qué estándares y formatos de redifusión se usan actualmente?
+a. RSS(Really Simple Syndication)
+b. Atom (Atom Syndication Format)
+c. RSS 2.0
+d. Todas son correctas
+D
+Formas erróneas de insertar un script en HTML
+a. Documento con <script>
+b. Documento externo
+c. En el elemento en concreto
+d. Ninguna de las anteriores
+D
+¿Cuál de los siguientes no lo ve el usuario?
+a. console.log
+b. alert
+c. document.write
+d. prompt
+C
+¿Cual es la sintaxis de un prompt?
+a. prompt (“Texto informativo”, “Texto de entrada por defecto” );
+b. prompt (“Texto informativo”);
+c. prompt (“Texto informativo” , “Ubicación de imagen”);
+d. prompt (“Texto informativo” , “Ubicación de imagen”);
+A
+¿Qué operador utilizaremos para indicar “igual que” en JavaScript?
+a. :=
+b. ==
+c. !=
+d. ===
+B
+¿Qué valores se indican entre paréntesis en una sentencia for?
+a. Condición, declaración y actualización
+b. Actualización, inicialización y expresión
+c. Inicializacion, condicion y actualización
+d. If, else if, y switch
+C
+¿Cómo sería la sintaxis para la inclusión en la página web con javascript?
+a. placeholder
+b. onclick
+c. console.log
+d. prompt
+B
+Cuál de estas no es una propiedad de  cadena de texto: (SERGIO)
+a. concat
+b. toUpperCase
+c. shift
+d. charArt
+C
+¿Que realiza la propiedad Childnodes? (Pablo)
+a. Indica el nombre del nodo.
+b. Indica el valor del nodo.
+c. Cambia o retorna los nodos hijos del elemento.
+d. Devuelve los nodos hijos del elemento.
+D
+¿Qué hace la función getElementById(identificador)? (Juan Carlos)
+a. Obtiene  el  elemento  HTML  cuyo  identificador  coincide  con  el  pasado  por parámetro.
+b. Obtiene los elementos cuyo atributo name es igual al pasado por parámetro.
+c. Obtiene los elementos cuya clase coincide con la pasada por parámetro.
+d. Obtiene  todos  los  elementos  del  documento  HTML  cuyas  etiquetas coincidan con la etiqueta pasada por parámetro.
+A
+¿Qué propiedad añade un elemento al principio del array? (Juan Carlos)
+a. unshift()
+b. pop()
+c. shift()
+d. reverse()
+A
+¿Para qué sirve la función reverse() del manejo de arrays? (JOSAN)
+a. Coloca los elementos del array en orden inverso.
+b. Función que añade un elemento al final del array.
+c. Elimina el primer elemento del array.
+d. Propiedad  que  da  el  número elementos del array
+A
+¿Cual no es un tipo de nodo?(GONZALO)
+a. document
+b. element
+c. text
+d. head
+D
+Ventajas de un ERP en la nube, señala la falsa: (Álvaro.S)
+a. Flexibilidad y escalabilidad
+b. Copias de seguridad constantes y automáticas
+c. Es multiplataforma
+d. Disponibilidad
+D
+Elija la opción correcta.	(lonsi)
+a. Un Sistema de Gestión Empresarial, mejorará el funcionamiento interno de la empresa.
+b. Un Sistema de Gestión Empresarial, mejorará el funcionamiento externo de la empresa.
+c. Un Sistema de Gestión, mejorará el funcionamiento interno de la empresa.
+d. Un Sistema de Gestión, mejorará el funcionamiento externo de la empresa.
+A
+En un Módulo  de  ventas:
+a. Su  función  principal  es  el  control  de  todo  lo  relacionado  con  las  ventas  de  la  empresa,  como facturas, listado de precios, descuentos, seguimiento, etc.
+b. Se  controla  todo  lo  relacionado  con  pedidos  a  proveedores,  gestión  del  almacén,  seguimiento de las compras, etc.
+c. Se  controlan  todos  los  aspectos contables de  la  empresa.  Es fundamental que este módulo siga el plan contable general.
+d. Gestiona todo lo relacionado con el personal de la empresa , como nóminas,gastos, vacaciones, etc.
+A
+Qué opción permite crear menús adaptados al nivel de acceso del usuario?(Roberto)
+a. Acceso restringido
+b. Niveles de acceso
+c. Personalizar menús
+d. Auditoría
+C
+Elija la opción correcta sobre los módulos de proyectos. (Lonsi)
+a. Permite la planificación de las fases de cualquier proyecto y sus tareas  asignando recursos mostrándose en diagramas de tipo Gantt.
+b. Se controlan todos los aspectos contables de la empresa. Es fundamental que este módulo siga el plan contable general.
+c. Módulo encargado de realizar las campañas necesarias para hacer llegar la información del producto o servicio al mercado.
+d. Se controla todo lo relacionado con pedidos a proveedores, gestión del  almacén, seguimiento de las compras, etc.
+A
+Según la descripción cuál es el “SAP”? (Lonsi)
+a. Software completamente modular que se adapta a todo tipo de  empresas.
+b. Una de las soluciones más implantadas por las empresas por su experiencia e implantación en el mercado. Disponen de una solución en la nube y destacan por su escalabilidad y seguridad.
+c. Software open-source escrito en Python y PostgreSql como base de datos. Se presenta como una solución escalable, modular y segura.
+d. Open-source comercial que dispone de una versión community gratuita. Según las necesidades será necesario comprar algunos módulos o trabajar con los estándares.
+B
