@@ -117,7 +117,7 @@ a. Int = 0;
 b. String = “”
 c. String = null
 d. Double = 0
-C
+B
 Condiciones de SGBD
 a. Deben ser SGBD y con soporte a programación orientada a objetos
 b. Deben soportar programación orientada a objetos

@@ -24,7 +24,7 @@ public class LectTest {
         }
     }
 
-    public void Impresion() {
+    public void Impresion() { //todo: Crear una Matriz que randomice la seleccion de preguntas almacenando previamente los datos resultantes de las lecturas en una lista de cadenas de texto
         String res = "";
         double points = 0;
         double questCount = 0;
@@ -39,7 +39,7 @@ public class LectTest {
                     System.out.println("Correcto");
                     points++;
                 }else{
-                    System.out.println("Incorrecto");
+                    System.out.println("Incorrecto, " + "la respuesta correcta es: '" + resp +"'");
                 }
                 questCount++;
             }else{
