@@ -1,0 +1,198 @@
+Pruebas dinámicas:
+a. Son aquellas que requieren de la ejecución del código para poder comprobar si este se ejecuta como esperábamos.
+b. Son aquellas que se realizan sin tener que ejecutar el código de la aplicación.
+c. Son aquellas que se llevan a cabo cuando hayan pasado las pruebas unitarias.
+d. Permiten comprobar que los componentes con múltiples funcionalidades que hemos desarrollado satisfacen las necesidades y se comportan correctamente.
+A
+Algunos tipos de pruebas funcionales son:
+a. Pruebas unitarias, pruebas de integración, pruebas de componentes, pruebas de regresión
+b. Pruebas estáticas y pruebas dinámicas
+c. A y B son correctas
+d. Ninguna de las anteriores es correcta
+A
+Las pruebas unitarias son:
+a. Trata  de  comprobar  el  correcto  funcionamiento  de  una  determinada unidad de código que tenemos implementado.
+b. Permiten  comprobar  que  los  componentes  con  múltiples  funcionalidades  que hemos desarrollado satisfacen las necesidades y se comportan correctamente.
+c. Es una prueba que solo se realiza una vez, al inicio del programa.
+d. Son aquellas que se realizan sin tener que ejecutar el código de la aplicación.
+A
+Señala la correcta
+a. Pruebas dinámicas, estáticas, funcionales y diversas
+b. Pruebas dinámicas, estáticas, funcionales y no funcionales
+c. Pruebas dinámicas, no funcionales, funcionales y diversas
+d. Todas son incorrectas
+B
+La metodología TDD…
+a. las pruebas permiten guiar to' el desarrollo software para detectar errores lo más rápido posible.
+b. consta siempre de pruebas estáticas.
+c. consta siempre de pruebas dinámicas.
+d. ninguna de las anteriores.
+A
+La definición de prueba de caja BLANCA nos dice que:
+a. Es incompatible con pruebas de caja negra.
+b. Simplemente, se realizan pruebas de las diferentes funcionalidades que se deberían implementar.
+c. No requiere de conocimientos previos de implementación del sistema.
+d. Se requiere un nivel de conocimientos de los detalles de implementación del sistema muy alto.
+D
+¿Qué desventaja es característica del enfoque exploratorio?
+a. Es muy complicado establecer una generalización que podamos utilizar en diferentes proyectos
+b. Es un tipo de prueba muy restrictiva, y da poca libertad al diseñador.
+c. Los resultados de las pruebas suelen ser muy genéricos, y resulta complicado sacar conclusiones
+d. No tiene ningún inconveniente característico
+A
+¿En qué consisten las pruebas de usabilidad y accesibilidad?
+a. En determinar si cumple todas las necesidades incluidas en la etapa de captura de requisitos.
+b. En comprobar si la interfaz es de fácil uso y entendible.
+c. Que el usuario está protegido de ataques externos, y sus datos están protegidos.
+d. Que el software en cuestión puede usarse sin problemas en los sistemas seleccionados.
+B
+¿Cual de las siguientes afirmaciones sobre las pruebas de seguridad es incorrecta?
+a. Son  esenciales  en  cualquier  desarrollo  software  que  pueda  requerir  el  tratamiento  de  cualquier  dato  sensible.
+b. Existen  determinadas ISOs para poder determinar qué tipo de información debe ser protegida y el nivel de seguridad que se debe aplicar.
+c. Las  aplicaciones  que  desarrollamos  tienen  que  considerar  el  tipo  de  datos  y  actuar  en  consecuencia.
+d. Son las más adecuadas para aplicaciones con gran cantidad de código.
+D
+Las Pruebas de aceptación:
+a. Se ubican en las primeras etapas previas a la publicación del software.
+b. No tienden a considerar datos estadísticos.
+c. Se centran en determinar si el software cumple todas las necesidades incluidas en la etapa de contextualización básica de funcionalidad.
+d. Se centran en determinar si el software cumple todas las necesidades incluidas en la etapa de captura de requisitos.
+D
+Los depuradores…
+a. Limpian los errores de un código fuente
+b. Autoejecutan los códigos fuente
+c. Solo lo tienen Java y C++
+d. Son herramientas que permiten controlar el flujo de ejecución de un código fuente
+D
+Para ejecutar una linea de codigo concreta utilizamos
+a. Puntos de ejecución
+b. Puntos de arranque
+c. Puntos de ruptura
+d. Puntos de sutura
+C
+¿Qué es un punto de ruptura?
+a. Es un lugar en el cual el software puede parar su ejecución quedando sin realizar ninguna tarea con el fin de que el programador pueda observar qué está pasando justo en ese momento
+b. Es cuando tenemos un fallo a la hora de depurar y la ejecución se finaliza en ese instante
+c. El sistema detecta que ha habido un fallo grave en la ejecución del programa y debido a este fallo se deberán tomar las medidas necesarias para solucionarlo
+d. Para poder llevar a cabo la depuración de programas, es necesario cumplir con determinadas características tanto de hardware como de software
+A
+¿Mediante qué funcionalidad de los depuradores podemos entrar en el código de un método en concreto si tenemos un breakpoint fuera de él?
+a. Step Into
+b. Step Put
+c. Run
+d. Step Over
+A
+¿Mediante qué funcionalidad de los depuradores podemos saltar el cuerpo de ejecución de un método y seguir adelante tratando dicho método como una instrucción?
+a. Step Into
+b. Step Put
+c. Run
+d. Step Over
+D
+¿Cuál puede ser el nivel  de  concreción  que  queremos  en  las  pruebas  que  vayamos  a  realizar?.
+a. Pruebas externas
+b. Pruebas de cobertura
+c. Pruebas Debug
+d. JUnit
+B
+¿Cuál no es la herramienta para crear pruebas unitarias de forma sencilla?
+a. JUnit
+b. PHPUnit
+c. Nunit
+d. JavaUnit
+D
+¿Qué procesos se utilizan para automatizar pruebas?
+a. Pruebas de código e interfaces gráficas
+b. Pruebas de código y desarrollo
+c. Pruebas de interfaz gráfica y debug
+d. Pruebas de desarrollo y debug
+A
+¿Qué tipo de prueba es relativamente sencilla de llevar a cabo, pues la idea es poder ejecutar al menos una vez cada línea de código?
+a. Pruebas de equivalencia
+b. Pruebas de cobertura o cubrimiento
+c. Pruebas de ejecución
+d. Pruebas de extremas
+B
+¿Cual es el objetivo de las pruebas unitarias?
+a. Poder validar el software al completo
+b. Poder validar una porción de hardware
+c. Poder validar un código al completo
+d. Poder validar una porción de software
+D
+¿Qué prueba existen casos excepcionales en los que el comportamiento debe ser diferente?
+a. Pruebas de cobertura
+b. Pruebas de clases de equivalencia
+c. Pruebas de casos extremos
+d. Pruebas de casos internos
+C
+No es un patrón de refactorización…
+a. Renombrado
+b. Sustitución de bloques
+c. RayTracing
+d. Movimiento de clases
+C
+¿Qué es un analizador de código?
+a. Un analizador de código se utiliza para saber qué fallos he cometido en un código.
+b. Permiten  revisar  el  estilo,  la  calidad,  el  mantenimiento  y  el  diseño  del  código  fuente.
+c. Da a conocer los errores del código y solucionarlos.
+d. B y C son correctas
+D
+Existen muchas herramientas que permiten realizar la refactorización de manera automática. Marca la INCORRECTA
+a. Eclipse
+b. IntelliJ Idea y Netbeans
+c. Visual paradigm
+d. Android Studio
+C
+Algunas de las herramientas soportadas por los IDEs son:
+a. Mejora de la comprensión del código.
+b. Mejora  de  la  abstracción.
+c. Soporte para la división lógica del código.
+d. Todas son correctas
+D
+¿Que es un analizador de código?
+a. Permiten  revisar  el  estilo,  la  calidad,  el  mantenimiento  y  el  diseño  del  código  fuente.
+b. Obtienen una representación del código visual que permite ver las dependencias y facilitar tareas como la ingeniería inversa.
+c. Permiten  forzar  la  utilización  de  métodos  setters  y  getters  y  generar  código  de  mejor calidad utilizando polimorfismo.
+d. Al  tratarse  de  una  de  los  IDEs  más  utilizados,  incorpora grandes funcionalidades para poder realizar la refactorización.
+A
+¿Cuáles son las pruebas de automación?
+a. Prueba de código
+b. Prueba de interfaz gráfica
+c. A y B son correctas
+d. Ninguna son correctas
+C
+Cuál no pertenece al flujo de trabajo con un VCS es el siguiente:
+a. Descarga del código.
+b. Realización  de  modificaciones.
+c. Consumidores internos.
+d. Subir  el  código.
+C
+Normalmente, el flujo de trabajo con un VCS es:
+a. Descarga del código → Realización de modificaciones → Subir el código.
+b. Realización de modificaciones → Subir el código.
+c. Descarga del código → Subir el código.
+d. Ninguna es correcta.
+A
+El uso de comentarios en el código es:
+a. Está prohibido
+b. Es altamente recomendable
+c. No importan
+d. Siempre hay que comentarlo to'
+B
+Tipos de consumidores:
+a. Consumidores internos y externos.
+b. Consumidores internos y excéntricos.
+c. Consumidores enteros y vacíos.
+d. Consumidores internos externos y enteros.
+A
+Cuál de estos no es un repositorio Cloud?
+a. Bitbucket
+b. SourceForge
+c. GNU Savannah
+d. SQC Unity
+D
+Elija la opción incorrecta sobre GITHUB.
+a. GITHUB ofrece un servicio web.
+b. A través del servicio web podemos acceder a todos los servicios y gestionar el código que tengamos en el repositorio.
+c. Además, ofrece una herramienta de pago de escritorio en la que  podamos trabajar y gestionar también todos nuestros  proyectos, esta  herramienta se conoce como GitHub Desktop.
+d. Normalmente, podemos acceder al portal web y realizar todas las gestiones sobre los diferentes proyectos que tengamos.
+C

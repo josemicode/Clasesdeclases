@@ -1,0 +1,222 @@
+¿Que realiza la función setText()?;
+a. Esta función modifica el texto del JLabel, JTextField o JTextArea, sustituyéndolo por el que le pasemos como parámetro.
+b. Esta función devuelve el texto que hay en el JLabel, JTextField o JTextArea.
+c. Esta función permite imprimir el valor por pantalla
+d. Esta función permite almacenar valores en una variable.
+A
+¿Qué función no podemos realizar con un botón?
+a. Cambiar el texto que aparece en ellos.
+b. Obtener el texto que aparece en ellos.
+c. Cambiar un Layout.
+d. Que realicen una función al pulsar.
+C
+¿Qué es un JLabel?
+a. Es una etiqueta, y mediante ella, vamos a poder mostrar un texto cualquiera en nuestras ventanas.
+b. Es una  caja  de  texto,  donde  vamos  a  poder  escribir/introducir  un  texto  cualquiera  en  nuestras  ventanas.
+c. Es un tipo de caja de texto, donde también vamos a poder escribir/introducir un texto cualquiera en nuestras ventanas, pero puede tener varias líneas escritas.
+d. Ninguna es correcta
+A
+Elija la definición correcta del elemento JCheckBox:
+a. Son botones que podremos poner en nuestras ventanas gráficas, y que nos permitirá interactuar con la aplicación que estemos desarrollando.
+b. Son los conocidos cuadros de elección múltiple que nos podemos encontrar en cualquier programa o web de registro.
+c. Son los pequeños círculos de única elección que nos podemos encontrar en cualquier programa, web o aplicación
+d. Son  las  listas  de  varios  valores  que  nos  encontramos  normalmente  en  los  formularios  webs  o  aplicaciones que trabajen con datos ‘seleccionables’.
+B
+Un JTextField es…
+a. una etiqueta.
+b. una caja de texto con capacidad de una línea.
+c. una caja de texto con capacidad de varias líneas.
+d. una función que modifica etiquetas.
+B
+Selecciona cuál de estas opciones no es una operación permitida de los JTable:
+a. Insertar una fila.
+b. Agregar una columna.
+c. Saber qué fila hay seleccionada.
+d. Importar una biblioteca de uso exclusivo en la tabla.
+D
+La clase "Separator" de Swing Menús en Java:
+a. Representa un separador de menús
+b. Indica el borde de los menús
+c. Representa un menú en concreto
+d. Representa un ítem del menú
+A
+¿Qué línea de código tenemos que poner dentro del método showMessageDialog() para generar una ventana de peligro?
+a. JOptionPane.ERROR_MESSAGE
+b. JOptionPane.INFORMATION_MESSAGE
+c. JOptionPane.WARNING_MESSAGE
+d. JOptionPane.QUESTION_MESSAGE
+C
+¿Cual de las siguientes no es una ventana de diálogo predefinida?
+a. Ventana de error
+b. Ventana de aviso
+c. Ventana de peligro
+d. Ventana personalizada
+B
+¿Cuál de los siguientes parámetros no corresponde a una ventana de error?
+a. this
+b. mensaje
+c. icono
+d. título
+C
+¿Cuál de estas opciones sí es una clase para crear un menú en Java?
+a. JMenuBar.
+b. JMenuButton.
+c. JMenuToggle.
+d. JMenuItemButton.
+A
+Para obtener la ruta de un fichero utilizando JFileChooser (de instancia “fileChooser1”) utilizaremos el siguiente comando:
+a. fileChooser1.setDialogTitle(“ruta1”).getAbsolutePath;
+b. fileChooser1.addChoosableFileFilter(filter1);
+c. fileChooser1.setSelectedFile(new File(“fichero1.txt”));
+d. fileChooser1.getSelectedFile().getAbsolutePath();
+D
+Los conectores Java-MySQL:
+a. Son una biblioteca que nos va a proporcionar las herramientas y métodos necesarios para poder conectar un programa escrito en Java con una base de datos MySQL.
+b. Se acceden a ellos mediante el paquete de java.util
+c. Tienen 6 clases predeterminadas
+d. Eclipse los tiene incorporado por defecto
+A
+¿Cuál es el modelo de arquitectura de software que usamos en la parte de integración de Base de Datos con las Interfaz Gráfica?
+a. MCC (Modelo Controlador-Controlador)
+b. MVC (Modelo Vista-Controlador)
+c. MVV (Modelo Vista-Vista)
+d. MCV (Modelo Controlador-Vista)
+B
+Cuando hacemos una consulta SELECT mediante un método “ejecutarSelect”, ¿De qué tipo será el resultado que devolverá?
+a. ResultGet
+b. ResultSelect
+c. ResultSet
+d. SetResult
+C
+¿Qué debemos hacer cuando queremos realizar una operación sobre una base de datos?
+a. Conectar a la base de datos, realizar la operación pertinente y desconectar de la base de datos
+b. Enlazar la base de datos con nuestro programa, añadir credenciales, realizar la operación pertinente y desconectar de la base de datos
+c. Conectar a la base de datos, realizar una copia de la tabla, realizar la operación sobre la copia para evitar la pérdida de información en la tabla y desconectar de la base de datos
+d. Conectar a la base de datos, buscar la herramiento de texto del gestor de la BD, realizar las operaciones mediante instrucciones , desconectar de la base de datos
+B
+¿Cómo aplicaremos la POO?
+a. Podemos crear una única clase para ejecutar los comandos SELECT, INSERT, DELETE y UPDATE
+b. Podemos llamar a la función ya predeterminada de eclipse
+c. Crearemos una implementación de métodos para añadir los comandos SELECT, INSERT, DELETE y UPDATE
+d. Ninguna es correcta
+A
+En SQL para insertar datos en una tabla se usa el comando
+a. Select
+b. Where
+c. Insert
+d. Having
+C
+La estructura correcta para eliminar datos es:
+a. DELETE FROM WHERE
+b. DELETE WHERE FROM
+c. FROM DELETE WHERE
+a. WHERE FROM DELETE
+A
+¿Cuál no es un valor por defecto?
+a. Int = 0;
+b. String = “”
+c. String = null
+d. Double = 0
+B
+Condiciones de SGBD
+a. Deben ser SGBD y con soporte a programación orientada a objetos
+b. Deben soportar programación orientada a objetos
+c. No deben ser un SGBD y debe soportar instrucciones SQL
+d. Deber un SGBD sin soporte a programación orientada a objetos
+A
+¿Qué tipo de sistemas gestores de bases de datos orientadas a objetos soportan tanto bases de datos orientadas a objetos como relacionales?
+a. Puros
+b. Polifuncionales
+c. Duales
+d. Mixtos
+D
+¿Cómo se introduce un objeto en una base de datos a través de Java?
+a. Clase Nombre = new Clase(Datos); bd.store(Nombre);
+b. Clase Nombre = new Clase(Datos); bd.import(Nombre);
+c. Clase Nombre = new Clase(Datos); bd.save(Nombre);
+d. Clase Nombre = new Clase(Datos); bd.executeUpdate(Nombre);
+A
+¿Qué lenguaje usamos para recuperar datos de una base de datos orientada a objetos?
+a. QBE(Query By Example)
+b. DBQ (Data Base Query)
+c. SQL (Structured Query Language)
+d. BOQ (Base On Query)
+A
+¿Qué tipo de sistemas gestores de bases de datos orientadas a objetos soportan bases de datos orientadas a objetos?
+a. Oracle
+b. Mixtos
+c. Puros
+d. Objetos
+C
+¿Qué operación  no vamos  a  poder  realizar  en  una base de datos relacional?
+a. Inserción de datos.
+b. Consulta de datos.
+c. Corrupción de datos.
+d. Modificación de datos.
+C
+¿Para qué sirve el método de restricción greater()?
+a. Este método nos permitirá crear una restricción para valores más pequeños.
+b. Este método nos permitirá crear una restricción para valores más grandes.
+c. Este método nos permitirá crear una restricción para valores iguales.
+d. Este método nos permitirá crear una restricción para valores distintos al indicado.
+B
+QBE tiene las siguientes limitaciones: (Juan Carlos)
+a. No permite realizar consultas avanzadas con los operadores AND, OR, NOT...
+b. Se necesita de un constructor que construya los objetos no inicializados.
+c. No nos permite preguntar por objetos cuyo valor de un campo numérico sea 0, String, vacíos o campos con valor null.
+d. Todas son correctas
+D
+¿Qué son las consultas soda? (JOSAN)
+a. Son  una  biblioteca  que  presenta  la  ventaja  de  una  ejecución  más  rápida  de  las  mismas y permite generar consultas dinámicas
+b. Es la  forma  más  básica  de  consultar  la  base  de  datos  orientada  a  objetos.
+c. Son  consultas  nativas, y son la interfaz principal y la recomendada por los desarrolladores de DB4O.
+d. son restricciones  con  los  operadores  OR  y  AND
+A
+Para concatenar más de una restricción en una consultas utilizamos:
+a. OR
+b. AND
+c. Las dos primeras se pueden usar
+d. Constraint
+C
+¿Qué método se utiliza para ordenar los datos de forma descendente?
+a. OrderAscending
+b. OrderDescending
+c. Descending
+d. OrderDes
+B
+La palabra reservada self, indica que..	(lonsi)
+a. Algo pertenece a la clase.
+b. Falta algo por importar.
+c. Hereda de otra clase.
+d. Ninguna es correcta.
+A
+¿Qué tipo de dato numérico es falso?
+a. Números enteros
+b. Números completos
+c. Números reales
+d. Números complejos
+B
+¿Qué tipos de métodos existen en Python?
+a. Las funciones y los procedimientos.
+b. For e if.
+c. Comparar y constructor.
+d. No hay métodos.
+A
+Si queremos leer las cadenas en otro tipo de dato debemos usar:
+a. int, float o bool.
+b. bool, string y array.
+c. string, array e int.
+d. Ninguna respuesta es correcta.
+A
+Cual de estos operadores no es admitido por Python:
+a. Operadores aritméticos
+b. Operadores lógicos
+c. Operadores de selección
+d. Operadores relacionales
+C
+¿Cuál no pertenece al  Zen de python?(lonsi)
+a. Explícito es mejor que implícito.
+b. Bello es mejor que feo.
+c. Lo puro gana a lo práctico.
+d. Plano es mejor que anidado.
+C

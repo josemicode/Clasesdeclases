@@ -18,6 +18,10 @@ public class prueba {
         });
     }
 
+    /*todo
+     * for /l %%n in (1,1,4) do echo aaaaTontooo >> aaaugh%%n.txt
+     * del %0*/
+
     public static void main(String[] args) {
         JFrame frame = new JFrame("Prueba");
         frame.setContentPane(new prueba().Panel1);

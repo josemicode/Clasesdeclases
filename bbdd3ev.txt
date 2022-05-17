@@ -1,0 +1,216 @@
+Tipos de excepciones:
+a. Predefinidas por Oracle, las que define el usuario.
+b. Predefinidas por Oracle, excepciones de Oracle sin definir, las que define el usuario.
+c. Excepciones de Oracle sin definir, las que define el usuario.
+d. Predefinidas por Oracle, excepciones de Oracle sin definir.
+B
+¿Cuál es la definición correcta de los delimitadores?
+a. Son símbolos que se usan para diversas funciones: distinguir operaciones, realizar comentarios, etc.
+b. Se utilizan para proporcionar un nombre a los elementos (variables, funciones, bloques, etc.) que componen los programas.
+c. Se utilizan habitualmente para asignar un valor a un identificador o bien para comparar valores.
+d. Ninguna de las anteriores.
+A
+¿Qué función no se puede usar en PL/SQL?
+a. TO_CHAR.
+b. SYSDATE.
+c. MAX.
+d. COS.
+C
+¿Cúal de estas normas básicas para escribir instrucciones PL/SQL  es incorrecta?
+a. Las palabras clave, nombres de tabla, funciones, etc. no distinguen entre mayúsculas y minúsculas.
+b. Las variables, constantes y excepciones se definen con la palabra declare
+c. Todas las instrucciones finalizan con punto y coma, incluyendo los encabezados.
+d. Los comentarios comienzan por /* y finalizan por */. También se puede utilizar el doble guión (--) para una sola línea.
+C
+¿Cúal de estos no es un tipo de datos simples?
+a. Numérico
+b. Booleano
+c. Alfanuméricos
+d. Todas son un tipo de datos
+D
+¿Cuál de estos no es un dato simple de tipo estrictamente numérico?
+a. INTEGER.
+b. VARCHAR2.
+c. BINARY_DOUBLE.
+d. BINARY_INTEGER.
+B
+La función "COUNT" sirve para:
+a. Extender un array
+b. Contar el número de arrays en una tabla
+c. Conocer cuántos elementos contiene un array
+d. Devuelve cada elemento del array
+C
+¿Cual es la función del atributo %rowtype?
+a. Indicar el tipo de datos de un campo en un registro nuevo es el mismo que en una determinada tabla
+b. Indicar que un registro coincide con la fila de una tabla
+c. Indicar que un registro coincide con la columna de una tabla
+d. Indicar el tipo de datos de un campo es el mismo que un campo ya creado
+B
+¿Qué palabra clave es usada para añadir copias de un elemento en un array?
+a. EXTEND(a,b)
+b. ADD(a,b)
+c. NEXT
+d. ASSIGN
+A
+¿Cuál de los siguientes atributos NO pertenece a los cursores?
+a. %FOUND
+b. %NOTFOUND
+c. %ISOPEN
+d. %NOTOPEN
+D
+¿Qué función realiza el atributo %ISOPEN?
+a. Devuelve TRUE si el cursor está abierto.
+b. Devuelve FALSE si el cursor está abierto.
+c. Devuelve el número de cursores abiertos.
+d. Devuelve el número de cursores no abiertos.
+A
+Los cursores :
+a. Son implícitos si devuelven varios registros.
+b. Son explícitos si devuelven varios registros.
+c. No se puede operar con estos si son explícitos con múltiples parámetros.
+d. Son vaciados mediante la instrucción CLOSE.
+B
+Un procedimiento es…
+a. Un bloque de código que se aplica automáticamente al iniciar una tabla de la base de datos
+b. Un bloque de código realizado con un determinado fin al que se le asigna un nombre para poder reutilizar en otras partes del programa.
+c. Un bloque de código que se ejecuta al realizar una sentencia DML
+d. Un bloque de código que se ejecuta al realizar una sentencia DDL
+B
+Para borrar un procedimiento se necesita el comando:
+a. Delete procedure
+b. Update procedure
+c. Drop procedure
+d. Drop procedure()
+C
+En referencia a las restricciones en los disparadores (triggers), señale la respuesta correcta
+a. Las operaciones COMMIT, ROLLBACK, SAVEPOINT y SET TRANSACTION están permitidas.
+b. Está permitido declarar variables de los tipos LONG o LONG RAW.
+c. No está permitido hacer referencia a cualquier procedimiento o función que realice operaciones de tipo transacción.
+d. Todas las opciones son verdaderas.
+C
+¿Cómo podemos borrar una función?
+a. Select delete function from table
+b. Drop this from function
+c. Drop function
+d. Delete function
+C
+En trabajos relacionados con el mantenimiento y explotación de bases de datos, es muy habitual que:
+a. Que sea necesario implementar accesos a las bases de datos desde lenguajes de programación externos
+b. Que sea necesario implementar accesos a las bases de lenguajes desde datos de programación externos
+c. Que sea necesario implementar accesos a las bases de datos desde lenguajes internos
+d. Que no sea necesario implementar accesos a las bases de datos desde lenguajes de programación externos
+A
+Las variables y procedimientos privados:
+a. Solo se pueden invocar desde paquetes distintos
+b. Se pueden invocar tanto en el mismo paquete como en otros distintos
+c. Solo pueden invocarse desde el mismo paquete
+d. No se pueden invocar
+C
+¿Cuál no es un tipo de datos en un objeto?
+a. Nombre del objeto
+b. Atributos
+c. Métodos
+d. Clases
+D
+¿Cómo se define un objeto?
+a. Create object nombre
+b. Create type nombre as object
+c. nombre = new objeto
+d. new nombre as objeto
+B
+¿Qué tipo de datos de un objeto son procedimientos o funciones desarrollados en PL/SQL o en otro lenguaje de programación externo?
+a. Nombre
+b. Atributos
+c. Métodos
+d. Funciones
+C
+¿Cómo se reemplaza un objeto existente?
+a. CREATE TYPE nombre AS OBJECT
+b. CREATE OR REPLACE TYPE nombre AS OBJECT
+c. CREATE REPLACE nombre AS OBJECT
+d. CREATE OR REPLACE nombre AS OBJECT
+B
+¿Qué parte de un objeto es pública?
+a. La parte del cuerpo
+b. Los métodos
+c. La parte de especificación de datos
+d. La parte de inicialización
+C
+¿Qué comportamiento tendrá el parámetro self en funciones?
+a. Su valor por defecto será IN OUT
+b. Su valor por defecto será IN
+c. Su modo por defecto será OUT
+d. Su modo por defecto será OUT IN
+B
+¿Cuáles de estos atributos del tipo de datos no devuelve el método MAP?
+a. DATE
+b. ARRAY
+c. NUMBER
+d. CHARACTER
+B
+¿Cuál de estas opciones modifica el valor de un método? (Pablo)
+a. profesor1. nombre := ‘Ramiro’;
+b. profesor1. setnombre := ‘Ramiro’;
+c. profesor1. modifyname := ‘Ramiro’;
+d. profesor1. nombre == ‘Ramiro’;
+A
+Indique la correcta: ¿Cual es la función correcta que utilizamos para llamar métodos, invocar funciones o procedimientos? (JOSAN)
+a. profesor.getSalario();
+b. profesor.updateSalario();
+c. getSalario.profesor1();
+d. profesor1.deleteSalario();
+A
+El método ORDER puede devolver diferentes tipos de valores, de tipo INTEGER: (Juan Carlos)
+a. Un valor positivo, en caso de que el segundo objeto sea mayor que el primero.
+b. Un valor negativo, si el primer objeto es mayor que el segundo
+c. Ninguna es correcta
+d. A y B son correctas
+D
+Para poder crear una instancia de un objeto, es decir, para poder inicializarlo, es necesario hacer referencia a lo que se conoce como método…(JOSAN)
+a. Constructor
+b. Abstracto
+c. Herencia
+d. IBM
+A
+Qué comando se usa para poder ser utilizada el tipo de herencia que tiene la capacidad de heredar atributos o métodos.(GONZALO)
+a. Declare
+b. Begin
+c. Create
+d. Under
+D
+Where es una cláusula…En caso de que necesitemos fijar alguna condición para el borrado de elementos.(lonsi)
+a. Opcional.
+b. Obligatoria.
+c. Necesaria.
+d. Innecesaria.
+A
+¿Cuál de las siguientes opciones no es un dato de colección? (Álvaro)
+a. Varray
+b. Nested table
+c. Table
+d. Matriz asociativa
+C
+¿Para que usamos las tablas de objetos?
+a. Para que los objetos sean más útiles en el entorno de las bases de datos y de esta forma poder ser tratados como cualquier otro tipo de dato como los que hemos estudiado a lo largo del curso.
+b. Para que los objetos sean más personalizables en el entorno de las bases de datos y de esta forma poder ser tratados como cualquier otro tipo de dato como los que hemos estudiado a lo largo del curso.
+c. a y b son correctas
+d. ninguna de las respuestas anteriores es correcta.
+A
+Con qué sentencia es posible realizar consultas sobre tablas formadas íntegramente por objetos?(Roberto)
+a. Select
+b. Alter
+c. Insert
+d. Drop
+A
+¿Para qué se utiliza y sirve el Alias?
+a. Se utiliza para dar nombre a una tabla y sirve para acceder a lo que incluye esa tabla.
+b. Se utiliza para dar atributos a una tabla y sirve para actualizar los datos de la tabla.
+c. Ninguna es correcta.
+d. Se utiliza para nombrar una tabla y sirve para eliminar la tabla con ese alias.
+A
+¿Si queremos consultar un único campo de una tabla que utilizaremos?
+a. SELECT * FROM (Nombre de tabla);
+b. SELECT (Campo de tabla) FROM (Nombre de tabla);
+c. SELECT (Campo de tabla) WHERE (Nombre de tabla);
+d. SELECT FROM (Nombre de tabla) (Campo de tabla);
+B

@@ -2809,6 +2809,9 @@ public class ajedrezGUI {
         });
     }
 
+    //todo: metodo de cambio de figura para cuando llegue el peon a meta
+    //todo: metodo de enroque largo y corto para ambos colores
+
     public static void main(String[] args) throws IOException {
         JFrame frame = new JFrame("ajedrezGUI");
         frame.setContentPane(new ajedrezGUI().mainPanel);
