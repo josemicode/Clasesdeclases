@@ -10,7 +10,7 @@ public class DBDrule {
     public static void main(String[] args) {
 
         ArrayList<String> Perks = new ArrayList<String>(Arrays.asList(
-                "Dead Hard","Head on","Borrow Time","Iron Will","Kindred","Spine Chill","UnBreakeble",
+                "Dead Hard","Head on","Borrow Time","Iron Will","Kindred","Spine Chill","Unbreakable",
                 "Adrenaline","Prove Thy","Sprint Burst",
                 "We'll Make It","Bond","WGLF","Inner Strength",
                 "Botany","Empathy","Urban",
