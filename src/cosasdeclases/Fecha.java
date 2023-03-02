@@ -1,6 +1,6 @@
 package cosasdeclases;
 
-public class Fecha {
+public class Fecha { //Pingos
 
     private int dia = 1;
     private int mes = 1;
